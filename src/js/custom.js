@@ -3,24 +3,27 @@ console.log("Custom JS loaded");
 
 
 /* ---- scroll header addNew class script ---*/
+let lastScrollTop = 0; // Variable to store the last scroll position
+const header = document.getElementById('header');
+
 document.addEventListener('scroll', function() {
-  const target = document.getElementById('header');
-  
+  let currentScrollTop = window.scrollY; // Current scroll position
+
   // Check if at the top of the page
-  if (window.scrollY === 0) {
-    target.classList.remove('scroll-down');
-    target.classList.add('scroll-up');
+  if (currentScrollTop === 0) {
+    header.classList.remove('scroll-down');
+    header.classList.add('scroll-up');
+  } else if (currentScrollTop > lastScrollTop) {
+    // Scrolling down
+    header.classList.remove('scroll-up');
+    header.classList.add('scroll-down');
+  } else {
+    // Scrolling up
+    header.classList.remove('scroll-down');
+    header.classList.add('scroll-up');
   }
-});
 
-document.addEventListener('wheel', function(event) {
-  const target = document.getElementById('header');
-
-  // Scroll down
-  if (event.deltaY > 0) {
-    target.classList.remove('scroll-up');
-    target.classList.add('scroll-down');
-  }
+  lastScrollTop = currentScrollTop; // Update the last scroll position
 });
 
 
