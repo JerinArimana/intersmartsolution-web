@@ -151,7 +151,7 @@
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:p-0 dark:bg-blue-600 md:dark:bg-transparent"
+                  class="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0 "
                   aria-current="page"
                 >
                   <span class="block absolute top-[-16px] h-[20px] w-[40px]">
@@ -190,14 +190,14 @@
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  class="block py-2 px-3 text-white rounded-sm md:border-0  md:p-0 "
                   >About us</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  class="block py-2 px-3 text-white rounded-sm md:border-0  md:p-0"
                   >Distance education</a
                 >
               </li>
@@ -205,7 +205,7 @@
                 <button
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center uppercase justify-between w-full py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  class="flex items-center uppercase justify-between w-full py-2 px-3 text-white rounded-sm   md:border-0  md:p-0 md:w-auto "
                 >
                   Document Services
                   <svg
@@ -267,14 +267,14 @@
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  class="block py-2 px-3 text-white rounded-sm md:border-0  md:p-0"
                   >Careers</a
                 >
               </li>
               <li class="">
                 <a
                   href="#"
-                  class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent relative underline"
+                  class=" block py-2 px-3 text-white rounded-sm md:border-0  md:p-0"
                   >Login</a
                 >
               </li>
@@ -283,7 +283,7 @@
               >
                 <a
                   href="#"
-                  class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  class="block py-2 px-3 text-white rounded-sm md:border-0  md:p-0"
                   >Contact</a
                 >
               </li>
@@ -421,12 +421,18 @@
     <!-- Main Content -->
 
     <main>
-      <section class="home-banner h-screen relative w-full overflow-hidden">
-        <!-- <img
-          src="./src/images/banner_img_1.png"
-          alt="Banner Image"
-          class="w-full h-auto rounded-lg shadow-md h-screen object-cover object-center"
-        /> -->
+      <section class="home-banner h-screen relative w-full overflow-hidden ">
+      <div class="absolute bottom-[6%] md:bottom-[10%] lg:bottom-[20%]  flex-col right-0  gap-2 bg-transparent flex justify-around items-center p-4 z-5">
+    <a href="#" class="bg-yellow-600 w-[37px] h-[37px] md:w-[57px] md:h-[57px] p-2 md:p-4 hover:bg-yellow-700">
+      <img src="./src/images/telephone-call_1.svg" alt="telicall" class="w-full h-auto object-cover"/>
+    </a>
+    <a href="#" class="bg-black w-[37px] h-[37px] md:w-[57px] md:h-[57px] p-2 md:p-4 hover:bg-gray-800">
+       <img src="./src/images/emai_evelop.svg" alt="telicall" class="w-full h-auto object-cover"/>
+    </a>
+    <a href="#" class="bg-green-500 w-[37px] h-[37px] md:w-[57px] md:h-[57px] p-2 md:p-4 hover:bg-green-600">
+       <img src="./src/images/whatsup_icon_white.svg" alt="telicall" class="w-full h-auto object-cover"/>
+    </a>
+  </div>
         <video
           class="banner-video w-full h-screen object-cover"
           autoplay
@@ -450,14 +456,14 @@
             >
               Your Gateway to Global Education
             </h1>
-            <p class="text-lg font-normal leading-[27px] mb-[60px]">
+            <p class="text-lg font-light leading-[27px] mb-[60px]">
               RK Education is a leading distance education consultancy committed
               to empowering learners of all nationalities with access to
               high-quality, flexible academic opportunities.
             </p>
 
             <button
-              class="btn-golden btn-sm bg-[var(--secondary-color)] hover:bg-[var(--secondary-color)] tracking-[0.96px] text-[14px] md:text-base text-white font-semibold uppercase tracking-wide font-medium"
+              class="btn-golden btn-sm bg-[var(--secondary-color)] hover:bg-[var(--secondary-color)] tracking-[0.96px] text-sm text-white font-medium uppercase tracking-wide "
             >
               Book Free Consultation
             </button>
@@ -470,7 +476,7 @@
           class="container-custom mx-auto px-4 sm:px-6 lg:px-8 pt-[80px] pb-[100px]"
         >
           <div
-            class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-[380px_1fr] 2xl:grid-cols-[580px_1fr] gap-4 sm:gap-6 lg:gap-[30px] 2xl:gap-[70px]"
+            class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-[380px_1fr] 2xl:grid-cols-[580px_1fr] gap-4 sm:gap-6 lg:gap-[30px] 2xl:gap-[60px]"
           >
             <div class="flex flex-col">
               <img
@@ -479,7 +485,7 @@
                 class="w-full h-auto object-cover rounded-md"
               />
               <p
-                class="mt-4 sm:mt-6 text-sm sm:text-base xl:text-lg leading-6 sm:leading-7 font-normal"
+                class="mt-4 sm:mt-6 text-sm sm:text-base  leading-6 sm:leading-7 font-normal"
               >
                 RK Education has become a trusted name in the field of distance
                 education consultancy, dedicated to helping students achieve
@@ -507,7 +513,7 @@
                     >Welcome to</span
                   >
                   <span
-                    class="font_display-unna text-[35px] lg:text-[45px] 2xl:text-[60px] text-(--text-color) leading-[30px] lg:leading-[50px]"
+                    class="font_display-unna text-[35px] lg:text-[45px] 2xl:text-[50px] text-(--text-color) leading-[30px] lg:leading-[50px]"
                   >
                     RK Education Group</span
                   >
@@ -519,7 +525,7 @@
               >
                 <div class="flex items-center justify-between gap-4 mb-4">
                   <h3
-                    class="text-base sm:text-lg md:text-[27px] lg:text-[37px] font_display-unna font-semibold"
+                    class="text-xl md:text-[27px] lg:text-[37px] font_display-unna font-semibold"
                   >
                     Mission
                   </h3>
@@ -530,7 +536,7 @@
                   />
                 </div>
                 <p
-                  class="text-sm sm:text-base xl:text-lg font-normal leading-6 sm:leading-7 text-[var(--text-color)]"
+                  class="text-sm sm:text-base xl:text-base font-normal leading-6 sm:leading-7 text-[var(--text-color)]"
                 >
                   To make high-quality, flexible, and globally recognized
                   education accessible to students of all nationalities, helping
@@ -544,7 +550,7 @@
               >
                 <div class="flex items-center justify-between gap-4 mb-4">
                   <h3
-                    class="text-base sm:text-lg md:text-[27px] lg:text-[37px] font_display-unna font-semibold"
+                    class="text-xl md:text-[27px] lg:text-[37px] font_display-unna font-semibold"
                   >
                     Vision
                   </h3>
@@ -556,7 +562,7 @@
                   />
                 </div>
                 <p
-                  class="text-sm sm:text-base xl:text-lg font-normal leading-6 sm:leading-7"
+                  class="text-sm sm:text-base xl:text-base font-normal leading-6 sm:leading-7"
                 >
                   To be a global leader in distance education consultancy,
                   empowering students worldwide with innovative and accessible
@@ -569,7 +575,7 @@
               >
                 <div class="flex items-center justify-between gap-4 mb-4">
                   <h3
-                    class="text-base sm:text-lg md:text-[27px] lg:text-[37px] font_display-unna font-semibold"
+                    class="text-xl md:text-[27px] lg:text-[37px] font_display-unna font-semibold"
                   >
                     Presence
                   </h3>
@@ -580,7 +586,7 @@
                   />
                 </div>
                 <p
-                  class="text-sm sm:text-base xl:text-lg font-normal leading-6 sm:leading-7 text-[var(--text-color)]"
+                  class="text-sm sm:text-base xl:text-base font-normal leading-6 sm:leading-7 text-[var(--text-color)]"
                 >
                   Integrity, excellence, and inclusivity guide our commitment to
                   providing ethical, high-quality, and student-centered
@@ -659,7 +665,7 @@
                 Personalized counseling
               </h6>
               <p
-                class="text-sm lg:text-base font-normal leading-[27px] text-center"
+                class="text-sm font-normal leading-[25px] text-center"
               >
                 RK Education has become a trusted name in the field of distance
                 education consultancy, dedicated to helping students achieve
@@ -691,7 +697,7 @@
                 Global university tie-ups
               </h6>
               <p
-                class="text-sm lg:text-base font-normal leading-[27px] text-center"
+                class="text-sm font-normal leading-[25px] text-center"
               >
                 RK Education has become a trusted name in the field of distance
                 education consultancy, dedicated to helping students achieve
@@ -748,7 +754,7 @@
                 Personalized counseling
               </h6>
               <p
-                class="text-sm lg:text-base font-normal leading-[27px] text-center"
+                class="text-sm font-normal leading-[25px] text-center"
               >
                 RK Education has become a trusted name in the field of distance
                 education consultancy, dedicated to helping students achieve
@@ -805,7 +811,7 @@
                 Personalized counseling
               </h6>
               <p
-                class="text-sm lg:text-base font-normal leading-[27px] text-center"
+                class="text-sm font-normal leading-[25px] text-center"
               >
                 RK Education has become a trusted name in the field of distance
                 education consultancy, dedicated to helping students achieve
@@ -1094,7 +1100,7 @@
             </swiper-slide>
           </swiper-container>
           <button
-            class="btn-golden bg-[var(--text-color)] bg-[var(--secondary-color)] btn-sm mx-auto flex mt-[18px] sm:mt-[28px] md:mt-[38px] lg:mt-[68px] tracking-[0.96px] text-[14px] md:text-base text-white font-semibold uppercase tracking-wide font-medium"
+            class="btn-golden bg-[var(--text-color)] bg-[var(--secondary-color)] btn-sm mx-auto flex mt-[18px] sm:mt-[28px] md:mt-[38px] lg:mt-[68px] tracking-[0.96px] text-sm text-white  uppercase tracking-wide font-medium"
           >
             View All Services
           </button>
@@ -1227,7 +1233,7 @@
         </div>
         <div class="mt-10 md:mt-16 xl:mt-22">
           <swiper-container
-            class="mySwiper"
+            class="mySwiper text-left"
             pagination="false"
             pagination-clickable="true"
             space-between="14"
@@ -1238,15 +1244,15 @@
           >
             <swiper-slide>
               <div
-                class="h-[400px] xs:h-[500px] md:h-[400px] lg:h-[430px] xl:h-[580px] bg-white pt-[20px] lg:pt-[70px] xl:pt-[90px] pb-[18px] lg:pb-[30px] xl:pb-[50px] px-[18px] lg:px-[30px] xl:px-[50px] rounded-xl shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
+                class="h-[400px] xs:h-[500px] md:h-[350px] lg:h-[430px] xl:h-[480px] bg-white pt-[20px] lg:pt-[70px] xl:pt-[90px] pb-[18px] lg:pb-[30px] xl:pb-[50px] px-[18px] lg:px-[30px] xl:px-[50px] rounded-xl shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
               >
                 <h3
-                  class="italic font_display-unna font-normal mb-[40px] text-[20px] lg:text-[26px] 2xl:text-[29px] leading-[14px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
+                  class="italic text-left font_display-unna font-normal mb-[40px] text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[24px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
                 >
                   Smooth process and excellent guidance!
                 </h3>
                 <p
-                  class="text-sm lg:text-base lg:leading-[18px] 2xl:leading-[26px] text-left font-normal text-[var(--dark-black)] mb-6"
+                  class="text-sm lg:leading-[18px] 2xl:leading-[26px] text-left font-normal text-[var(--dark-black)] mb-6"
                 >
                   RK Education made my dream of studying abroad come true! I had
                   no idea where to start with distance education, but the team
@@ -1276,7 +1282,7 @@
             </swiper-slide>
             <swiper-slide>
               <div
-                class="h-[400px] xs:h-[500px] md:h-[400px] lg:h-[430px] xl:h-[580px] bg-white relative shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
+                class="h-[400px] xs:h-[500px] md:h-[350px] lg:h-[430px] xl:h-[480px] bg-white relative shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
               >
                 <video
                   class="w-full object-cover h-screen rounded-t-xl"
@@ -1294,7 +1300,7 @@
                   class="absolute bottom-0 left-0 bg-[var(--background-color)] m-3 p-3 rounded-[20px]"
                 >
                   <h3
-                    class="italic font_display-unna font-normal mb-[40px] text-[20px] lg:text-[26px] 2xl:text-[29px] leading-[14px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
+                    class="italic font_display-unna font-normal mb-[40px] text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[24px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
                   >
                     RK Education made my dream of studying abroad come true!
                   </h3>
@@ -1322,15 +1328,15 @@
             </swiper-slide>
             <swiper-slide>
               <div
-                class="h-[400px] xs:h-[500px] md:h-[400px] lg:h-[430px] xl:h-[580px] bg-white pt-[20px] lg:pt-[70px] xl:pt-[90px] pb-[18px] lg:pb-[30px] xl:pb-[50px] px-[18px] lg:px-[30px] xl:px-[50px] rounded-xl shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
+                class="h-[400px] xs:h-[500px] md:h-[350px] lg:h-[430px] xl:h-[480px] bg-white pt-[20px] lg:pt-[70px] xl:pt-[90px] pb-[18px] lg:pb-[30px] xl:pb-[50px] px-[18px] lg:px-[30px] xl:px-[50px] rounded-xl shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
               >
                 <h3
-                  class="italic font_display-unna font-normal mb-[40px] text-[20px] lg:text-[26px] 2xl:text-[29px] leading-[14px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
+                  class="italic text-left font_display-unna font-normal mb-[40px] text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[24px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
                 >
                   Smooth process and excellent guidance!
                 </h3>
                 <p
-                  class="text-sm lg:text-base lg:leading-[18px] 2xl:leading-[26px] text-left font-normal text-[var(--dark-black)] mb-6"
+                  class="text-sm lg:leading-[18px] 2xl:leading-[26px] text-left font-normal text-[var(--dark-black)] mb-6"
                 >
                   RK Education made my dream of studying abroad come true! I had
                   no idea where to start with distance education, but the team
@@ -1360,15 +1366,15 @@
             </swiper-slide>
             <swiper-slide>
               <div
-                class="h-[400px] xs:h-[500px] md:h-[400px] lg:h-[430px] xl:h-[580px] bg-white pt-[20px] lg:pt-[70px] xl:pt-[90px] pb-[18px] lg:pb-[30px] xl:pb-[50px] px-[18px] lg:px-[30px] xl:px-[50px] rounded-xl shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
+                class="h-[400px] xs:h-[500px] md:h-[350px] lg:h-[430px] xl:h-[480px] bg-white pt-[20px] lg:pt-[70px] xl:pt-[90px] pb-[18px] lg:pb-[30px] xl:pb-[50px] px-[18px] lg:px-[30px] xl:px-[50px] rounded-xl shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
               >
                 <h3
-                  class="italic font_display-unna font-normal mb-[40px] text-[20px] lg:text-[26px] 2xl:text-[29px] leading-[14px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
+                  class="italic text-left font_display-unna font-normal mb-[40px] text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[24px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
                 >
                   Smooth process and excellent guidance!
                 </h3>
                 <p
-                  class="text-sm lg:text-base lg:leading-[18px] 2xl:leading-[26px] text-left font-normal text-[var(--dark-black)] mb-6"
+                  class="text-sm lg:leading-[18px] 2xl:leading-[26px] text-left font-normal text-[var(--dark-black)] mb-6"
                 >
                   RK Education made my dream of studying abroad come true! I had
                   no idea where to start with distance education, but the team
@@ -1398,15 +1404,15 @@
             </swiper-slide>
             <swiper-slide>
               <div
-                class="h-[400px] xs:h-[500px] md:h-[400px] lg:h-[430px] xl:h-[580px] bg-white pt-[20px] lg:pt-[70px] xl:pt-[90px] pb-[18px] lg:pb-[30px] xl:pb-[50px] px-[18px] lg:px-[30px] xl:px-[50px] rounded-xl shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
+                class="h-[400px] xs:h-[500px] md:h-[350px] lg:h-[430px] xl:h-[480px] bg-white pt-[20px] lg:pt-[70px] xl:pt-[90px] pb-[18px] lg:pb-[30px] xl:pb-[50px] px-[18px] lg:px-[30px] xl:px-[50px] rounded-xl shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
               >
                 <h3
-                  class="italic font_display-unna font-normal mb-[40px] text-[20px] lg:text-[26px] 2xl:text-[29px] leading-[14px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
+                  class="italic text-left font_display-unna font-normal mb-[40px] text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[24px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
                 >
                   Smooth process and excellent guidance!
                 </h3>
                 <p
-                  class="text-sm lg:text-base lg:leading-[18px] 2xl:leading-[26px] text-left font-normal text-[var(--dark-black)] mb-6"
+                  class="text-sm lg:leading-[18px] 2xl:leading-[26px] text-left font-normal text-[var(--dark-black)] mb-6"
                 >
                   RK Education made my dream of studying abroad come true! I had
                   no idea where to start with distance education, but the team
@@ -1436,15 +1442,15 @@
             </swiper-slide>
             <swiper-slide>
               <div
-                class="h-[400px] xs:h-[500px] md:h-[400px] lg:h-[430px] xl:h-[580px] bg-white pt-[20px] lg:pt-[70px] xl:pt-[90px] pb-[18px] lg:pb-[30px] xl:pb-[50px] px-[18px] lg:px-[30px] xl:px-[50px] rounded-xl shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
+                class="h-[400px] xs:h-[500px] md:h-[350px] lg:h-[430px] xl:h-[480px] bg-white pt-[20px] lg:pt-[70px] xl:pt-[90px] pb-[18px] lg:pb-[30px] xl:pb-[50px] px-[18px] lg:px-[30px] xl:px-[50px] rounded-xl shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
               >
                 <h3
-                  class="italic font_display-unna font-normal mb-[40px] text-[20px] lg:text-[26px] 2xl:text-[29px] leading-[14px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
+                  class="italic text-left font_display-unna font-normal mb-[40px] text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[24px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
                 >
                   Smooth process and excellent guidance!
                 </h3>
                 <p
-                  class="text-sm lg:text-base lg:leading-[18px] 2xl:leading-[26px] text-left font-normal text-[var(--dark-black)] mb-6"
+                  class="text-sm lg:leading-[18px] 2xl:leading-[26px] text-left font-normal text-[var(--dark-black)] mb-6"
                 >
                   RK Education made my dream of studying abroad come true! I had
                   no idea where to start with distance education, but the team
@@ -1510,7 +1516,7 @@
                     SHARJAH
                   </h3>
                   <p
-                    class="text-base font-light text-gray-300 mt-[7px] leading-[22px] sm:pr-19"
+                    class="text-sm font-light text-gray-300 mt-[7px] leading-[22px] sm:pr-19"
                   >
                     RK Education, Al Wahda Street, Sharjah Emirates central post
                     office - Rahma-01, Floor no - 801 – Near Building Al Soor
@@ -1518,7 +1524,7 @@
                   </p>
                   <a
                     href="#"
-                    class="text-yellow-400 text-base font-normal mt-[14px] inline-block"
+                    class="text-yellow-400 text-sm font-normal mt-[14px] inline-block"
                     >Locate Us On Map</a
                   >
                 </div>
@@ -1538,13 +1544,13 @@
                     DUBAI
                   </h3>
                   <p
-                    class="text-base font-light text-gray-300 mt-[7px] leading-[22px]"
+                    class="text-sm font-light text-gray-300 mt-[7px] leading-[22px]"
                   >
                     RK Education, Bur Dubai, Near Metro
                   </p>
                   <a
                     href="#"
-                    class="text-yellow-400 text-base font-normal mt-[14px] inline-block"
+                    class="text-yellow-400 text-sm font-normal mt-[14px] inline-block"
                     >Locate Us On Map</a
                   >
                 </div>
@@ -1564,13 +1570,13 @@
                     ABU DHABI
                   </h3>
                   <p
-                    class="text-base font-light text-gray-300 mt-[7px] leading-[22px]"
+                    class="text-sm font-light text-gray-300 mt-[7px] leading-[22px]"
                   >
                     RK Education, Hamdan Street
                   </p>
                   <a
                     href="#"
-                    class="text-yellow-400 text-base font-normal mt-[14px] inline-block"
+                    class="text-yellow-400 text-sm font-normal mt-[14px] inline-block"
                     >Locate Us On Map</a
                   >
                 </div>
@@ -1661,7 +1667,7 @@
                     <h5 class="text-[22px] font-normal font_display-unna">
                       Ms. Aisha Mohammed
                     </h5>
-                    <p class="text-[16px] font-normal">Academic Counselor</p>
+                    <p class="text-sm font-normal">Academic Counselor</p>
                   </div>
                 </div>
               </swiper-slide>
@@ -1712,7 +1718,7 @@
                     <h5 class="text-[22px] font-normal font_display-unna">
                       Ms. Aisha Mohammed
                     </h5>
-                    <p class="text-[16px] font-normal">Academic Counselor</p>
+                    <p class="text-sm font-normal">Academic Counselor</p>
                   </div>
                 </div>
               </swiper-slide>
@@ -1763,7 +1769,7 @@
                     <h5 class="text-[22px] font-normal font_display-unna">
                       Ms. Aisha Mohammed
                     </h5>
-                    <p class="text-[16px] font-normal">Academic Counselor</p>
+                    <p class="text-sm font-normal">Academic Counselor</p>
                   </div>
                 </div>
               </swiper-slide>
@@ -1814,7 +1820,7 @@
                     <h5 class="text-[22px] font-normal font_display-unna">
                       Ms. Aisha Mohammed
                     </h5>
-                    <p class="text-[16px] font-normal">AAcademic Counselor</p>
+                    <p class="text-sm font-normal">AAcademic Counselor</p>
                   </div>
                 </div>
               </swiper-slide>
@@ -1865,7 +1871,7 @@
                     <h5 class="text-[22px] font-normal font_display-unna">
                       Mr. Junaid Rahman
                     </h5>
-                    <p class="text-[16px] font-normal">
+                    <p class="text-sm font-normal">
                       Regional Head – Abu Dhabi
                     </p>
                   </div>
@@ -1918,7 +1924,7 @@
                     <h5 class="text-[22px] font-normal font_display-unna">
                       Ms. Neha Thomas
                     </h5>
-                    <p class="text-[16px] font-normal">
+                    <p class="text-sm font-normal">
                       Admissions Officer – Kerala
                     </p>
                   </div>
@@ -1973,7 +1979,7 @@
                     >
                       Mr. Faisal Al Nuaimi
                     </h5>
-                    <p class="text-[14px] md:text-[16px] font-normal">
+                    <p class="text-sm md:text-[16px] font-normal">
                       Student Success Coordinator – Al Ain
                     </p>
                   </div>
@@ -2003,7 +2009,7 @@
                 Let’s Get Started
               </h3>
               <p
-                class="text-[12px] lg:text-[15px] 2xl:text-[18px] font-normal leading-[18px] lg:leading-[28px]"
+                class="text-base font-normal leading-[18px] lg:leading-[28px]"
               >
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
@@ -2011,13 +2017,13 @@
               </p>
               <div class="flex flex-col md:flex-row gap-4 mt-7">
                 <button
-                  class="max-w-[200px] btn-golden btn-sm bg-[var(--secondary-color)] hover:bg-[var(--secondary-color)] tracking-[0.96px] text-[14px] md:text-base text-white font-semibold uppercase tracking-wide font-medium"
+                  class="max-w-[200px] btn-golden btn-sm bg-[var(--secondary-color)] hover:bg-[var(--secondary-color)] tracking-[0.96px] text-sm text-white  uppercase tracking-wide font-medium"
                 >
                   EnQuire Now
                 </button>
                 <div class="flex items-center md:flex-row gap-4">
                   <button
-                    class="bg-[var(--background-color)] w-[52px] h-[52px] rounded-full p-[13px]"
+                    class="bg-[var(--background-color)] w-[48px] h-[48px] rounded-full p-[13px]"
                   >
                     <img
                       src="./src/images/whatsup_icon.svg"
@@ -2052,12 +2058,12 @@
           </h2>
           <div class="mt-16">
             <!-- Accordion Item 1 -->
-            <div class="border-b border-slate-200">
+            <div class="border-b border-slate-200 text-left">
               <button
                 onclick="toggleAccordion(1)"
                 class="w-full flex justify-between items-center p-5 text-slate-800 border-b border-slate-200"
               >
-                <h3 class="text-[20px]">What is RK Education Group?</h3>
+                <h3 class="text-lg">What is RK Education Group?</h3>
                 <span
                   id="icon-1"
                   class="text-slate-800 transition-transform duration-300"
@@ -2079,10 +2085,10 @@
                 class="bg-[var(--light-yellow)] text-[var(--text-color)] max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
               >
                 <div class="p-5 pr-20">
-                  <h4 class="text-[20px] font-medium capitalize pb-1">
+                  <h4 class="text-lg font-medium capitalize pb-1">
                     distance education valid for government or private jobs?
                   </h4>
-                  <p class="text-[18px]">
+                  <p class="text-sm">
                     RK Education is a distance education consultancy that helps
                     students enroll in accredited programs from recognized
                     universities across India and abroad. We offer personalized
@@ -2094,12 +2100,12 @@
             </div>
 
             <!-- Accordion Item 2 -->
-            <div class="border-b border-slate-200">
+            <div class="border-b border-slate-200 text-left">
               <button
                 onclick="toggleAccordion(2)"
                 class="w-full flex justify-between items-center p-5 text-slate-800 border-b border-slate-200"
               >
-                <h3 class="text-[20px]">
+                <h3 class="text-lg">
                   Do I need to attend regular classes?
                 </h3>
                 <span
@@ -2123,10 +2129,10 @@
                 class="bg-[var(--light-yellow)] text-[var(--text-color)] max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
               >
                 <div class="p-5 pr-20">
-                  <h4 class="text-[20px] font-medium capitalize">
+                  <h4 class="text-lg font-medium capitalize">
                     distance education valid for government or private jobs?
                   </h4>
-                  <p class="text-[18px] pb-1">
+                  <p class="text-sm pb-1">
                     RK Education is a distance education consultancy that helps
                     students enroll in accredited programs from recognized
                     universities across India and abroad. We offer personalized
@@ -2138,12 +2144,12 @@
             </div>
 
             <!-- Accordion Item 3 -->
-            <div class="border-b border-slate-200">
+            <div class="border-b border-slate-200 ">
               <button
                 onclick="toggleAccordion(3)"
                 class="w-full flex justify-between items-center p-5 text-slate-800 border-b border-slate-200"
               >
-                <h3 class="text-[20px]">
+                <h3 class="text-lg">
                   Can I apply if I’m already working full-time?
                 </h3>
                 <span
@@ -2167,10 +2173,10 @@
                 class="bg-[var(--light-yellow)] text-[var(--text-color)] max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
               >
                 <div class="p-5 pr-20">
-                  <h4 class="text-[20px] font-medium capitalize pb-1">
+                  <h4 class="text-lg font-medium capitalize pb-1">
                     What are the eligibility criteria for admission?
                   </h4>
-                  <p class="text-[18px]">
+                  <p class="text-sm">
                     RK Education is a distance education consultancy that helps
                     students enroll in accredited programs from recognized
                     universities across India and abroad. We offer personalized
@@ -2193,10 +2199,10 @@
         >
           <!-- About RK Group -->
           <div>
-            <h3 class="text-lg font-medium text-[var(--secondary-color)] mb-3">
+            <h3 class="text-base font-medium text-[var(--secondary-color)] mb-3">
               ABOUT RK GROUP
             </h3>
-            <p class="text-base font-light leading-[27px]">
+            <p class="text-sm font-light leading-[27px]">
               At RK Education, Our Vision is to be the leading provider of
               distance education consultancy, empowering people from all
               nationalities to access high-quality, flexible educational
@@ -2210,11 +2216,11 @@
           >
             <div>
               <h3
-                class="text-lg font-medium text-[var(--secondary-color)] mb-3"
+                class="text-base font-medium text-[var(--secondary-color)] mb-3"
               >
                 QUICK LINKS
               </h3>
-              <ul class="space-y-2text-base">
+              <ul class="space-y-2 text-sm">
                 <li><a href="#" class="hover:text-yellow-500">Home</a></li>
                 <li>
                   <a href="#" class="hover:text-yellow-500">Our Programs</a>
@@ -2230,11 +2236,11 @@
 
             <div>
               <h3
-                class="text-lg font-medium text-[var(--secondary-color)] mb-3"
+                class="text-base font-medium text-[var(--secondary-color)] mb-3"
               >
                 ACCREDITATIONS
               </h3>
-              <ul class="text-base font-light leading-[27px] space-y-1">
+              <ul class="text-sm font-light leading-[27px] space-y-1">
                 <li>• UGC-DEB Approved</li>
                 <li>• AICTE Recognized</li>
                 <li>
@@ -2252,7 +2258,7 @@
                 href="#"
                 class="footer-brand-logo absolute top-[-80px] right-0 px-[10px] pb-[10px] pt-[5px] lg:px-[10px] lg:pb-[10px] lg:pt-[5px] flex items-center space-x-3 rtl:space-x-reverse rounded-bl-[200px] rounded-br-[200px] rounded-tl-0 rounded-tr-0 bg-[rgba(217,217,217,0.2)]"
               >
-                <span class="">
+                <span class="brand-logo">
                   <svg
                     role="img"
                     aria-label="RK Education Logo"
@@ -2339,10 +2345,10 @@
               </a>
             </div>
             <!-- Newsletter -->
-            <h3 class="text-lg font-medium text-[var(--secondary-color)] mb-3">
+            <h3 class="text-base font-medium text-[var(--secondary-color)] mb-3">
               NEWSLETTER
             </h3>
-            <p class="text-base font-light leading-[27px] mb-4">
+            <p class="text-sm font-light leading-[27px] mb-4">
               Sign up for email updates today.
             </p>
             <form class="flex flex-col space-y-5">
@@ -2353,7 +2359,7 @@
               />
               <button
                 type="submit"
-                class="flex flex-row gap-4 font-normal text-base w-max px-10 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600"
+                class="flex flex-row gap-4 font-normal text-sm w-max px-10 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600"
               >
                 SUBMIT
                 <img src="./src/images/arrow-right.svg" alt="arrow" />
@@ -2363,10 +2369,10 @@
 
           <!-- Contact Info -->
           <div class="">
-            <h3 class="text-lg font-medium text-[var(--secondary-color)] mb-3">
+            <h3 class="text-base font-medium text-[var(--secondary-color)] mb-3">
               CONTACT US
             </h3>
-            <ul class="text-base font-light leading-[27px] space-y-1">
+            <ul class="text-sm font-light leading-[27px] space-y-1">
               <li class="flex gap-3">
                 <img src="./src/images/email-icon.svg" alt="email-icon" />
                 info@rkeducationgroup.com
@@ -2383,11 +2389,11 @@
           <div class="md:col-span-2">
             <div class=" ">
               <h3
-                class="text-lg font-medium text-[var(--secondary-color)] mb-3"
+                class="text-base font-medium text-[var(--secondary-color)] mb-3"
               >
                 Address
               </h3>
-              <ul class="text-base font-light leading-[27px] space-y-1">
+              <ul class="text-sm font-light leading-[27px] space-y-1">
                 <li class="flex gap-2 flex-col text-[var(--secondary-color)]">
                   United Arab Emirates
                   <ul class="flex text-white flex-col md:flex-row gap-3 text-[13px]">
@@ -2411,7 +2417,7 @@
                 </li>
                 <li class="flex gap-2 flex-col text-[var(--secondary-color)]">
                   India
-                  <ul class="flex gap-2 text-[13px] text-white">
+                  <ul class="flex gap-2 text-sm text-white">
                     <li>Kerala – MG Road, Kochi</li>
                   </ul>
                 </li>

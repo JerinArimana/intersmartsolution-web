@@ -8,17 +8,26 @@ const header = document.getElementById('header');
 
 document.addEventListener('scroll', function() {
   let currentScrollTop = window.scrollY; // Current scroll position
+  const documentHeight = document.documentElement.scrollHeight; // Total document height
+  const windowHeight = window.innerHeight; // Viewport height
 
   // Check if at the top of the page
   if (currentScrollTop === 0) {
     header.classList.remove('scroll-down');
-    header.classList.add('scroll-up');
-  } else if (currentScrollTop > lastScrollTop) {
-    // Scrolling down
+    header.classList.remove('scroll-up');
+  }
+  // Check if at the bottom of the page
+  else if (currentScrollTop + windowHeight >= documentHeight - 10) { // Small buffer for precision
+    header.classList.remove('scroll-down');
+    header.classList.remove('scroll-up');
+  }
+  // Scrolling down
+  else if (currentScrollTop > lastScrollTop) {
     header.classList.remove('scroll-up');
     header.classList.add('scroll-down');
-  } else {
-    // Scrolling up
+  }
+  // Scrolling up
+  else {
     header.classList.remove('scroll-down');
     header.classList.add('scroll-up');
   }
