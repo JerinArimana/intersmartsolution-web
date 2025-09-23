@@ -21,7 +21,7 @@ body {
     rgba(255, 255, 255, 0) 56%,
     rgba(195, 151, 48, 1) 100%
   );
-
+--light-yellow:#c498311a;
   ---overlay-gradient:linear-gradient(180deg, rgba(0, 0, 0, 0.00) 42.4%, rgba(0, 0, 0, 0.80) 100%);
   ---gray-border: 0.972px solid rgba(0, 0, 0, 0.14);
   ---light-gray:#E2E2E2;
@@ -152,9 +152,10 @@ backdrop-filter: blur(16.5px);
 }
 .scroll-up {
   /* transform: translateY(0); */
+  transition: all 0.5s ease;
 }
 header {
-  transition: all 0.3s ease;
+ transition: all 0.8s ease;
 }
 .scroll-down {
       background: rgb(195 151 48 / 28%);
@@ -162,14 +163,28 @@ header {
 /* background: rgba(255, 255, 255, 0.1); */
     color: #ffffff;
   /* transform: translateY(-100%); */
+  transition: all 0.8s ease;
 }
 
+.scroll-down .brand_logo{
+  transition: all 0.5s ease;
+}
+ .scroll-down .brand_logo .logo_icon{
+        width: 70px;
+        height: 70px;
+        transition: all 0.5s ease;
+}
+.scroll-down .nav_menu__item{
+        padding-top: 25px;
+        transition: all 0.5s ease;
+}
 
 /* Extra small devices (phones, <576px) */
 @media only screen and (max-width: 575.98px) {
   .container-custom {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+    transition: all 0.3s ease;
   }
 }
 
