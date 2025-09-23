@@ -158,7 +158,8 @@ header {
  transition: all 0.8s ease;
 }
 .scroll-down {
-      background: rgb(195 151 48 / 28%);
+  background: rgb(195 151 48 / 62%);
+      /* background: rgb(195 151 48 / 28%); */
   backdrop-filter: blur(20px);
 /* background: rgba(255, 255, 255, 0.1); */
     color: #ffffff;
