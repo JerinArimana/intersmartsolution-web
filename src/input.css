@@ -32,6 +32,7 @@ body {
   );
   ---gray-border: 0.972px solid rgba(0, 0, 0, 0.14);
   ---light-gray: #e2e2e2;
+  --border-light-yellow:#c397304d;
 }
 .font_display-unna {
   font-family: var(--font-display-unna);
@@ -370,4 +371,8 @@ swiper-slide img {
 .tam_card:hover .social {
   opacity: 1;
   transition: all 0.8s ease;
+}
+
+.custom-text {
+  @apply mt-4 text-base text-[var(--text-color)] leading-relaxed;
 }
