@@ -33,6 +33,7 @@ body {
   ---gray-border: 0.972px solid rgba(0, 0, 0, 0.14);
   ---light-gray: #e2e2e2;
   --border-light-yellow:#c397304d;
+  --yellow-shade:rgba(195, 151, 48, 0.1);
 }
 .font_display-unna {
   font-family: var(--font-display-unna);
@@ -44,6 +45,13 @@ body {
   border-radius: 200px;
   border: 1px solid #ffcc53;
   /* backdrop-filter: blur(9.5px); */
+}
+.bg-blue-style{
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+}
+.bg-blue-style:hover{
+  background:var( --background-color);
 }
 .gradient-border {
   background: linear-gradient(#ffffff 0 0) padding-box,
