@@ -182,3 +182,6 @@ const team_slider = document.querySelector('#team_slider');
       icon.innerHTML = minusSVG;
     }
   }
+
+
+  
