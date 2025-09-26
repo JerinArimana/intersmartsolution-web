@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+
 body {
   font-family: var(--font-display-Inter);
   font-style: normal;
@@ -30,7 +31,7 @@ body {
     rgba(0, 0, 0, 0) 42.4%,
     rgba(0, 0, 0, 0.8) 100%
   );
-  ---gray-border: 0.972px solid rgba(0, 0, 0, 0.14);
+  --gray-border: 0.972px solid rgba(0, 0, 0, 0.14);
   ---light-gray: #e2e2e2;
   --border-light-yellow:#c397304d;
   --yellow-shade:rgba(195, 151, 48, 0.1);
@@ -210,30 +211,35 @@ body {
   opacity: 1;
 }
 .service_card:hover .content {
-  border-radius: 20px;
+  
   background: rgba(40, 40, 40, 0.73);
 
   backdrop-filter: blur(16.5px);
 }
 .scroll-up {
-  transform: translateY(0);
+  /* transform: translateY(0);
   transition: all 0.5s ease;
   background: rgb(195 151 48 / 62%);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px); */
 }
 header {
   transition: all 0.8s ease;
 }
-.scroll-down {
-  /* background: rgb(195 151 48 / 62%); */
-  /* background: rgb(195 151 48 / 28%); */
-  /* backdrop-filter: blur(20px); */
-  /* background: rgba(255, 255, 255, 0.1); */
-  /* color: #ffffff; */
-  transform: translateY(-100%);
-  transition: all 0.8s ease;
-}
 
+.bg-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.19) 0%, rgba(0, 0, 0, 0.19) 100%);
+  }
+  
+.nav-active {
+    border-bottom: 2px solid #C39730; /* gold underline */
+   
+  }
+  .btn-nave.nav-active{
+    border: unset;
+  }
 .scroll-down .brand_logo {
   transition: all 0.5s ease;
 }
@@ -246,7 +252,11 @@ header {
   padding-top: 25px;
   transition: all 0.5s ease;
 }
-
+.testimolina-card-h{
+  min-height: 500px;
+    height: 100%;
+    max-height: 500px;
+}
 /* Extra small devices (phones, <576px) */
 @media only screen and (max-width: 575.98px) {
   .container-custom {
@@ -321,9 +331,7 @@ swiper-slide img {
   height: 100%;
   object-fit: cover;
 }
-.collapse {
-  visibility: visible !important;
-}
+
 @keyframes pulseSmooth {
   0% {
     transform: translateY(0);
@@ -336,6 +344,30 @@ swiper-slide img {
   }
 }
 
+.footer-brand-logo{
+  border-radius: 0 0 200px 200px;
+background: rgba(217, 217, 217, 0.20);
+backdrop-filter: blur(12px);
+}
+
+.testimolina-card-border{
+  border-radius: 20px;
+border: 1px solid #BABABA;
+background: #FFF;
+overflow: hidden;
+}
+.custome-card-style{
+      /* padding: 20px; */
+    width: 100%;
+    width: 86%;
+    bottom: -31px;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    height: 75px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
 /* .footer-brand-logo .brand-logo{
   width: 70px;
         height: 70px;
@@ -383,4 +415,22 @@ swiper-slide img {
 
 .custom-text {
   @apply mt-4 text-base text-[var(--text-color)] leading-relaxed;
+}
+
+
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 100;
+  text-decoration: none;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 10px; /* moves into view */
 }

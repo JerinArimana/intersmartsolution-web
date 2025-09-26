@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>RK group</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>RK Education Group</title>
+    <link rel="icon" href="./src/images/RKG-LOGO.svg" type="image/RK Education Group" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
@@ -16,11 +23,10 @@
   </head>
 
   <body>
+    <a href="#header" class="skip-link">Skip to main content</a>
     <!-- Header -->
-    <header class="fixed w-full z-30 top-0 left-0" id="header">
-      <nav
-        class=""
-      >
+    <header class="absolute w-full top-0 z-10" id="header">
+      <nav class="">
         <div
           class="brand_logo mx-auto w-full container-custom px-4 sm:px-6 lg:px-8 flex flex-wrap items-center lg:items-start justify-between"
         >
@@ -31,88 +37,11 @@
             <span
               class="logo_icon w-[70px] h-[70px] lg:w-[100px] lg:h-[100px] 2xl:w-[132px] 2xl:h-[132px]"
             >
-              <svg
-                role="img"
-                aria-label="RK Education Logo"
-                xmlns="http://www.w3.org/2000/svg"
-                width="132"
-                height="132"
-                viewBox="0 0 150 153"
-                fill="none"
-              >
-                <path
-                  d="M74.9994 142.43C111.453 142.43 141.005 112.912 141.005 76.5C141.005 40.0878 111.453 10.5699 74.9994 10.5699C38.5457 10.5699 8.99414 40.0878 8.99414 76.5C8.99414 112.912 38.5457 142.43 74.9994 142.43Z"
-                  fill="white"
-                />
-                <path
-                  d="M74.9995 138.565C109.316 138.565 137.136 110.778 137.136 76.5C137.136 42.2222 109.316 14.4346 74.9995 14.4346C40.6826 14.4346 12.8633 42.2222 12.8633 76.5C12.8633 110.778 40.6826 138.565 74.9995 138.565Z"
-                  fill="white"
-                />
-                <path
-                  d="M75.0003 139.292C58.2014 139.292 42.4276 132.752 30.5228 120.894C18.6511 109.036 12.1035 93.2467 12.1035 76.467C12.1035 59.6872 18.6511 43.9313 30.5228 32.0402C42.3945 20.182 58.2014 13.6418 75.0003 13.6418C91.7993 13.6418 107.573 20.182 119.478 32.0402C131.35 43.8983 137.897 59.6872 137.897 76.467C137.897 93.2467 131.35 109.003 119.478 120.894C107.573 132.785 91.7993 139.292 75.0003 139.292ZM75.0003 15.1613C41.1379 15.1613 13.5916 42.6762 13.5916 76.5C13.5916 110.324 41.1379 137.839 75.0003 137.839C108.863 137.839 136.409 110.324 136.409 76.5C136.409 42.6762 108.863 15.1613 75.0003 15.1613Z"
-                  fill="#C39730"
-                />
-                <path
-                  d="M75.0003 142.727C57.3085 142.727 40.6418 135.824 28.1418 123.338C15.6418 110.852 8.73047 94.2047 8.73047 76.533C8.73047 58.8614 15.6418 42.2137 28.1418 29.728C40.6418 17.2422 57.3085 10.3387 75.0003 10.3387C92.6921 10.3387 109.359 17.1762 121.859 29.6619C134.359 42.1477 141.27 58.7953 141.27 76.467C141.27 94.1386 134.359 110.786 121.859 123.272C109.359 135.758 92.6921 142.727 75.0003 142.727ZM75.0003 11.726C39.253 11.726 10.1524 40.7934 10.1524 76.5C10.1524 112.207 39.253 141.274 75.0003 141.274C110.748 141.274 139.848 112.207 139.848 76.5C139.848 40.7934 110.748 11.726 75.0003 11.726Z"
-                  fill="#C39730"
-                />
-                <path
-                  d="M46.8262 90.6703C46.8262 82.5117 46.8262 74.2539 46.8262 65.9631C49.9347 65.9631 52.977 65.9631 56.1185 65.9631C56.1185 68.8368 56.1185 71.6775 56.1185 74.5512C56.4492 74.5842 56.6807 74.6172 56.9122 74.6172C60.0537 74.6172 63.1953 74.6172 66.3368 74.6172C66.9651 74.6172 67.5934 74.5512 68.1886 74.419C70.2058 73.9566 71.5286 72.7344 71.8262 70.6535C71.9915 69.5304 72.0908 68.3744 71.9254 67.2513C71.5617 64.3776 69.809 63.0233 66.6675 62.9903C62.0048 62.9572 57.309 62.9573 52.6463 62.9573C51.0259 62.9573 49.3725 62.9573 47.7521 62.9573C47.4876 62.9573 47.19 62.9573 46.8593 62.9573C46.8593 60.2817 46.8593 57.7383 46.8593 55.1289C47.0246 55.0959 47.1569 55.0628 47.2892 55.0628C53.6053 55.0628 59.9214 55.0628 66.2376 55.1289C68.6516 55.1619 71.0656 55.3601 73.3804 56.2189C78.1093 57.9696 80.8209 61.3718 81.3169 66.3925C81.5815 69.1341 81.35 71.8426 80.2587 74.419C78.8699 77.7221 76.4228 79.9022 73.1159 81.1574C72.8513 81.2565 72.5868 81.3556 72.2561 81.4877C75.3315 86.6405 78.3738 91.7273 81.4161 96.8141C78.5722 98.2345 75.7945 99.6218 72.9175 101.042C72.8844 100.976 72.7191 100.778 72.6199 100.547C69.2468 94.7332 65.8408 88.8867 62.4677 83.0732C62.3355 82.842 62.0378 82.5117 61.8394 82.5117C59.9876 82.4786 58.1688 82.4786 56.2508 82.4786C56.2508 87.3342 56.2508 92.1237 56.2508 97.0784C48.1159 94.5019 39.981 92.8504 31.4492 94.1386C31.4492 81.818 31.4492 69.5304 31.4492 57.1768C32.8381 57.1768 34.1939 57.1768 35.682 57.1768C35.682 67.9449 35.682 78.647 35.682 89.283C39.3857 89.7124 43.0564 90.1749 46.8262 90.6703Z"
-                  fill="#C39730"
-                />
-                <path
-                  d="M92.9231 78.9773C92.9231 79.4398 92.9231 79.671 92.9231 79.9352C92.9231 84.3614 92.9231 88.8206 92.9892 93.2467C92.9892 93.9074 92.7908 94.1056 92.1625 94.2377C89.517 94.7662 86.9045 95.3938 84.259 95.9553C84.0606 95.9883 83.8622 96.0544 83.5977 96.0874C83.5977 82.4126 83.5977 68.8038 83.5977 55.0958C84.0606 55.0958 84.4905 55.0958 84.9204 55.0958C87.3014 55.0958 89.7154 55.1289 92.0963 55.0958C92.8238 55.0958 93.0223 55.294 93.0223 56.0207C92.9892 61.8012 92.9892 67.5816 92.9892 73.362C92.9892 73.4942 93.0223 73.6593 93.0553 73.9566C94.1466 72.8005 95.1387 71.7765 96.1307 70.7196C100.826 65.6658 105.522 60.612 110.218 55.5583C110.416 55.3601 110.747 55.1619 110.979 55.1619C114.649 55.1619 118.287 55.1949 121.957 55.1949C121.991 55.1949 122.057 55.228 122.189 55.3271C116.104 61.8012 110.02 68.2092 103.935 74.6833C111.607 84.4275 119.213 94.1056 126.918 103.916C126.554 103.949 126.356 103.982 126.124 103.982C123.611 103.982 121.098 103.982 118.551 103.949C118.188 103.949 117.758 103.784 117.46 103.552C115.41 101.967 113.36 100.381 111.342 98.7299C110.78 98.2675 110.383 97.6399 109.953 97.0784C106.283 92.3219 102.579 87.5654 98.9085 82.8089C98.7432 82.6107 98.5778 82.3795 98.3794 82.2474C96.6268 81.1574 94.8741 80.1004 92.9231 78.9773Z"
-                  fill="#C39730"
-                />
-                <path
-                  d="M112.665 103.387C110.648 103.057 108.763 102.595 106.845 102.495C103.671 102.33 100.463 102.264 97.2884 102.429C92.9564 102.661 88.6574 103.354 84.4908 104.543C80.6217 105.633 76.918 107.054 73.7103 109.564C71.5609 111.249 69.8413 113.33 68.8492 115.906C68.7831 116.071 68.6839 116.203 68.5185 116.402C68.3863 116.203 68.2871 116.104 68.2209 115.972C66.2368 111.315 62.5992 108.375 58.1019 106.36C53.2077 104.18 48.0159 103.189 42.758 102.495C39.1204 102 35.4498 101.736 31.8122 102.033C29.1336 102.264 26.4881 102.793 23.8095 103.189C23.5781 103.222 23.3797 103.288 23.082 103.189C24.3717 102.264 25.6945 101.372 26.9511 100.381C31.4484 96.7811 36.6733 96.2196 42.1297 96.8141C47.586 97.4087 52.877 98.6308 57.8704 100.91C61.8056 102.694 65.3439 105.105 67.9894 108.573C68.0886 108.705 68.1548 108.837 68.254 108.937C68.4193 108.804 68.5185 108.771 68.5847 108.672C72.0238 104.543 76.5543 102 81.4484 100.084C86.8717 97.9372 92.4934 96.8471 98.3135 96.9132C101.918 96.9462 105.225 97.805 108.135 100.084C109.59 101.207 111.111 102.264 112.665 103.387Z"
-                  fill="#C39730"
-                />
-                <path
-                  d="M24.1738 98.796C24.1738 86.5414 24.1738 74.5181 24.1738 62.4948C25.5296 62.4948 26.8524 62.4948 28.2744 62.4948C28.2744 63.1554 28.2744 63.783 28.2744 64.4106C28.3074 74.6503 28.3074 84.8899 28.3405 95.1295C28.3405 95.658 28.2082 95.9883 27.7453 96.2856C26.6209 97.0453 25.4966 97.8711 24.1738 98.796Z"
-                  fill="#C39730"
-                />
-                <path
-                  d="M43.5513 41.8834C43.5513 40.4631 43.5513 39.2079 43.5513 37.8867C39.5169 38.8446 35.5817 39.7694 31.6465 40.6943C31.6465 40.8264 31.6465 40.9255 31.6465 41.0576C35.251 41.8174 38.8224 42.544 42.46 43.3038C42.1955 44.2286 41.997 45.0544 41.7325 45.9462C41.5671 45.9132 41.3687 45.9132 41.1703 45.8471C37.4997 44.5259 33.8621 43.2047 30.1915 41.8834C29.8939 41.7843 29.5962 41.6852 29.3317 41.5201C29.1002 41.3219 28.7695 41.0576 28.7695 40.8264C28.7695 40.5952 29.1333 40.2649 29.3978 40.1658C31.4812 39.4061 33.5314 38.6464 35.6478 37.9857C43.882 35.3763 52.1161 32.7999 60.3833 30.2234C62.9627 29.3977 65.542 29.4307 68.1214 30.2565C78.1412 33.4935 88.1611 36.7306 98.1809 39.9676C98.2801 40.0006 98.3793 40.0337 98.4785 40.0667C98.8423 40.331 99.4044 40.5291 99.4706 40.8595C99.5698 41.487 98.9415 41.7183 98.4124 41.9164C94.6756 43.2707 90.9388 44.592 87.2021 45.9462C86.4746 46.2105 85.747 46.4747 84.9865 46.706C84.788 46.772 84.5235 46.772 84.3582 46.6399C83.4984 45.9793 82.6716 45.2526 81.7788 44.5259C86.5738 43.1056 91.6002 42.2468 96.5936 41.2558C96.5936 41.1898 96.5936 41.1237 96.6267 41.0576C96.2629 40.9255 95.8992 40.7604 95.5023 40.6613C90.542 39.34 85.5817 38.0518 80.5883 36.7636C76.9838 35.8387 73.3793 34.7817 69.7087 34.055C62.7973 32.6677 56.0513 33.3614 49.669 36.4663C47.3211 37.6224 45.3039 39.2409 43.882 41.5201C43.8489 41.5531 43.7497 41.6192 43.5513 41.8834Z"
-                  fill="#C39730"
-                />
-                <path
-                  d="M47.8169 53.2131C47.8169 51.9909 47.7838 50.8679 47.8499 49.7778C47.8499 49.5136 48.1475 49.1833 48.4121 49.0181C50.8592 47.1684 53.637 46.1114 56.6132 45.715C63.0616 44.8232 69.4769 44.9883 75.7269 46.8711C77.4465 47.3996 79.0669 48.2914 80.7203 49.0181C81.2163 49.2163 81.3817 49.5797 81.3817 50.1412C81.3486 51.3964 81.3817 52.6846 81.3817 54.0719C70.2044 50.5045 59.1264 49.8769 47.8169 53.2131Z"
-                  fill="#C39730"
-                />
-                <path
-                  d="M43.453 63.8491C42.3948 62.8912 41.3366 61.9663 40.3114 60.9424C40.113 60.7442 40.08 60.2157 40.1792 59.8854C40.7413 57.375 41.3366 54.8316 41.9649 52.3212C42.0972 51.7927 42.1633 51.2973 41.6673 50.9339C41.6011 50.9009 41.5681 50.8018 41.535 50.7358C41.0059 49.8769 41.1382 48.7209 41.8657 48.1263C42.4609 47.6308 43.2876 47.5978 43.8498 48.0933C44.5773 48.6878 44.8419 49.976 44.1474 50.7027C43.4199 51.4955 43.453 52.3543 43.453 53.2461C43.453 56.5492 43.453 59.8854 43.453 63.1885C43.453 63.4527 43.453 63.717 43.453 63.8491Z"
-                  fill="#C39730"
-                />
-                <path
-                  d="M47.9492 42.9734C55.8527 39.6043 64.0537 39.8685 72.3209 41.2558C64.1199 40.7273 56.018 41.2889 47.9492 42.9734Z"
-                  fill="#C39730"
-                />
-                <path
-                  d="M46.8249 44.625C46.2296 45.2856 45.6675 45.9462 45.0391 46.5408C44.8738 46.706 44.5431 46.739 44.3116 46.6729C44.1132 46.6399 43.8487 46.4087 43.8156 46.2435C43.7164 45.4508 43.6833 44.658 43.6172 43.7332C44.7746 44.0635 45.8328 44.3277 46.8249 44.625Z"
-                  fill="#C39730"
-                />
-                <path
-                  d="M88.8221 115.444C88.4583 115.047 88.293 114.486 88.293 113.792V109.102C88.293 108.375 88.4583 107.813 88.8221 107.45C89.1858 107.054 89.7149 106.856 90.3763 106.856C91.0707 106.856 91.5668 107.054 91.9305 107.45C92.2943 107.846 92.4596 108.408 92.4596 109.102V109.861H91.1369V109.003C91.1369 108.408 90.9054 108.111 90.4094 108.111C89.9133 108.111 89.6819 108.408 89.6819 109.003V113.891C89.6819 114.486 89.9133 114.75 90.4094 114.75C90.9054 114.75 91.1369 114.453 91.1369 113.891V112.141H90.4424V110.852H92.4596V113.792C92.4596 114.519 92.2943 115.08 91.9305 115.444C91.5668 115.84 91.0377 116.038 90.3763 116.038C89.6819 116.038 89.1858 115.84 88.8221 115.444Z"
-                  fill="#C39730"
-                />
-                <path
-                  d="M93.7167 106.955H95.8C96.5275 106.955 97.0566 107.12 97.3873 107.45C97.718 107.78 97.8833 108.309 97.8833 109.003V109.564C97.8833 110.489 97.5857 111.084 96.9574 111.315V111.348C97.2881 111.447 97.5526 111.645 97.6849 111.975C97.8172 112.306 97.8833 112.702 97.8833 113.231V114.816C97.8833 115.08 97.8833 115.278 97.9164 115.444C97.9495 115.609 97.9825 115.741 98.0487 115.906H96.6267C96.5606 115.774 96.5275 115.609 96.5275 115.51C96.4944 115.378 96.4944 115.146 96.4944 114.816V113.198C96.4944 112.801 96.4283 112.504 96.296 112.339C96.1638 112.174 95.9323 112.108 95.6016 112.108H95.1056V115.939H93.6836V106.955H93.7167ZM95.6347 110.786C95.9323 110.786 96.1307 110.72 96.263 110.555C96.3952 110.423 96.4614 110.159 96.4614 109.828V109.135C96.4614 108.804 96.3952 108.573 96.296 108.441C96.1968 108.309 95.9984 108.21 95.7669 108.21H95.1386V110.753H95.6347V110.786Z"
-                  fill="#C39730"
-                />
-                <path
-                  d="M99.6364 115.444C99.2726 115.047 99.0742 114.486 99.0742 113.792V109.102C99.0742 108.375 99.2726 107.846 99.6364 107.45C100 107.054 100.529 106.856 101.224 106.856C101.918 106.856 102.447 107.054 102.811 107.45C103.175 107.846 103.373 108.408 103.373 109.102V113.792C103.373 114.519 103.175 115.047 102.811 115.444C102.447 115.84 101.918 116.038 101.224 116.038C100.529 116.038 100 115.84 99.6364 115.444ZM101.951 113.858V108.97C101.951 108.375 101.72 108.078 101.224 108.078C100.728 108.078 100.496 108.375 100.496 108.97V113.858C100.496 114.453 100.728 114.75 101.224 114.75C101.72 114.75 101.951 114.453 101.951 113.858Z"
-                  fill="#C39730"
-                />
-                <path
-                  d="M105.092 115.444C104.728 115.047 104.562 114.486 104.562 113.792V106.955H105.984V113.891C105.984 114.188 106.051 114.42 106.183 114.552C106.315 114.684 106.48 114.75 106.712 114.75C106.943 114.75 107.109 114.684 107.241 114.552C107.373 114.42 107.439 114.188 107.439 113.891V106.955H108.795V113.792C108.795 114.519 108.63 115.08 108.266 115.444C107.902 115.84 107.373 116.038 106.712 116.038C105.984 116.038 105.455 115.84 105.092 115.444Z"
-                  fill="#C39730"
-                />
-                <path
-                  d="M110.086 106.955H112.169C112.864 106.955 113.393 107.153 113.757 107.516C114.12 107.88 114.286 108.441 114.286 109.168V110.06C114.286 110.786 114.12 111.348 113.757 111.711C113.393 112.074 112.897 112.273 112.169 112.273H111.508V115.906H110.086V106.955ZM112.136 110.984C112.368 110.984 112.533 110.918 112.665 110.786C112.765 110.654 112.831 110.456 112.831 110.126V109.069C112.831 108.771 112.765 108.54 112.665 108.408C112.566 108.276 112.368 108.21 112.136 108.21H111.475V110.951H112.136V110.984Z"
-                  fill="#C39730"
-                />
-              </svg>
+              <img
+                src="./src/images/RKG-LOGO.svg"
+                alt="header logo"
+                class="w-full h-auto object-cover"
+              />
             </span>
           </a>
           <button
@@ -146,17 +75,12 @@
           >
             <ul
               aria-label="Main navigation"
-              class="relative flex flex-col md:items-center md:font-normal 
-              text-[12px] 2xl:text-base uppercase p-4 md:p-0 mt-4 border 
-               space-x-[15px] 
-              lg:space-x-[25px] 2xl:space-x-[55px] rtl:space-x-reverse
-               md:flex-row md:mt-0 md:border-0 md:bg-transparent 
-               "
+              class="relative flex flex-col md:items-center md:font-normal text-[12px] 2xl:text-base uppercase p-4 md:p-0 mt-4 border space-x-[15px] lg:space-x-[20px] 2xl:space-x-[50px] rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent tracking-[1px] leading-none"
             >
               <li>
                 <a
                   href="index.html"
-                  class="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0"
+                  class="block text-white md:bg-transparent py-[3px] rounded-none"
                   aria-current="page"
                 >
                   <span class="block absolute top-[-16px] h-[20px] w-[40px]">
@@ -195,14 +119,14 @@
               <li>
                 <a
                   href="about.html"
-                  class="block py-2 px-3 text-white rounded-sm md:border-0 md:p-0"
+                  class="block text-white md:border-0 py-[3px] py-[1px] rounded-none"
                   >About us</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-white rounded-sm md:border-0 md:p-0"
+                  class="block text-white md:border-0 py-[3px] py-[1px] rounded-none"
                   >Distance education</a
                 >
               </li>
@@ -210,7 +134,7 @@
                 <button
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center uppercase justify-between w-full py-2 px-3 text-white rounded-sm md:border-0 md:p-0 md:w-auto"
+                  class="flex items-center uppercase justify-between w-full py-2 px-3 text-white md:border-0 md:p-0 md:w-auto"
                 >
                   Document Services
                   <svg
@@ -232,7 +156,7 @@
                 <!-- Dropdown menu -->
                 <div
                   id="dropdownNavbar"
-                  class="z-10 hidden font-normal bg-white divide-y  rounded-lg shadow-sm w-44  "
+                  class="z-10 hidden font-normal bg-white divide-y rounded-lg shadow-sm w-44"
                 >
                   <ul
                     class="py-2 text-sm text-black dark:text-gray-400"
@@ -241,21 +165,21 @@
                     <li>
                       <a
                         href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-none"
                         >Dashboard</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-none"
                         >Settings</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-none"
                         >Earnings</a
                       >
                     </li>
@@ -263,7 +187,7 @@
                   <div class="py-1">
                     <a
                       href="#"
-                      class="block px-4 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                      class="block px-3 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                       >Sign out</a
                     >
                   </div>
@@ -272,23 +196,23 @@
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-white rounded-sm md:border-0 md:p-0"
+                  class="block text-white md:border-0 py-[3px] rounded-none"
                   >Careers</a
                 >
               </li>
               <li class="">
                 <a
                   href="#"
-                  class="block py-2 px-3 text-white rounded-sm md:border-0 md:p-0"
+                  class="block text-white border-b-2 py-[3px] rounded-none"
                   >Login</a
                 >
               </li>
               <li
-                class="gradient-border-line px-[18px] py-[8px] 2xl:px-[28px] 2xl:py-[8px]"
+                class="gradient-border-line px-[18px] py-[8px] 2xl:px-[28px] 2xl:py-[10.5px]"
               >
                 <a
                   href="#"
-                  class="block py-2 px-3 text-white rounded-sm md:border-0 md:p-0"
+                  class="block py-2 px-3 text-white md:border-0 py-[1px] rounded-none btn-nave"
                   >Contact</a
                 >
               </li>
@@ -296,337 +220,380 @@
           </div>
         </div>
       </nav>
-      <div
-      id="drawer-example"
-      class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800"
-      tabindex="-1"
-      aria-labelledby="drawer-label"
-    >
-      <h5
-        id="drawer-label"
-        class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"
-      >
-        <svg
-          class="w-4 h-4 me-2.5"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-        >
-          <path
-            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"
-          />
-        </svg>
-        Info
-      </h5>
-      <button
-        type="button"
-        data-drawer-hide="drawer-example"
-        aria-controls="drawer-example"
-        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
-      >
-        <svg
-          class="w-3 h-3"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 14 14"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-          />
-        </svg>
-        <span class="sr-only">Close menu</span>
-      </button>
-
-      <div class="space-y-2">
-        <ul
-          aria-label="mobile navigation"
-          class="text-gray-800 dark:text-gray-200"
-        >
-          <li>
-            <a
-              href="index.html"
-              class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="about.html"
-              class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
-              >About us</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
-              >Distance education</a
-            >
-          </li>
-          <li class="flex items-center">
-            <a
-              href="#"
-              class="w-full py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
-              id="dropdownDefaultButton"
-              data-dropdown-toggle="dropdown"
-              >Document Services</a
-            >
-
-            <svg
-              class="w-2.5 h-2.5 ms-3"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 10 6"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m1 1 4 4 4-4"
-              />
-            </svg>
-            <div
-              id="dropdown"
-              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700"
-            >
-              <ul
-                class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                aria-labelledby="dropdownDefaultButton"
-              >
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Dashboard</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Settings</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Earnings</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Sign out</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
-              >Careers</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
-              >Login</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
-              >Contact</a
-            >
-          </li>
-         
-        </ul>
-      </div>
-    </div>
+     
     </header>
-    
-    
-   
+ <div
+        id="drawer-example"
+        class="fixed top-0 left-0 !z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80"
+        tabindex="-1"
+        aria-labelledby="drawer-label"
+      >
+        <h5
+          id="drawer-label"
+          class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"
+        >
+          <svg
+            class="w-4 h-4 me-2.5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"
+            />
+          </svg>
+          Info
+        </h5>
+        <button
+          type="button"
+          data-drawer-hide="drawer-example"
+          aria-controls="drawer-example"
+          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
+        >
+          <svg
+            class="w-3 h-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+            />
+          </svg>
+          <span class="sr-only">Close menu</span>
+        </button>
+
+        <div class="space-y-2">
+          <ul
+            aria-label="mobile navigation"
+            class="text-black "
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block  py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
+                >Distance education</a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                href="#"
+                class="w-full py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
+                id="dropdownDefaultButton"
+                data-dropdown-toggle="dropdown"
+                >Document Services</a
+              >
+
+              <svg
+                class="w-2.5 h-2.5 ms-3"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+              <div
+                id="dropdown"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                  aria-labelledby="dropdownDefaultButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Dashboard</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Earnings</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Sign out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
+                >Careers</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
+                >Login</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     <main>
-      <section class="home-banner h-screen relative w-full overflow-hidden">
-        <video
-          class="banner-video w-full h-screen object-cover"
-          autoplay
-          loop
-          muted
-          playsinline
+     <section
+  class="home-banner bg-overlay h-screen relative w-full overflow-hidden"
+  aria-label="Education Consultancy Banner"
+>
+  <!-- Background video with description -->
+  <video
+    class="banner-video w-full h-screen object-cover"
+    autoplay
+    loop
+    muted
+    playsinline
+    aria-hidden="true"
+  >
+    <source
+      src="./src/images/banner_Education_People_1920x1080.mp4"
+      type="video/mp4"
+    />
+    <!-- Fallback text for screen readers -->
+    Your browser does not support the video tag. This video shows people learning in an education environment.
+  </video>
+
+  <div
+    class="relative mx-auto w-full container-custom px-4 sm:px-6 lg:px-8"
+  >
+    <div
+      class="absolute bottom-0 z-5 text-white left-0 text-left px-4 [@media(min-width:1280px)_and_(max-width:1680px)]:max-w-[540px] md:max-w-[540px] lg:max-w-[600px] xl:max-w-[700px] pb-10"
+    >
+      <!-- Heading should be semantic h1 (good for SEO + accessibility) -->
+      <h1
+        class="font_display-unna mx-auto mb-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[67px] text-[40px] md:text-[57px] lg:text-[68px] 2xl:text-[87px] font-normal leading-[35px] md:leading-[60px] lg:leading-[73px] 2xl:leading-[80px]"
+      >
+        Your Gateway to Global Education
+      </h1>
+
+      <!-- Paragraph is fine -->
+      <p
+        class="text-lg font-light leading-[27px] mb-[50px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[15px]"
+      >
+        RK Education is a leading distance education consultancy committed
+        to empowering learners of all nationalities with access to
+        high-quality, flexible academic opportunities.
+      </p>
+
+      <!-- Button with accessible label -->
+      <button
+        class="btn-golden btn-sm bg-[var(--secondary-color)] hover:bg-[var(--secondary-color)] tracking-[0.96px] text-sm text-white font-medium uppercase tracking-wide"
+        aria-label="Book a free consultation with RK Education"
+      >
+        Book Free Consultation
+      </button>
+    </div>
+  </div>
+</section>
+
+
+     <section aria-labelledby="welcome-title">
+  <div
+    class="container-custom mx-auto px-4 sm:px-6 lg:px-8 pt-[80px] pb-[100px]"
+  >
+    <div
+      class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-[380px_1fr] 2xl:grid-cols-[580px_1fr] gap-4 sm:gap-6 lg:gap-[30px] 2xl:gap-[60px]"
+    >
+      <!-- About / Welcome Section -->
+      <article class="flex flex-col">
+        <img
+          src="src/images/welcome_img.png"
+          alt="Students learning at RK Education Group"
+          class="w-full h-auto object-cover rounded-md"
+        />
+        <p
+          class="mt-4 sm:mt-6 text-sm sm:text-base [@media(min-width:1280px)_and_(max-width:1680px)]:text-[15px] leading-6 sm:leading-[27px] font-normal"
         >
-          <source
-            src="./src/images/banner_Education_People_1920x1080.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <div
-          class="relative mx-auto w-full container-custom px-4 sm:px-6 lg:px-8"
-        >
-          <div
-            class="absolute bottom-0 z-5 text-white bottom-0 left-0 text-left px-4 md:max-w-[540px] lg:max-w-[700px] pb-10"
+          RK Education has become a trusted name in the field of distance
+          education consultancy, dedicated to helping students achieve their
+          academic and career aspirations. Over the years, we have built strong
+          partnerships with globally recognized universities and institutions,
+          offering flexible and affordable educational opportunities to learners
+          from diverse backgrounds.
+          <a
+            href="#"
+            class="text-[var(--secondary-color)] hover:underline"
+            aria-label="Read more about RK Education"
+            >Read More</a
           >
-            <h1
-              class="font_display-unna mx-auto mb-[40px] text-[40px] md:text-[57px] lg:text-[78px] 2xl:text-[87px] font-normal leading-[65px] md:leading-[93px]"
-            >
-              Your Gateway to Global Education
-            </h1>
-            <p class="text-lg font-light leading-[27px] mb-[60px]">
-              RK Education is a leading distance education consultancy committed
-              to empowering learners of all nationalities with access to
-              high-quality, flexible academic opportunities.
-            </p>
+        </p>
+      </article>
 
-            <button
-              class="btn-golden btn-sm bg-[var(--secondary-color)] hover:bg-[var(--secondary-color)] tracking-[0.96px] text-sm text-white font-medium uppercase tracking-wide"
-            >
-              Book Free Consultation
-            </button>
-          </div>
-        </div>
-      </section>
+      <!-- Mission, Vision, Presence Section -->
+      <section
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-2"
+        aria-labelledby="mission-vision-presence"
+      >
+        <h2 id="mission-vision-presence" class="sr-only">
+          Mission, Vision and Presence
+        </h2>
 
-      <section>
-        <div
-          class="container-custom mx-auto px-4 sm:px-6 lg:px-8 pt-[80px] pb-[100px]"
+        <!-- Welcome Block -->
+        <article
+          class="gradient-border rounded-md pr-[29px] [@media(min-width:1280px)_and_(max-width:1680px)]:pr-[20px] [@media(min-width:1280px)_and_(max-width:1680px)]:pl-[30px] pl-[35px] lg:pl-[25px] py-[70px] min-h-[200px] sm:min-h-[300px] flex flex-col justify-center"
         >
-          <div
-            class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-[380px_1fr] 2xl:grid-cols-[580px_1fr] gap-4 sm:gap-6 lg:gap-[30px] 2xl:gap-[60px]"
-          >
-            <div class="flex flex-col">
-              <img
-                src="src/images/welcome_img.png"
-                alt="welcome image"
-                class="w-full h-auto object-cover rounded-md"
-              />
-              <p
-                class="mt-4 sm:mt-6 text-sm sm:text-base leading-6 sm:leading-7 font-normal"
-              >
-                RK Education has become a trusted name in the field of distance
-                education consultancy, dedicated to helping students achieve
-                their academic and career aspirations. Over the years, we have
-                built strong partnerships with globally recognized universities
-                and institutions, offering flexible and affordable educational
-                opportunities to learners from diverse backgrounds.
-                <a
-                  href="#"
-                  class="text-[var(--secondary-color)] hover:underline"
-                  >Read More</a
-                >
-              </p>
-            </div>
+          <h2 id="welcome-title" class="font-normal">
+            <span
+              class="block text-xl text-(--secondary-color) uppercase tracking-[5px] leading-[63.73px]"
+              >Welcome to</span
+            >
+            <span
+              class="font_display-unna text-[35px] lg:text-[35px] 2xl:text-[50px] text-(--text-color) leading-[30px] [@media(min-width:1280px)_and_(max-width:1680px)]:leading-[53px] lg:leading-[40px] xl:leading-[63px]"
+            >
+              RK Education Group</span
+            >
+          </h2>
+        </article>
 
+        <!-- Mission Block -->
+        <article
+          class="border border-[var(--secondary-color)] rounded-md pr-[29px] pl-[35px] lg:pl-[25px] xl:pl-[50px] [@media(min-width:1280px)_and_(max-width:1680px)]:pr-[20px] [@media(min-width:1280px)_and_(max-width:1680px)]:pl-[30px] py-[29px] min-h-[200px] sm:min-h-[300px] flex flex-col"
+          aria-labelledby="mission-title"
+        >
+          <div class="flex items-center justify-between gap-4 mb-4">
+            <h3
+              id="mission-title"
+              class="text-2xl md:text-[27px] lg:text-[30px] xl:text-[37px] font_display-unna font-normal leading[63.73px]"
+            >
+              Mission
+            </h3>
             <div
-              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-2"
+              class="min-width-[73px] min-h-[73px] flex items-center justify-center"
             >
-              <div
-                class="gradient-border rounded-md p-4 sm:p-6 md:p-7 lg:p-8 xl:p-7 min-h-[200px] sm:min-h-[300px] flex flex-col justify-center"
-              >
-                <h2 class="font-normal">
-                  <span
-                    class="block text-xl text-(--secondary-color) uppercase tracking-[5px]"
-                    >Welcome to</span
-                  >
-                  <span
-                    class="font_display-unna text-[35px] lg:text-[45px] 2xl:text-[50px] text-(--text-color) leading-[30px] lg:leading-[50px]"
-                  >
-                    RK Education Group</span
-                  >
-                </h2>
-              </div>
-
-              <div
-                class="border border-[var(--secondary-color)] rounded-md p-4 sm:p-6 md:p-3 xl:p-8 min-h-[200px] sm:min-h-[300px] flex flex-col"
-              >
-                <div class="flex items-center justify-between gap-4 mb-4">
-                  <h3
-                    class="text-xl md:text-[27px] lg:text-[37px] font_display-unna font-semibold"
-                  >
-                    Mission
-                  </h3>
-                  <img
-                    src="./src/images/mission.gif"
-                    alt="mission"
-                    class="w-10 sm:w-12 lg:w-16 max-w-[73px] h-auto"
-                  />
-                </div>
-                <p
-                  class="text-sm sm:text-base xl:text-base font-normal leading-6 sm:leading-7 text-[var(--text-color)]"
-                >
-                  To make high-quality, flexible, and globally recognized
-                  education accessible to students of all nationalities, helping
-                  them achieve their academic and professional goals through
-                  transparent and ethical guidance.
-                </p>
-              </div>
-
-              <div
-                class="border text-white bg-(--secondary-color) border-[var(--secondary-color)] rounded-md p-4 sm:p-6 md:p-3 xl:p-8 min-h-[200px] sm:min-h-[300px] flex flex-col"
-              >
-                <div class="flex items-center justify-between gap-4 mb-4">
-                  <h3
-                    class="text-xl md:text-[27px] lg:text-[37px] font_display-unna font-semibold"
-                  >
-                    Vision
-                  </h3>
-                  <img
-                    src="./src/images/vision.gif"
-                    alt="vision Animated GIF"
-                    ata-hover=""
-                    class="w-10 sm:w-12 lg:w-16 max-w-[73px] h-auto gif"
-                  />
-                </div>
-                <p
-                  class="text-sm sm:text-base xl:text-base font-normal leading-6 sm:leading-7"
-                >
-                  To be a global leader in distance education consultancy,
-                  empowering students worldwide with innovative and accessible
-                  learning solutions.
-                </p>
-              </div>
-
-              <div
-                class="border border-[var(--secondary-color)] rounded-md p-4 sm:p-6 md:p-3 xl:p-8 min-h-[200px] sm:min-h-[300px] flex flex-col"
-              >
-                <div class="flex items-center justify-between gap-4 mb-4">
-                  <h3
-                    class="text-xl md:text-[27px] lg:text-[37px] font_display-unna font-semibold"
-                  >
-                    Presence
-                  </h3>
-                  <img
-                    src="./src/images/presence.gif"
-                    alt="values"
-                    class="w-10 sm:w-12 lg:w-16 max-w-[73px] h-auto"
-                  />
-                </div>
-                <p
-                  class="text-sm sm:text-base xl:text-base font-normal leading-6 sm:leading-7 text-[var(--text-color)]"
-                >
-                  Integrity, excellence, and inclusivity guide our commitment to
-                  providing ethical, high-quality, and student-centered
-                  educational support.
-                </p>
-              </div>
+              <img
+                src="./src/images/mission.gif"
+                alt="Animated icon representing mission"
+                class="w-10 sm:w-12 lg:w-16 max-w-[73px] h-auto"
+              />
             </div>
           </div>
-        </div>
+          <p
+            class="text-sm sm:text-base lg:text-[14px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[15px] xl:text-base font-normal leading-6 sm:leading-[27px] lg:leading-[24px] xl:leading-[27px] text-[var(--text-color)]"
+          >
+            To make high-quality, flexible, and globally recognized education
+            accessible to students of all nationalities, helping them achieve
+            their academic and professional goals through transparent and
+            ethical guidance.
+          </p>
+        </article>
+
+        <!-- Vision Block -->
+        <article
+          class="border text-white bg-(--secondary-color) border-[var(--secondary-color)] rounded-md pr-[29px] pl-[35px] lg:pl-[25px] xl:pl-[50px] [@media(min-width:1280px)_and_(max-width:1680px)]:pr-[20px] [@media(min-width:1280px)_and_(max-width:1680px)]:pl-[30px] py-[29px] min-h-[200px] sm:min-h-[300px] flex flex-col"
+          aria-labelledby="vision-title"
+        >
+          <div class="flex items-center justify-between gap-4 mb-4">
+            <h3
+              id="vision-title"
+              class="text-2xl md:text-[27px] lg:text-[30px] font_display-unna font-normal leading[63.73px]"
+            >
+              Vision
+            </h3>
+            <div
+              class="min-width-[73px] min-h-[73px] flex items-center justify-center"
+            >
+              <img
+                src="./src/images/vision.gif"
+                alt="Animated icon representing vision"
+                class="w-10 sm:w-12 lg:w-16 max-w-[73px] h-auto gif"
+              />
+            </div>
+          </div>
+          <p
+            class="text-sm sm:text-base lg:text-[14px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[15px] xl:text-base font-normal leading-6 sm:leading-[27px] lg:leading-[24px] xl:leading-[27px]"
+          >
+            To empower students with personalized support, ensuring they make
+            informed decisions and successfully enroll in programs that enhance
+            their careers and future opportunities.
+          </p>
+        </article>
+
+        <!-- Presence Block -->
+        <article
+          class="border border-[var(--secondary-color)] rounded-md pr-[29px] pl-[35px] lg:pl-[25px] xl:pl-[50px] [@media(min-width:1280px)_and_(max-width:1680px)]:pr-[20px] [@media(min-width:1280px)_and_(max-width:1680px)]:pl-[30px] py-[29px] min-h-[200px] sm:min-h-[300px] flex flex-col"
+          aria-labelledby="presence-title"
+        >
+          <div class="flex items-center justify-between gap-4 mb-4">
+            <h3
+              id="presence-title"
+              class="text-2xl md:text-[27px] lg:text-[30px] font_display-unna font-normal leading[63.73px]"
+            >
+              Presence
+            </h3>
+            <div
+              class="min-width-[73px] min-h-[73px] flex items-center justify-center"
+            >
+              <img
+                src="./src/images/presence.gif"
+                alt="Animated icon showing global presence"
+                class="w-10 sm:w-12 lg:w-16 max-w-[73px] h-auto"
+              />
+            </div>
+          </div>
+          <p
+            class="text-sm sm:text-base lg:text-[14px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[15px] xl:text-base font-normal leading-6 sm:leading-[27px] lg:leading-[24px] xl:leading-[27px] text-[var(--text-color)]"
+          >
+            With a strong presence in the UAE (Sharjah, Dubai, Abu Dhabi, and Al
+            Ain) and India (Kerala), RK Education bridges the gap between
+            students and top-tier distance learning institutions worldwide.
+          </p>
+        </article>
       </section>
+    </div>
+  </div>
+</section>
+
       <section
         class="bg-[url(/src/images/whyChoose_img.png)] bg-center bg-no-repeat bg-cover pt-[80px] pb-[100px]"
       >
@@ -635,7 +602,7 @@
         >
           <h2 class="font-normal">
             <span
-              class="block text-xl text-(--secondary-color) uppercase tracking-[5px]"
+              class="block text-xl text-(--secondary-color) uppercase tracking-[5px] leading-[63.73px]"
               >Why Choose US</span
             >
             <span
@@ -648,7 +615,7 @@
             class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 mt-7 md:mt-10 lg:mt-22"
           >
             <div
-              class="why_choosCard transition duration-700 ease-in-out relative text-center px-2 md:px-4 lg:px-2 xl:px-8 pt-[17px] lg:pt-[47px] pb-[30px] flex flex-col text-white items-center hover:bg-[var(--background-color)] hover:text-[var(--text-color)] hover:border-1 hover:border-(--secondary-color) rounded-md transition"
+              class="why_choosCard transition duration-700 ease-in-out relative text-center px-2 md:px-4 lg:px-2 xl:px-8 [@media(min-width:1280px)_and_(max-width:1680px)]:px-[28px] pt-[17px] lg:pt-[47px] pb-[30px] flex flex-col text-white items-center hover:bg-[var(--background-color)] hover:text-[var(--text-color)] hover:border-1 hover:border-(--secondary-color) rounded-md transition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -690,7 +657,7 @@
               </svg>
 
               <h6
-                class="text-[18px] lg:text-[22px] font-medium leading-[33px] capitalize my-[10px] lg:my-[20px]"
+                class="text-[18px] lg:text-[22px] font-medium leading-[33px] capitalize my-[10px] lg:my-[20px] lg:max-w-[220px] lg:min-h-[66px]"
               >
                 Personalized counseling
               </h6>
@@ -702,7 +669,7 @@
             </div>
             <!-- next card -->
             <div
-              class="why_choosCard transition duration-700 ease-in-out relative text-center px-2 md:px-4 lg:px-2 xl:px-8 pt-[17px] lg:pt-[47px] pb-[30px] flex flex-col text-white items-center hover:bg-[var(--background-color)] hover:text-[var(--text-color)] hover:border-1 hover:border-(--secondary-color) rounded-md transition"
+              class="why_choosCard transition duration-700 ease-in-out relative text-center px-2 md:px-4 lg:px-2 xl:px-8 [@media(min-width:1280px)_and_(max-width:1680px)]:px-[28px] pt-[17px] lg:pt-[47px] pb-[30px] flex flex-col text-white items-center hover:bg-[var(--background-color)] hover:text-[var(--text-color)] hover:border-1 hover:border-(--secondary-color) rounded-md transition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -720,7 +687,7 @@
               </svg>
 
               <h6
-                class="text-[18px] lg:text-[22px] font-medium leading-[33px] capitalize my-[10px] lg:my-[20px]"
+                class="text-[18px] lg:text-[22px] font-medium leading-[33px] capitalize my-[10px] lg:my-[20px] lg:max-w-[220px] lg:min-h-[66px]"
               >
                 Global university tie-ups
               </h6>
@@ -775,9 +742,9 @@
               </svg>
 
               <h6
-                class="text-[18px] lg:text-[22px] font-medium leading-[33px] capitalize my-[10px] lg:my-[20px]"
+                class="text-[18px] lg:text-[22px] font-medium leading-[33px] capitalize my-[10px] lg:my-[20px] lg:max-w-[220px] lg:min-h-[66px]"
               >
-                Personalized counseling
+                Visa assistance
               </h6>
               <p class="text-sm font-normal leading-[25px] text-center">
                 RK Education has become a trusted name in the field of distance
@@ -787,7 +754,7 @@
             </div>
             <!-- next card -->
             <div
-              class="why_choosCard transition duration-700 ease-in-out relative text-center px-2 md:px-4 lg:px-2 xl:px-8 pt-[17px] lg:pt-[47px] pb-[30px] flex flex-col text-white items-center hover:bg-[var(--background-color)] hover:text-[var(--text-color)] hover:border-1 hover:border-(--secondary-color) rounded-md transition"
+              class="why_choosCard transition duration-700 ease-in-out relative text-center px-2 md:px-4 lg:px-2 [@media(min-width:1280px)_and_(max-width:1680px)]:px-[28px] xl:px-[28px] pt-[17px] lg:pt-[47px] pb-[30px] flex flex-col text-white items-center hover:bg-[var(--background-color)] hover:text-[var(--text-color)] hover:border-1 hover:border-(--secondary-color) rounded-md transition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -830,11 +797,13 @@
               </svg>
 
               <h6
-                class="text-[18px] lg:text-[22px] font-medium leading-[33px] capitalize my-[10px] lg:my-[20px]"
+                class="text-[18px] lg:text-[22px] font-medium leading-[33px] capitalize my-[10px] lg:my-[20px] lg:max-w-[220px] lg:min-h-[66px]"
               >
-                Personalized counseling
+                Expert academic advisors
               </h6>
-              <p class="text-sm font-normal leading-[25px] text-center">
+              <p
+                class="text-sm font-normal leading-[25px] text-center 2xl:leading-[27px]"
+              >
                 RK Education has become a trusted name in the field of distance
                 education consultancy, dedicated to helping students achieve
                 their academic and career aspirations.
@@ -847,7 +816,7 @@
         <div class="container-custom mx-auto px-4 sm:px-6 lg:px-8">
           <h2 class="font-normal text-center">
             <span
-              class="block text-xl text-(--secondary-color) uppercase tracking-[5px]"
+              class="block text-xl text-(--secondary-color) uppercase tracking-[5px] leading-[63.73px]"
               >Our Programs</span
             >
             <span
@@ -871,268 +840,250 @@
             <swiper-slide>
               <a href="services.html">
                 <div class="service_card relative rounded-xl overflow-hidden">
-                <img
-                  src="./src/images/service_img_1.jpg"
-                  alt="program image"
-                  class="w-full h-auto"
-                />
-                <div
-                  class="content transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
-                >
-                  <p
-                    class="font-bold xl:pr-[33px] text-[18px] xl:text-[22px] font-bold capitalize leading-[27.7px]"
+                  <img
+                    src="./src/images/service_img_1.jpg"
+                    alt="Certificate attestations"
+                    class="w-full h-auto"
+                  />
+                  <div
+                    class="content custome-card-style transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:py-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
                   >
-                    End-to-end distance education consulting
-                  </p>
-                  <span
-                    class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="11"
-                      height="18"
-                      viewBox="0 0 11 18"
-                      fill="none"
-                    >
-                      <path
-                        d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
-                        fill="white"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
-                  </span>
+                    <div class="max-w-[75%]">
+                      <p
+                        class="font-bold text-[15px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[18px] xl:text-[22px] font-bold capitalize leading-[23px] lg:leading-[27.7px]"
+                      >
+                        Certificate attestations
+                      </p>
+                      <div
+                        class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] [@media(min-width:1280px)_and_(max-width:1680px)]:w-[40px] [@media(min-width:1280px)_and_(max-width:1680px)]:h-[40px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11"
+                          height="18"
+                          viewBox="0 0 11 18"
+                          fill="none"
+                        >
+                          <path
+                            d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
+                            fill="white"
+                            stroke="white"
+                            stroke-width="0.5"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
               </a>
-              
+            </swiper-slide>
+
+            <swiper-slide>
+              <a href="services.html">
+                <div class="service_card relative rounded-xl overflow-hidden">
+                  <img
+                    src="./src/images/service_img_2.jpg"
+                    alt="End-to-end distance education consulting"
+                    class="w-full h-auto"
+                  />
+                  <div
+                    class="content custome-card-style transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:py-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
+                  >
+                    <div class="max-w-[75%]">
+                      <p
+                        class="font-bold text-[15px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[18px] xl:text-[22px] font-bold capitalize leading-[23px] lg:leading-[27.7px]"
+                      >
+                        End-to-end distance education consulting
+                      </p>
+                      <div
+                        class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] [@media(min-width:1280px)_and_(max-width:1680px)]:w-[40px] [@media(min-width:1280px)_and_(max-width:1680px)]:h-[40px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11"
+                          height="18"
+                          viewBox="0 0 11 18"
+                          fill="none"
+                        >
+                          <path
+                            d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
+                            fill="white"
+                            stroke="white"
+                            stroke-width="0.5"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </swiper-slide>
+
+            <swiper-slide>
+              <a href="services.html">
+                <div class="service_card relative rounded-xl overflow-hidden">
+                  <img
+                    src="./src/images/service_img_3.png"
+                    alt="Assistance with program selection"
+                    class="w-full h-auto"
+                  />
+                  <div
+                    class="content custome-card-style transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:py-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
+                  >
+                    <div class="max-w-[75%]">
+                      <p
+                        class="font-bold text-[15px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[18px] xl:text-[22px] font-bold capitalize leading-[23px] lg:leading-[27.7px]"
+                      >
+                        Assistance with program selection
+                      </p>
+                      <div
+                        class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] [@media(min-width:1280px)_and_(max-width:1680px)]:w-[40px] [@media(min-width:1280px)_and_(max-width:1680px)]:h-[40px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11"
+                          height="18"
+                          viewBox="0 0 11 18"
+                          fill="none"
+                        >
+                          <path
+                            d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
+                            fill="white"
+                            stroke="white"
+                            stroke-width="0.5"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </swiper-slide>
             <swiper-slide>
               <a href="services.html">
                 <div class="service_card relative rounded-xl overflow-hidden">
-                <img
-                  src="./src/images/service_img_2.jpg"
-                  alt="program image"
-                  class="w-full h-auto"
-                />
-                <div
-                  class="content transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
-                >
-                  <p
-                    class="font-bold xl:pr-[33px] text-[18px] xl:text-[22px] font-bold capitalize leading-[27.7px]"
+                  <img
+                    src="./src/images/service_img_4.png"
+                    alt=" Personalized academic advising"
+                    class="w-full h-auto"
+                  />
+                  <div
+                    class="content custome-card-style transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:py-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
                   >
-                    End-to-end distance education consulting
-                  </p>
-                  <span
-                    class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="11"
-                      height="18"
-                      viewBox="0 0 11 18"
-                      fill="none"
-                    >
-                      <path
-                        d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
-                        fill="white"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
-                  </span>
+                    <div class="max-w-[75%]">
+                      <p
+                        class="font-bold text-[15px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[18px] xl:text-[22px] font-bold capitalize leading-[23px] lg:leading-[27.7px]"
+                      >
+                        Personalized academic advising
+                      </p>
+                      <div
+                        class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] [@media(min-width:1280px)_and_(max-width:1680px)]:w-[40px] [@media(min-width:1280px)_and_(max-width:1680px)]:h-[40px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11"
+                          height="18"
+                          viewBox="0 0 11 18"
+                          fill="none"
+                        >
+                          <path
+                            d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
+                            fill="white"
+                            stroke="white"
+                            stroke-width="0.5"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
               </a>
-              
             </swiper-slide>
             <swiper-slide>
               <a href="services.html">
-<div class="service_card relative rounded-xl overflow-hidden">
-                <img
-                  src="./src/images/service_img_2.jpg"
-                  alt="program image"
-                  class="w-full h-screen object-cover"
-                />
-                <div
-                  class="content transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
-                >
-                  <p
-                    class="font-bold xl:pr-[33px] text-[18px] xl:text-[22px] font-bold capitalize leading-[27.7px]"
+                <div class="service_card relative rounded-xl overflow-hidden">
+                  <img
+                    src="./src/images/service_img_5.png"
+                    alt=" Certificate attestations"
+                    class="w-full h-auto"
+                  />
+                  <div
+                    class="content custome-card-style transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:py-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
                   >
-                    Assistance with program selection
-                  </p>
-                  <span
-                    class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="11"
-                      height="18"
-                      viewBox="0 0 11 18"
-                      fill="none"
-                    >
-                      <path
-                        d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
-                        fill="white"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
-                  </span>
+                    <div class="max-w-[75%]">
+                      <p
+                        class="font-bold text-[15px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[18px] xl:text-[22px] font-bold capitalize leading-[23px] lg:leading-[27.7px]"
+                      >
+                        Certificate attestations
+                      </p>
+                      <div
+                        class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] [@media(min-width:1280px)_and_(max-width:1680px)]:w-[40px] [@media(min-width:1280px)_and_(max-width:1680px)]:h-[40px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11"
+                          height="18"
+                          viewBox="0 0 11 18"
+                          fill="none"
+                        >
+                          <path
+                            d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
+                            fill="white"
+                            stroke="white"
+                            stroke-width="0.5"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
               </a>
-              
             </swiper-slide>
             <swiper-slide>
-              <div class="service_card relative rounded-xl overflow-hidden">
-                <img
-                  src="./src/images/service_img_3.png"
-                  alt="program image"
-                  class="w-full h-screen object-cover"
-                />
-                <div
-                  class="content transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
-                >
-                  <p
-                    class="font-bold xl:pr-[33px] text-[18px] xl:text-[22px] font-bold capitalize leading-[27.7px]"
+              <a href="services.html">
+                <div class="service_card relative rounded-xl overflow-hidden">
+                  <img
+                    src="./src/images/service_img_5.png"
+                    alt=" Certificate attestations"
+                    class="w-full h-auto"
+                  />
+                  <div
+                    class="content custome-card-style transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:py-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
                   >
-                    Assistance with program selection
-                  </p>
-                  <span
-                    class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="11"
-                      height="18"
-                      viewBox="0 0 11 18"
-                      fill="none"
-                    >
-                      <path
-                        d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
-                        fill="white"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
-                  </span>
+                    <div class="max-w-[75%]">
+                      <p
+                        class="font-bold text-[15px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[18px] xl:text-[22px] font-bold capitalize leading-[23px] lg:leading-[27.7px]"
+                      >
+                        Certificate attestations
+                      </p>
+                      <div
+                        class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] [@media(min-width:1280px)_and_(max-width:1680px)]:w-[40px] [@media(min-width:1280px)_and_(max-width:1680px)]:h-[40px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11"
+                          height="18"
+                          viewBox="0 0 11 18"
+                          fill="none"
+                        >
+                          <path
+                            d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
+                            fill="white"
+                            stroke="white"
+                            stroke-width="0.5"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div class="service_card relative rounded-xl overflow-hidden">
-                <img
-                  src="./src/images/service_img_4.png"
-                  alt="program image"
-                  class="w-full h-screen object-cover"
-                />
-                <div
-                  class="content transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
-                >
-                  <p
-                    class="font-bold xl:pr-[33px] text-[18px] xl:text-[22px] font-bold capitalize leading-[27.7px]"
-                  >
-                    Personalized academic advising
-                  </p>
-                  <span
-                    class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="11"
-                      height="18"
-                      viewBox="0 0 11 18"
-                      fill="none"
-                    >
-                      <path
-                        d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
-                        fill="white"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div class="service_card relative rounded-xl overflow-hidden">
-                <img
-                  src="./src/images/service_img_5.png"
-                  alt="program image"
-                  class="w-full h-screen object-cover"
-                />
-                <div
-                  class="content transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
-                >
-                  <p
-                    class="font-bold xl:pr-[33px] text-[18px] xl:text-[22px] font-bold capitalize leading-[27.7px]"
-                  >
-                    Certificate attestations
-                  </p>
-                  <span
-                    class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="11"
-                      height="18"
-                      viewBox="0 0 11 18"
-                      fill="none"
-                    >
-                      <path
-                        d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
-                        fill="white"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div class="service_card relative rounded-xl overflow-hidden">
-                <img
-                  src="./src/images/service_img_5.png"
-                  alt="program image"
-                  class="w-full h-screen object-cover"
-                />
-                <div
-                  class="content transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
-                >
-                  <p
-                    class="font-bold xl:pr-[33px] text-[18px] xl:text-[22px] font-bold capitalize leading-[27.7px]"
-                  >
-                    Certificate attestations
-                  </p>
-                  <span
-                    class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="11"
-                      height="18"
-                      viewBox="0 0 11 18"
-                      fill="none"
-                    >
-                      <path
-                        d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
-                        fill="white"
-                        stroke="white"
-                        stroke-width="0.5"
-                      />
-                    </svg>
-                  </span>
-                </div>
-              </div>
+              </a>
             </swiper-slide>
           </swiper-container>
           <button
             class="btn-golden bg-[var(--text-color)] bg-[var(--secondary-color)] btn-sm mx-auto flex mt-[18px] sm:mt-[28px] md:mt-[38px] lg:mt-[68px] tracking-[0.96px] text-sm text-white uppercase tracking-wide font-medium"
-          >
+          aria-label="View all available services"
+            >
             View All Services
           </button>
         </div>
@@ -1142,15 +1093,13 @@
           <div
             class="seter-border pt-[15px] pt:mt-[30px] lg:pt-[70px] flex justify-center relative items-center mx-auto border-t-1 border-[var(---light-gray)]"
           >
-            <h2
-              class="font-normal text-center leading-[30px] lg:leading-[50px]"
-            >
+            <h2 class="font-normal text-center">
               <span
-                class="block text-xl text-(--secondary-color) uppercase tracking-[5px]"
+                class="block text-xl text-(--secondary-color) uppercase tracking-[5px] leading-[63.73px]"
                 >Our Programs</span
               >
               <span
-                class="font_display-unna text-[35px] 2xl:text-[60px] text-(--text-color)"
+                class="font_display-unna text-[35px] 2xl:text-[60px] text-(--text-color) leading-[30px] lg:leading-[50px]"
               >
                 Our Esteemed Global Partners</span
               >
@@ -1250,19 +1199,21 @@
       </section>
       <section class="pt-[80px] pb-[100px]">
         <div class="container-custom mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="font-normal text-center leading-[30px] lg:leading-[50px]">
+          <h2 class="font-normal text-center">
             <span
-              class="block text-xl text-(--secondary-color) uppercase tracking-[5px]"
-              >Testimonials
-            </span>
+              class="block text-xl text-(--secondary-color) uppercase tracking-[5px] leading-[63.73px]"
+              >Testimonials</span
+            >
             <span
-              class="font_display-unna text-[35px] 2xl:text-[60px] text-(--text-color)"
+              class="font_display-unna text-[35px] 2xl:text-[60px] text-(--text-color) leading-[30px] lg:leading-[50px]"
             >
               Real Stories. Real Success.</span
             >
           </h2>
         </div>
         <div class="mt-10 md:mt-16 xl:mt-22">
+          <!-- autoplay-delay="2500"
+            autoplay-disable-on-interaction="false" -->
           <swiper-container
             class="mySwiper text-left"
             pagination="false"
@@ -1270,20 +1221,19 @@
             space-between="14"
             slides-per-view="3"
             id="testimonials_slider"
-            autoplay-delay="2500"
-            autoplay-disable-on-interaction="false"
+            
           >
             <swiper-slide>
               <div
-                class="h-[400px] xs:h-[500px] md:h-[350px] lg:h-[430px] xl:h-[480px] bg-white pt-[20px] lg:pt-[70px] xl:pt-[90px] pb-[18px] lg:pb-[30px] xl:pb-[50px] px-[18px] lg:px-[30px] xl:px-[50px] rounded-xl shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
+                class="testimolina-card-h testimolina-card-border  bg-white pt-[30px] lg:pt-[70px] [@media(min-width:1280px)_and_(max-width:1680px)]:pt-[65px] xl:pt-[90px] pb-[30px] xl:pb-[50px] px-[30px] [@media(min-width:1280px)_and_(max-width:1680px)]:px-[40px] xl:px-[50px] rounded-xl flex flex-col items-start rounded-xl"
               >
                 <h3
-                  class="italic text-left font_display-unna font-normal mb-[40px] text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[24px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
+                  class="italic text-left font_display-unna font-normal mb-[40px] text-[24px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[29px] text-[var(--dark-black)] mb-4"
                 >
                   Smooth process and excellent guidance!
                 </h3>
                 <p
-                  class="text-sm lg:leading-[18px] 2xl:leading-[26px] text-left font-normal text-[var(--dark-black)] mb-6"
+                  class="text-sm [@media(min-width:1280px)_and_(max-width:1680px)]:text-[14px] lg:text-[16px] leading-[26px]  text-left font-normal text-[var(--dark-black)] mb-6"
                 >
                   RK Education made my dream of studying abroad come true! I had
                   no idea where to start with distance education, but the team
@@ -1291,29 +1241,31 @@
                   ethical, and always student-focused. I’m now enrolled in a top
                   UK program — all thanks to them!
                 </p>
-                <div class="flex items-center mt-auto">
-                  <div class="max-h-[77px] max-w-[77px] pr-[30px]">
+                <div class="flex items-center mt-auto text-left">
+                  <!-- Avatar -->
+                  <div class="h-[77px] w-[77px] mr-[30px] flex-shrink-0">
                     <img
-                      class="rounded-full w-full h-auto object-cover"
+                      class="rounded-full w-full h-full object-cover"
                       src="https://i.pravatar.cc/50?img=12"
                       alt="Rohit Menon"
                     />
                   </div>
 
+                  <!-- Text block takes remaining width -->
                   <div
-                    class="border-l-1 pl-[30px] text-left border-[var(--secondary-color)]"
+                    class="w-[calc(100%-107px)] border-l border-[var(--secondary-color)] pl-[30px]"
                   >
-                    <h4 class="font-semibold text-[var(--dark-black)]">
+                    <h4 class="font-medium xl:text-[20px] text-[var(--dark-black)] leading-29px">
                       Rohit Menon
                     </h4>
-                    <p class="text-sm text-[var(--dark-gray)]">Dubai</p>
+                    <p class="text-sm text-[var(--dark-gray)] leading-29px">Dubai</p>
                   </div>
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
               <div
-                class="h-[400px] xs:h-[500px] md:h-[350px] lg:h-[430px] xl:h-[480px] bg-white relative shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
+                class="testimolina-card-h testimolina-card-border bg-white relative shadow-md flex flex-col items-start rounded-xl"
               >
                 <video
                   class="w-full object-cover h-screen rounded-t-xl"
@@ -1328,25 +1280,27 @@
                   />
                 </video>
                 <div
-                  class="absolute bottom-0 left-0 bg-[var(--background-color)] m-3 p-3 rounded-[20px]"
+                  class="absolute p-[39px] bottom-0 left-0 bg-[var(--background-color)] m-3 p-3 rounded-[20px]"
                 >
                   <h3
-                    class="italic font_display-unna font-normal mb-[40px] text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[24px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
+                    class="italic font_display-unna font-normal mb-[40px] text-[24px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[29px] text-[var(--dark-black)] mb-4"
                   >
                     RK Education made my dream of studying abroad come true!
                   </h3>
 
-                  <div class="flex items-center mt-auto">
-                    <div class="max-h-[77px] max-w-[77px] pr-[30px]">
+                  <div class="flex items-center mt-auto text-left">
+                    <!-- Avatar -->
+                    <div class="h-[77px] w-[77px] mr-[30px] flex-shrink-0">
                       <img
-                        class="rounded-full w-full h-auto object-cover"
+                        class="rounded-full w-full h-full object-cover"
                         src="https://i.pravatar.cc/50?img=12"
                         alt="Rohit Menon"
                       />
                     </div>
 
+                    <!-- Text block takes remaining width -->
                     <div
-                      class="border-l-1 pl-[30px] text-left border-[var(--secondary-color)]"
+                      class="w-[calc(100%-107px)] border-l border-[var(--secondary-color)] pl-[30px]"
                     >
                       <h4 class="font-semibold text-[var(--dark-black)]">
                         Rohit Menon
@@ -1357,17 +1311,19 @@
                 </div>
               </div>
             </swiper-slide>
+
+
             <swiper-slide>
               <div
-                class="h-[400px] xs:h-[500px] md:h-[350px] lg:h-[430px] xl:h-[480px] bg-white pt-[20px] lg:pt-[70px] xl:pt-[90px] pb-[18px] lg:pb-[30px] xl:pb-[50px] px-[18px] lg:px-[30px] xl:px-[50px] rounded-xl shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
+                class="testimolina-card-h testimolina-card-border  bg-white pt-[30px] lg:pt-[70px] [@media(min-width:1280px)_and_(max-width:1680px)]:pt-[65px] xl:pt-[90px] pb-[30px] xl:pb-[50px] px-[30px] [@media(min-width:1280px)_and_(max-width:1680px)]:px-[40px] xl:px-[50px] rounded-xl flex flex-col items-start rounded-xl"
               >
                 <h3
-                  class="italic text-left font_display-unna font-normal mb-[40px] text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[24px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
+                  class="italic text-left font_display-unna font-normal mb-[40px] text-[24px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[29px] text-[var(--dark-black)] mb-4"
                 >
                   Smooth process and excellent guidance!
                 </h3>
                 <p
-                  class="text-sm lg:leading-[18px] 2xl:leading-[26px] text-left font-normal text-[var(--dark-black)] mb-6"
+                  class="text-sm [@media(min-width:1280px)_and_(max-width:1680px)]:text-[14px] lg:text-[16px] leading-[26px]  text-left font-normal text-[var(--dark-black)] mb-6"
                 >
                   RK Education made my dream of studying abroad come true! I had
                   no idea where to start with distance education, but the team
@@ -1375,37 +1331,40 @@
                   ethical, and always student-focused. I’m now enrolled in a top
                   UK program — all thanks to them!
                 </p>
-                <div class="flex items-center mt-auto">
-                  <div class="max-h-[77px] max-w-[77px] pr-[30px]">
+                <div class="flex items-center mt-auto text-left">
+                  <!-- Avatar -->
+                  <div class="h-[77px] w-[77px] mr-[30px] flex-shrink-0">
                     <img
-                      class="rounded-full w-full h-auto object-cover"
+                      class="rounded-full w-full h-full object-cover"
                       src="https://i.pravatar.cc/50?img=12"
                       alt="Rohit Menon"
                     />
                   </div>
 
+                  <!-- Text block takes remaining width -->
                   <div
-                    class="border-l-1 pl-[30px] text-left border-[var(--secondary-color)]"
+                    class="w-[calc(100%-107px)] border-l border-[var(--secondary-color)] pl-[30px]"
                   >
-                    <h4 class="font-semibold text-[var(--dark-black)]">
+                    <h4 class="font-medium xl:text-[20px] text-[var(--dark-black)] leading-29px">
                       Rohit Menon
                     </h4>
-                    <p class="text-sm text-[var(--dark-gray)]">Dubai</p>
+                    <p class="text-sm text-[var(--dark-gray)] leading-29px">Dubai</p>
                   </div>
                 </div>
               </div>
             </swiper-slide>
+           
             <swiper-slide>
               <div
-                class="h-[400px] xs:h-[500px] md:h-[350px] lg:h-[430px] xl:h-[480px] bg-white pt-[20px] lg:pt-[70px] xl:pt-[90px] pb-[18px] lg:pb-[30px] xl:pb-[50px] px-[18px] lg:px-[30px] xl:px-[50px] rounded-xl shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
+                class="testimolina-card-h testimolina-card-border  bg-white pt-[30px] lg:pt-[70px] [@media(min-width:1280px)_and_(max-width:1680px)]:pt-[65px] xl:pt-[90px] pb-[30px] xl:pb-[50px] px-[30px] [@media(min-width:1280px)_and_(max-width:1680px)]:px-[40px] xl:px-[50px] rounded-xl flex flex-col items-start rounded-xl"
               >
                 <h3
-                  class="italic text-left font_display-unna font-normal mb-[40px] text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[24px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
+                  class="italic text-left font_display-unna font-normal mb-[40px] text-[24px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[29px] text-[var(--dark-black)] mb-4"
                 >
                   Smooth process and excellent guidance!
                 </h3>
                 <p
-                  class="text-sm lg:leading-[18px] 2xl:leading-[26px] text-left font-normal text-[var(--dark-black)] mb-6"
+                  class="text-sm [@media(min-width:1280px)_and_(max-width:1680px)]:text-[14px] lg:text-[16px] leading-[26px]  text-left font-normal text-[var(--dark-black)] mb-6"
                 >
                   RK Education made my dream of studying abroad come true! I had
                   no idea where to start with distance education, but the team
@@ -1413,37 +1372,39 @@
                   ethical, and always student-focused. I’m now enrolled in a top
                   UK program — all thanks to them!
                 </p>
-                <div class="flex items-center mt-auto">
-                  <div class="max-h-[77px] max-w-[77px] pr-[30px]">
+                <div class="flex items-center mt-auto text-left">
+                  <!-- Avatar -->
+                  <div class="h-[77px] w-[77px] mr-[30px] flex-shrink-0">
                     <img
-                      class="rounded-full w-full h-auto object-cover"
+                      class="rounded-full w-full h-full object-cover"
                       src="https://i.pravatar.cc/50?img=12"
                       alt="Rohit Menon"
                     />
                   </div>
 
+                  <!-- Text block takes remaining width -->
                   <div
-                    class="border-l-1 pl-[30px] text-left border-[var(--secondary-color)]"
+                    class="w-[calc(100%-107px)] border-l border-[var(--secondary-color)] pl-[30px]"
                   >
-                    <h4 class="font-semibold text-[var(--dark-black)]">
+                    <h4 class="font-medium xl:text-[20px] text-[var(--dark-black)] leading-29px">
                       Rohit Menon
                     </h4>
-                    <p class="text-sm text-[var(--dark-gray)]">Dubai</p>
+                    <p class="text-sm text-[var(--dark-gray)] leading-29px">Dubai</p>
                   </div>
                 </div>
               </div>
             </swiper-slide>
-            <swiper-slide>
+           <swiper-slide>
               <div
-                class="h-[400px] xs:h-[500px] md:h-[350px] lg:h-[430px] xl:h-[480px] bg-white pt-[20px] lg:pt-[70px] xl:pt-[90px] pb-[18px] lg:pb-[30px] xl:pb-[50px] px-[18px] lg:px-[30px] xl:px-[50px] rounded-xl shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
+                class="testimolina-card-h testimolina-card-border  bg-white pt-[30px] lg:pt-[70px] [@media(min-width:1280px)_and_(max-width:1680px)]:pt-[65px] xl:pt-[90px] pb-[30px] xl:pb-[50px] px-[30px] [@media(min-width:1280px)_and_(max-width:1680px)]:px-[40px] xl:px-[50px] rounded-xl flex flex-col items-start rounded-xl"
               >
                 <h3
-                  class="italic text-left font_display-unna font-normal mb-[40px] text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[24px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
+                  class="italic text-left font_display-unna font-normal mb-[40px] text-[24px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[29px] text-[var(--dark-black)] mb-4"
                 >
                   Smooth process and excellent guidance!
                 </h3>
                 <p
-                  class="text-sm lg:leading-[18px] 2xl:leading-[26px] text-left font-normal text-[var(--dark-black)] mb-6"
+                  class="text-sm [@media(min-width:1280px)_and_(max-width:1680px)]:text-[14px] lg:text-[16px] leading-[26px]  text-left font-normal text-[var(--dark-black)] mb-6"
                 >
                   RK Education made my dream of studying abroad come true! I had
                   no idea where to start with distance education, but the team
@@ -1451,37 +1412,39 @@
                   ethical, and always student-focused. I’m now enrolled in a top
                   UK program — all thanks to them!
                 </p>
-                <div class="flex items-center mt-auto">
-                  <div class="max-h-[77px] max-w-[77px] pr-[30px]">
+                <div class="flex items-center mt-auto text-left">
+                  <!-- Avatar -->
+                  <div class="h-[77px] w-[77px] mr-[30px] flex-shrink-0">
                     <img
-                      class="rounded-full w-full h-auto object-cover"
+                      class="rounded-full w-full h-full object-cover"
                       src="https://i.pravatar.cc/50?img=12"
                       alt="Rohit Menon"
                     />
                   </div>
 
+                  <!-- Text block takes remaining width -->
                   <div
-                    class="border-l-1 pl-[30px] text-left border-[var(--secondary-color)]"
+                    class="w-[calc(100%-107px)] border-l border-[var(--secondary-color)] pl-[30px]"
                   >
-                    <h4 class="font-semibold text-[var(--dark-black)]">
+                    <h4 class="font-medium xl:text-[20px] text-[var(--dark-black)] leading-29px">
                       Rohit Menon
                     </h4>
-                    <p class="text-sm text-[var(--dark-gray)]">Dubai</p>
+                    <p class="text-sm text-[var(--dark-gray)] leading-29px">Dubai</p>
                   </div>
                 </div>
               </div>
             </swiper-slide>
-            <swiper-slide>
+           <swiper-slide>
               <div
-                class="h-[400px] xs:h-[500px] md:h-[350px] lg:h-[430px] xl:h-[480px] bg-white pt-[20px] lg:pt-[70px] xl:pt-[90px] pb-[18px] lg:pb-[30px] xl:pb-[50px] px-[18px] lg:px-[30px] xl:px-[50px] rounded-xl shadow-md flex flex-col items-start shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)]"
+                class="testimolina-card-h testimolina-card-border  bg-white pt-[30px] lg:pt-[70px] [@media(min-width:1280px)_and_(max-width:1680px)]:pt-[65px] xl:pt-[90px] pb-[30px] xl:pb-[50px] px-[30px] [@media(min-width:1280px)_and_(max-width:1680px)]:px-[40px] xl:px-[50px] rounded-xl flex flex-col items-start rounded-xl"
               >
                 <h3
-                  class="italic text-left font_display-unna font-normal mb-[40px] text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[24px] lg:leading-[18px] 2xl:leading-[29px] text-[var(--dark-black)] mb-4"
+                  class="italic text-left font_display-unna font-normal mb-[40px] text-[24px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[24px] lg:text-[26px] 2xl:text-[29px] leading-[29px] text-[var(--dark-black)] mb-4"
                 >
                   Smooth process and excellent guidance!
                 </h3>
                 <p
-                  class="text-sm lg:leading-[18px] 2xl:leading-[26px] text-left font-normal text-[var(--dark-black)] mb-6"
+                  class="text-sm [@media(min-width:1280px)_and_(max-width:1680px)]:text-[14px] lg:text-[16px] leading-[26px]  text-left font-normal text-[var(--dark-black)] mb-6"
                 >
                   RK Education made my dream of studying abroad come true! I had
                   no idea where to start with distance education, but the team
@@ -1489,43 +1452,52 @@
                   ethical, and always student-focused. I’m now enrolled in a top
                   UK program — all thanks to them!
                 </p>
-                <div class="flex items-center mt-auto">
-                  <div class="max-h-[77px] max-w-[77px] pr-[30px]">
+                <div class="flex items-center mt-auto text-left">
+                  <!-- Avatar -->
+                  <div class="h-[77px] w-[77px] mr-[30px] flex-shrink-0">
                     <img
-                      class="rounded-full w-full h-auto object-cover"
+                      class="rounded-full w-full h-full object-cover"
                       src="https://i.pravatar.cc/50?img=12"
                       alt="Rohit Menon"
                     />
                   </div>
 
+                  <!-- Text block takes remaining width -->
                   <div
-                    class="border-l-1 pl-[30px] text-left border-[var(--secondary-color)]"
+                    class="w-[calc(100%-107px)] border-l border-[var(--secondary-color)] pl-[30px]"
                   >
-                    <h4 class="font-semibold text-[var(--dark-black)]">
+                    <h4 class="font-medium xl:text-[20px] text-[var(--dark-black)] leading-29px">
                       Rohit Menon
                     </h4>
-                    <p class="text-sm text-[var(--dark-gray)]">Dubai</p>
+                    <p class="text-sm text-[var(--dark-gray)] leading-29px">Dubai</p>
                   </div>
                 </div>
               </div>
             </swiper-slide>
           </swiper-container>
+          <button
+          
+            class="btn-golden bg-[var(--text-color)] bg-[var(--secondary-color)] btn-sm mx-auto flex mt-[18px] sm:mt-[28px] md:mt-[38px] lg:mt-[68px] tracking-[0.96px] text-sm text-white uppercase tracking-wide font-medium"
+          aria-label=" View All Testimonials"
+            >
+            View All Testimonials
+          </button>
         </div>
       </section>
       <section class="pt-[80px] pb-[100px] bg-[var(--mid-black)]">
         <div class="container-custom mx-auto px-4 sm:px-6 lg:px-8">
-          <h2
-            class="font-normal text-white text-center leading-[30px] lg:leading-[50px]"
-          >
+          
+<h2 class="font-normal text-center">
             <span
-              class="block text-xl text-(--secondary-color) uppercase tracking-[5px]"
-              >Our Global Presence
-            </span>
-            <span class="font_display-unna text-[35px] 2xl:text-[60px]">
-              We’re Where You Need Us</span
+              class="block text-xl text-(--secondary-color) uppercase tracking-[5px] leading-[63.73px]"
+              >Our Global Presence</span
+            >
+            <span
+              class="font_display-unna text-white text-[35px] 2xl:text-[60px] text-(--text-color) leading-[30px] lg:leading-[50px]"
+            >
+               We’re Where You Need Us</span
             >
           </h2>
-
           <!-- Grid Layout -->
 
           <div
@@ -1534,7 +1506,7 @@
             <!-- Left Column: Locations -->
             <div class="space-y-6">
               <!-- Sharjah -->
-              <div class="bg-gray-800 p-5 rounded-lg shadow-md flex gap-4">
+              <div class="bg-[var(--text-color)] p-5 flex gap-4">
                 <img
                   src="./src/images/location-img-1.png"
                   alt="Sharjah Office"
@@ -1555,14 +1527,14 @@
                   </p>
                   <a
                     href="#"
-                    class="text-yellow-400 text-sm font-normal mt-[14px] inline-block"
+                    class="text-[var(--secondary-color)] underline  text-base font-normal mt-[14px] inline-block"
                     >Locate Us On Map</a
                   >
                 </div>
               </div>
 
               <!-- Dubai -->
-              <div class="bg-gray-800 p-5 rounded-lg shadow-md flex gap-4">
+              <div class="bg-[var(--text-color)] p-5 flex gap-4">
                 <img
                   src="./src/images/location-img-1.png"
                   alt="Dubai Office"
@@ -1581,14 +1553,14 @@
                   </p>
                   <a
                     href="#"
-                    class="text-yellow-400 text-sm font-normal mt-[14px] inline-block"
+                    class="text-[var(--secondary-color)] underline  text-base font-normal mt-[14px] inline-block"
                     >Locate Us On Map</a
                   >
                 </div>
               </div>
 
               <!-- Abu Dhabi -->
-              <div class="bg-gray-800 p-5 rounded-lg shadow-md flex gap-4">
+              <div class="bg-[var(--text-color)] p-5 flex gap-4">
                 <img
                   src="./src/images/location-img-1.png"
                   alt="Abu Dhabi Office"
@@ -1607,7 +1579,7 @@
                   </p>
                   <a
                     href="#"
-                    class="text-yellow-400 text-sm font-normal mt-[14px] inline-block"
+                    class="text-[var(--secondary-color)] underline  text-base font-normal mt-[14px] inline-block"
                     >Locate Us On Map</a
                   >
                 </div>
@@ -1628,14 +1600,17 @@
 
       <section class="pt-[80px] pb-[70px]">
         <div class="container-custom mx-auto px-4 sm:px-6 lg:px-8">
-          <h2
-            class="font-normal text-center leading-[30px] lg:leading-[50px] max-w-[600px] mx-auto"
-          >
+         
+
+
+          <h2 class="font-normal text-center">
             <span
-              class="block text-xl text-(--secondary-color) uppercase tracking-[5px]"
-              >Regional support team
-            </span>
-            <span class="font_display-unna text-[35px] 2xl:text-[60px]">
+              class="block text-xl text-(--secondary-color) uppercase tracking-[5px] leading-[63.73px]"
+              >Regional support team</span
+            >
+            <span
+              class="font_display-unna  text-[35px] 2xl:text-[60px] text-(--text-color) leading-[30px] lg:leading-[50px]"
+            >
               Meet the People Behind Your Success</span
             >
           </h2>
@@ -1663,28 +1638,28 @@
                         <li class="mt-3 mb-0">
                           <img
                             src="./src/images/twitter_icon.svg"
-                            alt="team"
+                            alt="Aisha Mohammed twitter icon"
                             class="w-full h-auto !object-contain"
                           />
                         </li>
                         <li>
                           <img
                             src="./src/images/facebook_icon.svg"
-                            alt="team"
+                            alt="Aisha Mohammed acebook icon"
                             class="w-full h-auto !object-contain"
                           />
                         </li>
                         <li>
                           <img
                             src="./src/images/instagram.svg"
-                            alt="team"
+                            alt="Aisha Mohammed instagram"
                             class="w-full h-auto !object-contain"
                           />
                         </li>
                         <li class="mt-3 mb-0">
                           <img
                             src="./src/images/indeed_icon.svg"
-                            alt="team"
+                            alt="Aisha Mohammed indeed icon"
                             class="w-full h-auto !object-contain"
                           />
                         </li>
@@ -1714,34 +1689,34 @@
                         <li class="mt-3 mb-0">
                           <img
                             src="./src/images/twitter_icon.svg"
-                            alt="team"
+                            alt="Aisha Mohammed social icon"
                             class="w-full h-auto !object-contain"
                           />
                         </li>
                         <li>
                           <img
                             src="./src/images/facebook_icon.svg"
-                            alt="team"
+                            alt="Aisha Mohammed social icon"
                             class="w-full h-auto !object-contain"
                           />
                         </li>
                         <li>
                           <img
                             src="./src/images/instagram.svg"
-                            alt="team"
+                            alt="Aisha Mohammed social icon"
                             class="w-full h-auto !object-contain"
                           />
                         </li>
                         <li class="mt-3 mb-0">
                           <img
                             src="./src/images/indeed_icon.svg"
-                            alt="team"
+                            alt="Aisha Mohammed social icon"
                             class="w-full h-auto !object-contain"
                           />
                         </li>
                       </ul>
                       <div class="img-box">
-                        <img src="./src/images/team-1.png" alt="team" />
+                        <img src="./src/images/team-1.png" alt="Aisha Mohammed social icon" />
                       </div>
                     </div>
                   </div>
@@ -2018,7 +1993,7 @@
           </div>
         </div>
       </section>
-      <section class="pb-[100px]">
+      <section class="pt-[80px] pb-[100px]">
         <div class="relative container-custom mx-auto px-4 sm:px-6 lg:px-8">
           <div
             class="p-10 lg:p-10 2xl:p-22 bg-[url(/src/images/enquire_bg.png)] bg-center bg-cover bg-no-repeat w-full h-full rounded-[30px]"
@@ -2037,7 +2012,7 @@
               >
                 Let’s Get Started
               </h3>
-              <p class="text-base font-normal leading-[18px] lg:leading-[28px]">
+              <p class="text-sm [@media(min-width:1280px)_and_(max-width:1680px)]:text-[15px] 2xl:text-lg font-normal leading-[18px] lg:leading-[28px]">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
                 Exercitation veniam consequat.
@@ -2070,17 +2045,19 @@
           </div>
         </div>
       </section>
-      <section class="pt-[80px] pb-[70px]">
+      <section class=" pb-[70px]">
         <div class="container-custom mx-auto px-4 sm:px-6 lg:px-8">
-          <h2
-            class="font-normal text-center leading-[30px] lg:leading-[50px] mx-auto"
-          >
+         
+
+           <h2 class="font-normal text-center">
             <span
-              class="block text-xl text-(--secondary-color) uppercase tracking-[5px]"
-              >FREQUENTLY asked questions
-            </span>
-            <span class="font_display-unna text-[35px] 2xl:text-[60px]"
-              >Got Questions? We’ve Got Answers</span
+              class="block text-xl text-(--secondary-color) uppercase tracking-[5px] leading-[63.73px]"
+              >FREQUENTLY asked questions</span
+            >
+            <span
+              class="font_display-unna  text-[35px] 2xl:text-[60px] text-(--text-color) leading-[30px] lg:leading-[50px]"
+            >
+              Got Questions? We’ve Got Answers</span
             >
           </h2>
           <div class="mt-16">
@@ -2212,12 +2189,17 @@
               </div>
             </div>
           </div>
+          <button
+            class="btn-golden bg-[var(--text-color)] bg-[var(--secondary-color)] btn-sm mx-auto flex mt-[18px] sm:mt-[28px] md:mt-[38px] lg:mt-[68px] tracking-[0.96px] text-sm text-white uppercase tracking-wide font-medium"
+          >
+            View All faq
+          </button>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="pt-[80px] bg-[var(--mid-black)] text-gray-300">
+    <footer class="pt-[97px] bg-[var(--mid-black)] text-gray-300">
       <div
         class="container-custom mx-auto pb-[70px] px-4 sm:px-6 lg:px-8 relative"
       >
@@ -2225,13 +2207,13 @@
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-15"
         >
           <!-- About RK Group -->
-          <div>
+          <div class="text-sm [@media(min-width:1280px)_and_(max-width:1680px)]:text-[15px]">
             <h3
               class="text-base font-medium text-[var(--secondary-color)] mb-3"
             >
               ABOUT RK GROUP
             </h3>
-            <p class="text-sm font-light leading-[27px]">
+            <p class=" font-light leading-[27px]">
               At RK Education, Our Vision is to be the leading provider of
               distance education consultancy, empowering people from all
               nationalities to access high-quality, flexible educational
@@ -2241,16 +2223,18 @@
           </div>
 
           <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:grid-cols-2 gap-10"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:grid-cols-2 gap-0"
           >
-            <div>
+            <div class="text-sm [@media(min-width:1280px)_and_(max-width:1680px)]:text-[15px]">
               <h3
-                class="text-base font-medium text-[var(--secondary-color)] mb-3"
+                class=" font-medium text-[var(--secondary-color)] mb-3"
               >
                 QUICK LINKS
               </h3>
-              <ul class="space-y-2 text-sm">
-                <li><a href="index.html" class="hover:text-yellow-500">Home</a></li>
+              <ul class="space-y-2 ">
+                <li>
+                  <a href="index.html" class="hover:text-yellow-500">Home</a>
+                </li>
                 <li>
                   <a href="#" class="hover:text-yellow-500">Our Programs</a>
                 </li>
@@ -2263,13 +2247,13 @@
               </ul>
             </div>
 
-            <div>
+            <div class="text-sm [@media(min-width:1280px)_and_(max-width:1680px)]:text-[15px]">
               <h3
                 class="text-base font-medium text-[var(--secondary-color)] mb-3"
               >
                 ACCREDITATIONS
               </h3>
-              <ul class="text-sm font-light leading-[27px] space-y-1">
+              <ul class=" font-light leading-[27px] space-y-1">
                 <li>• UGC-DEB Approved</li>
                 <li>• AICTE Recognized</li>
                 <li>
@@ -2285,7 +2269,7 @@
             <div class="flex justify-end">
               <a
                 href="index.html"
-                class="footer-brand-logo absolute top-[-80px] right-0 px-[10px] pb-[10px] pt-[5px] lg:px-[10px] lg:pb-[10px] lg:pt-[5px] flex items-center space-x-3 rtl:space-x-reverse rounded-bl-[200px] rounded-br-[200px] rounded-tl-0 rounded-tr-0 bg-[rgba(217,217,217,0.2)]"
+                class="footer-brand-logo absolute top-[-97px] right-0 px-[10px] pb-[10px] pt-[5px] lg:px-[10px] lg:pb-[10px] lg:pt-[5px] flex items-center space-x-3 rtl:space-x-reverse rounded-bl-[200px] rounded-br-[200px] rounded-tl-0 rounded-tr-0 bg-[rgba(217,217,217,0.2)]"
               >
                 <span class="brand-logo">
                   <svg
@@ -2375,11 +2359,11 @@
             </div>
             <!-- Newsletter -->
             <h3
-              class="text-base font-medium text-[var(--secondary-color)] mb-3"
+              class="text-sm [@media(min-width:1280px)_and_(max-width:1680px)]:text-[15px] font-medium text-[var(--secondary-color)] mb-3"
             >
               NEWSLETTER
             </h3>
-            <p class="text-sm font-light leading-[27px] mb-4">
+            <p class="text-sm [@media(min-width:1280px)_and_(max-width:1680px)]:text-[15px] xl:text-lg font-light leading-[27px] mb-4">
               Sign up for email updates today.
             </p>
             <form class="flex flex-col space-y-5">
@@ -2390,7 +2374,7 @@
               />
               <button
                 type="submit"
-                class="flex flex-row gap-4 font-normal text-sm w-max px-10 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600"
+                class="flex flex-row gap-4 font-normal text-sm w-max px-8 py-3 bg-[var(--secondary-color)] text-white rounded-lg hover:bg-yellow-600 tracking-[3.2px]"
               >
                 SUBMIT
                 <img src="./src/images/arrow-right.svg" alt="arrow" />
@@ -2399,13 +2383,13 @@
           </div>
 
           <!-- Contact Info -->
-          <div class="">
+          <div class="text-sm [@media(min-width:1280px)_and_(max-width:1680px)]:text-[15px]">
             <h3
               class="text-base font-medium text-[var(--secondary-color)] mb-3"
             >
               CONTACT US
             </h3>
-            <ul class="text-sm font-light leading-[27px] space-y-1">
+            <ul class=" font-light leading-[27px] space-y-1">
               <li class="flex gap-3">
                 <img src="./src/images/email-icon.svg" alt="email-icon" />
                 info@rkeducationgroup.com
@@ -2420,13 +2404,13 @@
           </div>
 
           <div class="md:col-span-2">
-            <div class=" ">
+            <div class="text-sm [@media(min-width:1280px)_and_(max-width:1680px)]:text-[15px] xl:text-lg ">
               <h3
                 class="text-base font-medium text-[var(--secondary-color)] mb-3"
               >
                 Address
               </h3>
-              <ul class="text-sm font-light leading-[27px] space-y-1">
+              <ul class="  font-light leading-[27px] space-y-1">
                 <li class="flex gap-2 flex-col text-[var(--secondary-color)]">
                   United Arab Emirates
                   <ul
@@ -2472,7 +2456,7 @@
           </div>
 
           <!-- Center: Social Icons -->
-          <div class="flex space-x-5 my-3 md:my-0 justify-center">
+          <div class="flex  my-3 md:my-0 justify-center items-center gap-[53px]">
             <a href="#" class="hover:text-yellow-500 transition-colors">
               <img src="./src/images/f_1_.svg" />
             </a>
@@ -2492,13 +2476,13 @@
 
           <!-- Right: Designed By -->
           <div
-            class="text-sm text-center md:text-right flex items-center space-x-1"
+            class="text-sm text-center md:text-right flex items-center space-x-3"
           >
-            <span>Designed By:</span>
+            <span class="text-white leading-[0.7px] font-normal">Designed By:</span>
             <a
               href="#"
               target="_blank"
-              class="hover:text-yellow-500 font-medium"
+              class="hover:text-yellow-500 "
             >
               <img src="./src/images/intersmart-logo-footer.svg" />
             </a>
@@ -2507,7 +2491,9 @@
       </div>
       <!-- Footer -->
     </footer>
- <div class="fixed bottom-[3%] right-0 z-10 gap-[28px] lg: gap-[48px] flex-col flex">
+    <div
+      class="fixed bottom-[3%] right-0 z-10 gap-[28px] lg: gap-[48px] flex-col flex"
+    >
       <div
         class="shadow-xl pl-[10px] lg:pl-[20px] pr-[10px] lg:pr-[15px] py-[17px] lg:py-[27px] bg-[var(--background-color)] rounded-l-[30px]"
       >
@@ -2547,7 +2533,7 @@
               <img src="./src/images/pnt.svg" />
             </a>
           </li>
-          
+
           <li>
             <a href="#">
               <img src="./src/images/tick.svg" />
@@ -2566,8 +2552,15 @@
         </ul>
       </div>
 
-      <a href="#" class="relative cursor-pointer right-[15px] max-w-[62px] max-h-[62px] bg-[var()]">
-        <img src="./src/images/chatboat.svg" alt="chatboat" class="w-full h-auto object-cover"/>
+      <a
+        href="#"
+        class="relative cursor-pointer right-[15px] max-w-[62px] max-h-[62px] bg-[var()]"
+      >
+        <img
+          src="./src/images/chatboat.svg"
+          alt="chatboat"
+          class="w-full h-auto object-cover"
+        />
       </a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
@@ -2575,6 +2568,6 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="./src/js/custom.js"></script>
 
-    <script></script>
+    
   </body>
 </html>
