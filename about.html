@@ -4,8 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>RK group</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>RK Education Group</title>
+    <link
+      rel="icon"
+      href="./src/images/RKG-LOGO.svg"
+      type="image/RK Education Group"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
@@ -16,11 +27,12 @@
   </head>
 
   <body>
-     <!-- Header -->
+    <a href="#header" class="skip-link">Skip to main content</a>
+    <!-- Header -->
     <header class="absolute w-full top-0 z-10" id="header">
       <nav class="">
         <div
-          class="brand_logo mx-auto w-full container-custom px-4 sm:px-6 lg:px-8 flex flex-wrap items-center lg:items-start justify-between"
+          class="brand_logo mx-auto w-full container-custom flex flex-wrap items-center lg:items-start justify-between"
         >
           <a
             href="index.html"
@@ -67,7 +79,7 @@
           >
             <ul
               aria-label="Main navigation"
-              class="relative flex flex-col md:items-center md:font-normal text-[12px] 2xl:text-base uppercase p-4 md:p-0 mt-4 border space-x-[15px] lg:space-x-[20px] 2xl:space-x-[50px] rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent tracking-[1px] leading-none"
+              class="relative flex flex-col md:items-center md:font-normal text-[12px] 2xl:text-base uppercase p-4 md:p-0 mt-4 border space-x-[15px] lg:space-x-[28px] 2xl:space-x-[50px] rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent tracking-[1px] leading-none"
             >
               <li>
                 <a
@@ -371,11 +383,9 @@
       </div>
     </aside>
 
-    <!-- Main Content -->
-
     <main>
       <section
-        class="home-banner flex items-end  min-h-[450px]  md:min-h-[500px] lg:min-h-[600px] relative w-full overflow-hidden bg-[url(/src/images/about-banner.png)] bg-center bg-cover bg-no-repeat"
+        class="flex items-end  min-h-[450px]  md:min-h-[500px] lg:min-h-[600px] relative w-full overflow-hidden bg-[url(/src/images/about-banner.png)] bg-center bg-cover bg-no-repeat"
       >
         <div
           class="relative mx-auto w-full container-custom px-4 sm:px-6 lg:px-8"
@@ -384,7 +394,7 @@
             class="bottom-0 z-5 text-white bottom-0 left-0 text-left pb-[100px]"
           >
             <h1
-              class="font_display-unna mx-auto mb-[5px] text-[40px] md:text-[57px] lg:text-[78px] 2xl:text-[87px] font-normal leading-[65px] md:leading-[93px]"
+              class="font_display-unna mx-auto mb-[5px] text-[40px] md:text-[57px] lg:text-[68px] 2xl:text-[87px] font-normal leading-[65px] md:leading-[93px]"
             >
               About Us
             </h1>
@@ -421,11 +431,9 @@
       </section>
 
       <section aria-labelledby="welcome-title">
-        <div
-          class="container-custom mx-auto px-4 sm:px-6 lg:px-8 pt-[80px] pb-[100px]"
-        >
+        <div class="container-custom pt-[80px] pb-[100px]">
           <div
-            class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-[380px_1fr] 2xl:grid-cols-[580px_1fr] gap-4 sm:gap-6 lg:gap-[30px] 2xl:gap-[60px]"
+            class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-[300px_1fr] lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-[30px] 2xl:gap-[60px]"
           >
             <!-- About / Welcome Section -->
             <article class="flex flex-col">
@@ -435,7 +443,7 @@
                 class="w-full h-auto object-cover rounded-md"
               />
               <p
-                class="mt-4 sm:mt-6 text-sm sm:text-base [@media(min-width:1280px)_and_(max-width:1680px)]:text-[15px] leading-6 sm:leading-[27px] font-normal"
+                class="text-base 2xl:text-lg leading-[27px] xl:pr-[2rem] font-normal"
               >
                 RK Education has become a trusted name in the field of distance
                 education consultancy, dedicated to helping students achieve
@@ -463,15 +471,15 @@
 
               <!-- Welcome Block -->
               <article
-                class="gradient-border rounded-md pr-[29px] [@media(min-width:1280px)_and_(max-width:1680px)]:pr-[20px] [@media(min-width:1280px)_and_(max-width:1680px)]:pl-[30px] pl-[35px] lg:pl-[25px] py-[70px] min-h-[200px] sm:min-h-[300px] flex flex-col justify-center"
+                class="gradient-border rounded-md p-[1rem] md:px-[1rem] lg:px-[1.5rem] py-[70px] min-h-[200px] sm:min-h-[300px] md:min-h-auto flex flex-col justify-center items-center"
               >
                 <h2 id="welcome-title" class="font-normal">
                   <span
-                    class="block text-xl text-(--secondary-color) uppercase tracking-[5px] leading-[63.73px]"
+                    class="block text-base 2xl:text-xl mb-[0.5rem] text-(--secondary-color) uppercase tracking-[5px]"
                     >Welcome to</span
                   >
                   <span
-                    class="font_display-unna text-[35px] lg:text-[35px] 2xl:text-[50px] text-(--text-color) leading-[30px] [@media(min-width:1280px)_and_(max-width:1680px)]:leading-[53px] lg:leading-[40px] xl:leading-[63px]"
+                    class="font_display-unna text-[30px] xl:text-[40px] 2xl:text-[47px] text-(--text-color) leading-none"
                   >
                     RK Education Group</span
                   >
@@ -480,13 +488,13 @@
 
               <!-- Mission Block -->
               <article
-                class="border border-[var(--secondary-color)] rounded-md pr-[29px] pl-[35px] lg:pl-[25px] xl:pl-[50px] [@media(min-width:1280px)_and_(max-width:1680px)]:pr-[20px] [@media(min-width:1280px)_and_(max-width:1680px)]:pl-[30px] py-[29px] min-h-[200px] sm:min-h-[300px] flex flex-col"
+                class="border border-[var(--secondary-color)] rounded-md p-[1rem] md:px-[1rem] lg:px-[1.5rem] xl:pl-[48px] lg:py-[30px] min-h-[200px] sm:min-h-[300px] md:max-h-auto flex flex-col"
                 aria-labelledby="mission-title"
               >
                 <div class="flex items-center justify-between gap-4 mb-4">
                   <h3
                     id="mission-title"
-                    class="text-2xl md:text-[27px] lg:text-[30px] xl:text-[37px] font_display-unna font-normal leading[63.73px]"
+                    class="text-2xl md:text-[27px] lg:text-[30px] xl:text-[37px] font_display-unna font-normal leading-none"
                   >
                     Mission
                   </h3>
@@ -501,7 +509,7 @@
                   </div>
                 </div>
                 <p
-                  class="text-sm sm:text-base lg:text-[14px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[15px] xl:text-base font-normal leading-6 sm:leading-[27px] lg:leading-[24px] xl:leading-[27px] text-[var(--text-color)]"
+                  class="text-sm sm:text-base lg:text-[14px] xl:text-base font-normal leading-6 sm:leading-[27px] lg:leading-[24px] xl:leading-[27px] text-[var(--text-color)]"
                 >
                   To make high-quality, flexible, and globally recognized
                   education accessible to students of all nationalities, helping
@@ -512,13 +520,13 @@
 
               <!-- Vision Block -->
               <article
-                class="border text-white bg-(--secondary-color) border-[var(--secondary-color)] rounded-md pr-[29px] pl-[35px] lg:pl-[25px] xl:pl-[50px] [@media(min-width:1280px)_and_(max-width:1680px)]:pr-[20px] [@media(min-width:1280px)_and_(max-width:1680px)]:pl-[30px] py-[29px] min-h-[200px] sm:min-h-[300px] flex flex-col"
+                class="border text-white bg-(--secondary-color) border-[var(--secondary-color)] rounded-md p-[1rem] md:px-[1rem] lg:px-[1.5rem] xl:pl-[48px] lg:py-[30px] min-h-[200px] sm:min-h-[300px] md:max-h-auto flex flex-col"
                 aria-labelledby="vision-title"
               >
                 <div class="flex items-center justify-between gap-4 mb-4">
                   <h3
                     id="vision-title"
-                    class="text-2xl md:text-[27px] lg:text-[30px] font_display-unna font-normal leading[63.73px]"
+                    class="text-2xl md:text-[27px] lg:text-[30px] xl:text-[37px] font_display-unna font-normal leading-none"
                   >
                     Vision
                   </h3>
@@ -543,13 +551,13 @@
 
               <!-- Presence Block -->
               <article
-                class="border border-[var(--secondary-color)] rounded-md pr-[29px] pl-[35px] lg:pl-[25px] xl:pl-[50px] [@media(min-width:1280px)_and_(max-width:1680px)]:pr-[20px] [@media(min-width:1280px)_and_(max-width:1680px)]:pl-[30px] py-[29px] min-h-[200px] sm:min-h-[300px] flex flex-col"
+                class="border border-[var(--secondary-color)] rounded-md p-[1rem] md:px-[1rem] lg:px-[1.5rem] xl:pl-[48px] lg:py-[30px] min-h-[200px] sm:min-h-[300px] flex flex-col"
                 aria-labelledby="presence-title"
               >
                 <div class="flex items-center justify-between gap-4 mb-4">
                   <h3
                     id="presence-title"
-                    class="text-2xl md:text-[27px] lg:text-[30px] font_display-unna font-normal leading[63.73px]"
+                    class="text-2xl md:text-[27px] lg:text-[30px] xl:text-[37px] font_display-unna font-normal leading-none"
                   >
                     Presence
                   </h3>
@@ -576,7 +584,6 @@
           </div>
         </div>
       </section>
-
       <section class="mx-auto px-6 py-10 bg-[var(--bg-black-founders)]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
@@ -595,19 +602,19 @@
             <div class="col-span-2">
               <h2 class="font-normal mb-[20px]">
                 <span
-                  class="block text-xl text-(--secondary-color) uppercase tracking-[5px]"
+                  class="block text-base 2xl:text-xl mb-[0.5rem] text-(--secondary-color) uppercase tracking-[5px]"
                 >
                   Founder’s Message</span
                 >
                 <span
-                  class="font_display-unna text-white text-[35px] 2xl:text-[60px] text-(--text-color) leading-[30px] lg:leading-[50px]"
+                  class="font_display-unna text-white text-[30px] xl:text-[40px] 2xl:text-[47px] leading-none"
                 >
                   From the Founder’s Desk</span
                 >
               </h2>
               
               <p
-                class="text-white text-sm lg:text-base font-light leading-relaxed mb-4"
+                class="text-white text-base 2xl:text-lg font-light leading-relaxed mb-4"
               >
                 At RK Education, our mission has always been simple yet powerful
                 — to make quality education accessible to everyone, everywhere.
@@ -617,7 +624,7 @@
                 future-focused academic opportunities.
               </p>
               <p
-                class="text-white text-sm lg:text-base font-light leading-relaxed"
+                class="text-white text-base 2xl:text-lg font-light leading-relaxed"
               >
                 As we move forward, our commitment remains steadfast — to
                 innovate, adapt, and continue empowering learners worldwide.
@@ -667,18 +674,18 @@
             <div class="col-span-2">
               <h2 class="font-normal mb-[20px]">
                 <span
-                  class="block text-xl text-(--secondary-color) uppercase tracking-[5px]"
+                  class="block text-base 2xl:text-xl mb-[0.5rem] text-(--secondary-color) uppercase tracking-[5px]"
                 >
                   Director’s Message</span
                 >
                 <span
-                  class="font_display-unna text-white text-[35px] 2xl:text-[60px] text-(--text-color) leading-[30px] lg:leading-[50px]"
+                  class="font_display-unna text-white text-[30px] xl:text-[40px] 2xl:text-[47px] leading-none"
                 >
                   From the Director’s Desk</span
                 >
               </h2>
               <p
-                class="text-white text-sm lg:text-base font-light leading-relaxed mb-4"
+                class="text-white text-base 2xl:text-lg font-light leading-relaxed mb-4"
               >
                 At RK Education, our mission has always been simple yet powerful
                 — to make quality education accessible to everyone, everywhere.
@@ -688,7 +695,7 @@
                 future-focused academic opportunities.
               </p>
               <p
-                class="text-white text-sm lg:text-base font-light leading-relaxed"
+                class="text-white text-base 2xl:text-lg font-light leading-relaxed"
               >
                 As we move forward, our commitment remains steadfast — to
                 innovate, adapt, and continue empowering learners worldwide.
@@ -736,18 +743,18 @@
             <div class="col-span-2">
               <h2 class="font-normal mb-[20px]">
                 <span
-                  class="block text-xl text-(--secondary-color) uppercase tracking-[5px]"
+                  class="block text-base 2xl:text-xl mb-[0.5rem] text-(--secondary-color) uppercase tracking-[5px]"
                 >
                   CEO’s Message</span
                 >
                 <span
-                  class="font_display-unna text-white text-[35px] 2xl:text-[60px] text-(--text-color) leading-[30px] lg:leading-[50px]"
+                  class="font_display-unna text-white text-[30px] xl:text-[40px] 2xl:text-[47px] leading-none"
                 >
                   From the CEO’s Desk</span
                 >
               </h2>
               <p
-                class="text-white text-sm lg:text-base font-light leading-relaxed mb-4"
+                class="text-white text-base 2xl:text-lg font-light leading-relaxed mb-4"
               >
                 At RK Education, our mission has always been simple yet powerful
                 — to make quality education accessible to everyone, everywhere.
@@ -757,7 +764,7 @@
                 future-focused academic opportunities.
               </p>
               <p
-                class="text-white text-sm lg:text-base font-light leading-relaxed"
+                class="text-white text-base 2xl:text-lg font-light leading-relaxed"
               >
                 As we move forward, our commitment remains steadfast — to
                 innovate, adapt, and continue empowering learners worldwide.
@@ -790,15 +797,20 @@
           </div>
         </div>
       </section>
-      <section aria-labelledby="Regional support team section" class="pt-[80px] pb-[70px]">
-        <div class="container-custom mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="font-normal text-center lg:max-w-[400px] xl:max-w-[650px] m-auto">
+ <section
+        aria-labelledby="Regional support team section"
+        class="pt-[80px] pb-[70px]"
+      >
+        <div class="container-custom">
+          <h2
+            class="font-normal text-center lg:max-w-[400px] 2xl:max-w-[500px] m-auto"
+          >
             <span
-              class="block text-base lg:text-xl text-(--secondary-color) uppercase tracking-[5px] leading-[40px] lg:leading-[63.73px]"
+              class="block text-base 2xl:text-xl mb-[0.5rem] text-(--secondary-color) uppercase tracking-[5px]"
               >Regional support team</span
             >
             <span
-              class="font_display-unna text-[35px] md:text-[45px] 2xl:text-[60px] text-(--text-color) leading-[40px] xl:leading-[63.73px]"
+              class="font_display-unna text-[30px] xl:text-[40px] 2xl:text-[47px] leading-none"
             >
               Meet the People Behind Your Success</span
             >
@@ -862,7 +874,7 @@
                     <h5 class="text-[22px] font-normal font_display-unna">
                       Ms. Aisha Mohammed
                     </h5>
-                    <p class="text-sm font-normal">Academic Counselor</p>
+                    <p class="text-base font-normal">Academic Counselor</p>
                   </div>
                 </div>
               </swiper-slide>
@@ -916,7 +928,7 @@
                     <h5 class="text-[22px] font-normal font_display-unna">
                       Ms. Aisha Mohammed
                     </h5>
-                    <p class="text-sm font-normal">Academic Counselor</p>
+                    <p class="text-base font-normal">Academic Counselor</p>
                   </div>
                 </div>
               </swiper-slide>
@@ -1018,7 +1030,7 @@
                     <h5 class="text-[22px] font-normal font_display-unna">
                       Ms. Aisha Mohammed
                     </h5>
-                    <p class="text-sm font-normal">AAcademic Counselor</p>
+                    <p class="text-base font-normal">Academic Counselor</p>
                   </div>
                 </div>
               </swiper-slide>
@@ -1067,9 +1079,9 @@
                   </div>
                   <div class="mt-4">
                     <h5 class="text-[22px] font-normal font_display-unna">
-                      Mr. Junaid Rahman
+                      Ms. Aisha Mohammed
                     </h5>
-                    <p class="text-sm font-normal">Regional Head – Abu Dhabi</p>
+                    <p class="text-base font-normal">Academic Counselor</p>
                   </div>
                 </div>
               </swiper-slide>
@@ -1118,11 +1130,9 @@
                   </div>
                   <div class="mt-4">
                     <h5 class="text-[22px] font-normal font_display-unna">
-                      Ms. Neha Thomas
+                      Ms. Aisha Mohammed
                     </h5>
-                    <p class="text-sm font-normal">
-                      Admissions Officer – Kerala
-                    </p>
+                    <p class="text-base font-normal">Academic Counselor</p>
                   </div>
                 </div>
               </swiper-slide>
@@ -1170,14 +1180,10 @@
                     </div>
                   </div>
                   <div class="mt-4">
-                    <h5
-                      class="text-[18px] md:text-[22px] font-normal font_display-unna"
-                    >
-                      Mr. Faisal Al Nuaimi
+                    <h5 class="text-[22px] font-normal font_display-unna">
+                      Ms. Aisha Mohammed
                     </h5>
-                    <p class="text-sm md:text-[16px] font-normal">
-                      Student Success Coordinator – Al Ain
-                    </p>
+                    <p class="text-base font-normal">Academic Counselor</p>
                   </div>
                 </div>
               </swiper-slide>
@@ -1186,28 +1192,26 @@
         </div>
       </section>
       <section
-      aria-labelledby="Why Choose US section"
+        aria-labelledby="Why Choose US section"
         class="bg-[url(/src/images/whyChoose_img.png)] bg-center bg-no-repeat bg-cover pt-[80px] pb-[100px]"
       >
-        <div
-          class="container-custom mx-auto px-4 sm:px-6 lg:px-8 text-white text-center"
-        >
+        <div class="container-custom text-white text-center">
           <h2 class="font-normal">
             <span
-              class="block  text-base lg:text-xl text-(--secondary-color) uppercase tracking-[5px] leading-[63.73px]"
+              class="block text-base 2xl:text-xl mb-[0.5rem] text-(--secondary-color) uppercase tracking-[5px]"
               >Why Choose US</span
             >
             <span
-              class="font_display-unna text-white text-[35px] 2xl:text-[60px] text-(--text-color) leading-[40px] lg:leading-[50px]"
+              class="font_display-unna text-[30px] xl:text-[40px] 2xl:text-[47px] leading-none"
             >
               The RK Advantage</span
             >
           </h2>
           <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 mt-7 md:mt-10 lg:mt-22"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 mt-7 md:mt-10 lg:mt-10"
           >
             <div
-              class="why_choosCard transition duration-700 ease-in-out relative text-center px-2 md:px-4 lg:px-2 xl:px-8 [@media(min-width:1280px)_and_(max-width:1680px)]:px-[28px] pt-[17px] lg:pt-[47px] pb-[30px] flex flex-col text-white items-center hover:bg-[var(--background-color)] hover:text-[var(--text-color)] hover:border-1 hover:border-(--secondary-color) rounded-md transition"
+              class="why_choosCard transition duration-700 ease-in-out relative text-center px-2 md:px-4 lg:px-3 xl:px-4 pt-[17px] lg:pt-[30px] pb-[30px] flex flex-col text-white items-center hover:bg-[var(--background-color)] hover:text-[var(--text-color)] hover:border-1 hover:border-(--secondary-color) rounded-md transition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1249,7 +1253,7 @@
               </svg>
 
               <h6
-                class="text-[18px] lg:text-[22px] font-medium leading-[33px] capitalize my-[10px] lg:my-[20px] lg:max-w-[220px] lg:min-h-[66px]"
+                class="text-[18px] lg:text-[20px] 2xl:text-[22px] font-medium mb-2 xl:leading-[28px] capitalize lg:max-w-[200px] lg:min-h-[66px]"
               >
                 Personalized counseling
               </h6>
@@ -1261,7 +1265,7 @@
             </div>
             <!-- next card -->
             <div
-              class="why_choosCard transition duration-700 ease-in-out relative text-center px-2 md:px-4 lg:px-2 xl:px-8 [@media(min-width:1280px)_and_(max-width:1680px)]:px-[28px] pt-[17px] lg:pt-[47px] pb-[30px] flex flex-col text-white items-center hover:bg-[var(--background-color)] hover:text-[var(--text-color)] hover:border-1 hover:border-(--secondary-color) rounded-md transition"
+              class="why_choosCard transition duration-700 ease-in-out relative text-center px-2 md:px-4 lg:px-3 xl:px-4 pt-[17px] lg:pt-[30px] pb-[30px] flex flex-col text-white items-center hover:bg-[var(--background-color)] hover:text-[var(--text-color)] hover:border-1 hover:border-(--secondary-color) rounded-md transition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1279,7 +1283,7 @@
               </svg>
 
               <h6
-                class="text-[18px] lg:text-[22px] font-medium leading-[33px] capitalize my-[10px] lg:my-[20px] lg:max-w-[220px] lg:min-h-[66px]"
+                class="text-[18px] lg:text-[20px] 2xl:text-[22px] font-medium mb-2 xl:leading-[28px] capitalize lg:max-w-[200px] lg:min-h-[66px]"
               >
                 Global university tie-ups
               </h6>
@@ -1291,50 +1295,79 @@
             </div>
             <!-- next card -->
             <div
-              class="why_choosCard transition duration-700 ease-in-out relative text-center px-2 md:px-4 lg:px-2 xl:px-8 pt-[17px] lg:pt-[47px] pb-[30px] flex flex-col text-white items-center hover:bg-[var(--background-color)] hover:text-[var(--text-color)] hover:border-1 hover:border-(--secondary-color) rounded-md transition"
+              class="why_choosCard transition duration-700 ease-in-out relative text-center px-2 md:px-4 lg:px-3 xl:px-4 pt-[17px] lg:pt-[30px] pb-[30px] flex flex-col text-white items-center hover:bg-[var(--background-color)] hover:text-[var(--text-color)] hover:border-1 hover:border-(--secondary-color) rounded-md transition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="89"
-                height="89"
-                viewBox="0 0 89 89"
+                width="95"
+                height="95"
+                viewBox="0 0 95 95"
                 fill="none"
-                class=""
               >
-                <mask
-                  id="path-1-outside-1_1_349"
-                  maskUnits="userSpaceOnUse"
-                  x="8.48438"
-                  y="11.5852"
-                  width="72"
-                  height="66"
-                  fill="black"
-                >
-                  <rect
-                    fill="white"
-                    x="8.48438"
-                    y="11.5852"
-                    width="72"
-                    height="66"
-                  />
-                  <path
-                    d="M26.3109 41.8022H29.1617C33.9872 41.8022 37.9088 37.8807 37.9088 33.0552V24.4472C37.9088 19.6218 33.9872 15.7002 29.1617 15.7002H26.3109C21.4855 15.7002 17.5639 19.6218 17.5639 24.4472V33.0552C17.5639 37.8807 21.4855 41.8022 26.3109 41.8022ZM26.3109 17.1047H29.1617C33.2223 17.1047 36.5181 20.4005 36.5181 24.4611V27.7847L34.5156 24.6975C34.2792 24.3221 33.6952 24.2665 33.417 24.6141C31.3033 26.9643 24.1555 26.9504 22.0695 24.6141C21.7775 24.2665 21.1934 24.3221 20.9709 24.6975L18.9684 27.7847V24.4611C18.9684 20.4005 22.2642 17.1047 26.3248 17.1047H26.3109ZM18.9545 30.3435L21.6941 26.116C24.2806 28.2993 31.192 28.2993 33.7647 26.116L36.5042 30.3435V33.0691C36.5042 37.1297 33.2084 40.4255 29.1478 40.4255H26.297C22.2364 40.4255 18.9406 37.1297 18.9406 33.0691V30.3435H18.9545ZM34.5713 42.7618C34.0845 42.7618 21.402 42.7618 20.9014 42.7618C14.6019 42.7618 9.48438 47.8793 9.48438 54.1788V75.7335C9.48438 76.1229 9.79031 76.4288 10.1797 76.4288H45.2652C45.6545 76.4288 45.9605 76.1229 45.9605 75.7335V54.1788C45.9605 47.8793 40.843 42.7618 34.5573 42.7618H34.5713ZM32.9998 44.1524L27.7433 57.266L22.4867 44.1524H33.0138H32.9998ZM44.5838 75.0243H38.2147V60.3671C38.2147 59.9777 37.9088 59.6718 37.5194 59.6718C37.13 59.6718 36.8241 59.9777 36.8241 60.3671V75.0243H18.6486V60.3671C18.6486 59.9777 18.3427 59.6718 17.9533 59.6718C17.5639 59.6718 17.258 59.9777 17.258 60.3671V75.0243H10.8889V54.1649C10.8889 48.6163 15.4223 44.1107 20.9709 44.1385L27.0758 59.3797C27.187 59.644 27.4513 59.8108 27.7294 59.8108C28.0075 59.8108 28.2717 59.644 28.3691 59.3797L34.4739 44.1385C40.0225 44.0968 44.5698 48.6024 44.5559 54.1649V75.0243H44.5838ZM65.61 47.5594C69.4481 47.5594 72.577 44.4305 72.577 40.5924V33.8896C72.577 30.0515 69.4481 26.9226 65.61 26.9226H63.385C59.5469 26.9226 56.418 30.0515 56.418 33.8896V40.5924C56.418 44.4305 59.5469 47.5594 63.385 47.5594H65.61ZM63.3989 28.2993H65.6239C68.6972 28.2993 71.2003 30.8024 71.2003 33.8757V35.9477L69.9209 33.973C69.6845 33.5976 69.1144 33.5558 68.8223 33.8896C67.2509 35.6557 61.758 35.6418 60.2005 33.8896C59.9084 33.5419 59.3244 33.5976 59.1019 33.973L57.8225 35.9477V33.8757C57.8225 30.8024 60.3256 28.2993 63.3989 28.2993ZM57.8086 40.5924V38.5204L59.8389 35.3915C60.6316 35.9199 62.1334 36.6291 64.4975 36.6291C66.8616 36.6291 68.3773 35.9199 69.1561 35.3915L71.1864 38.5204V40.5924C71.1864 43.6657 68.6833 46.1688 65.61 46.1688H63.385C60.3117 46.1688 57.8086 43.6657 57.8086 40.5924ZM69.8375 47.9905C69.4759 47.9905 59.5608 47.9905 59.1853 47.9905C54.193 47.9905 50.1323 52.0511 50.1323 57.0435V73.8422C50.1323 74.2316 50.4383 74.5376 50.8277 74.5376H78.1813C78.5706 74.5376 78.8766 74.2316 78.8766 73.8422V57.0435C78.8766 52.0511 74.8159 47.9905 69.8375 47.9905ZM68.3773 49.3811L64.4975 59.046L60.6177 49.3811H68.3773ZM77.4859 73.1469H72.8273V61.869C72.8273 61.4796 72.5214 61.1736 72.132 61.1736C71.7427 61.1736 71.4367 61.4796 71.4367 61.869V73.1469H57.5722V61.869C57.5722 61.4796 57.2663 61.1736 56.8769 61.1736C56.4875 61.1736 56.1816 61.4796 56.1816 61.869V73.1469H51.523V57.0435C51.523 52.8299 54.93 49.409 59.1297 49.3811L63.8578 61.1597C63.9691 61.424 64.2333 61.5908 64.5114 61.5908C64.7895 61.5908 65.0537 61.424 65.1511 61.1597L69.8792 49.3811C74.0789 49.409 77.4859 52.8299 77.4859 57.0435V73.1469ZM76.3734 12.5852H43.2766C41.5522 12.5852 40.1477 13.9897 40.1477 15.7141V22.0971C40.1477 23.585 41.1906 24.8227 42.5813 25.1425V30.6633C42.5813 30.9415 42.7481 31.2057 43.0123 31.303C43.2766 31.4143 43.5686 31.3447 43.7772 31.15L49.6595 25.226H76.3734C78.0978 25.226 79.5023 23.8215 79.5023 22.0971V15.7141C79.5023 13.9897 78.0978 12.5852 76.3734 12.5852ZM78.1117 22.0971C78.1117 23.0566 77.333 23.8354 76.3734 23.8354H49.3675C49.1728 23.8354 48.992 23.9188 48.8669 24.044L43.9719 28.9807V24.5446C43.9719 24.1552 43.6659 23.8493 43.2766 23.8493C42.317 23.8493 41.5383 23.0705 41.5383 22.111V15.728C41.5383 14.7685 42.317 13.9897 43.2766 13.9897H76.3734C77.333 13.9897 78.1117 14.7685 78.1117 15.728V22.111V22.0971ZM47.212 16.1452C43.5686 16.2425 43.5686 21.5686 47.212 21.666C50.8555 21.5686 50.8555 16.2425 47.212 16.1452ZM47.212 20.2754C45.4181 20.2475 45.4181 17.5636 47.212 17.5358C49.0059 17.5636 49.0059 20.2475 47.212 20.2754ZM74.9272 17.8557H53.1361C52.2183 17.8557 52.2322 16.465 53.1361 16.465H74.9272C75.845 16.465 75.8311 17.8557 74.9272 17.8557ZM74.9272 20.8733H53.1361C52.2183 20.8733 52.2322 19.4827 53.1361 19.4827H74.9272C75.845 19.4827 75.8311 20.8733 74.9272 20.8733Z"
-                  />
-                </mask>
                 <path
-                  d="M26.3109 41.8022H29.1617C33.9872 41.8022 37.9088 37.8807 37.9088 33.0552V24.4472C37.9088 19.6218 33.9872 15.7002 29.1617 15.7002H26.3109C21.4855 15.7002 17.5639 19.6218 17.5639 24.4472V33.0552C17.5639 37.8807 21.4855 41.8022 26.3109 41.8022ZM26.3109 17.1047H29.1617C33.2223 17.1047 36.5181 20.4005 36.5181 24.4611V27.7847L34.5156 24.6975C34.2792 24.3221 33.6952 24.2665 33.417 24.6141C31.3033 26.9643 24.1555 26.9504 22.0695 24.6141C21.7775 24.2665 21.1934 24.3221 20.9709 24.6975L18.9684 27.7847V24.4611C18.9684 20.4005 22.2642 17.1047 26.3248 17.1047H26.3109ZM18.9545 30.3435L21.6941 26.116C24.2806 28.2993 31.192 28.2993 33.7647 26.116L36.5042 30.3435V33.0691C36.5042 37.1297 33.2084 40.4255 29.1478 40.4255H26.297C22.2364 40.4255 18.9406 37.1297 18.9406 33.0691V30.3435H18.9545ZM34.5713 42.7618C34.0845 42.7618 21.402 42.7618 20.9014 42.7618C14.6019 42.7618 9.48438 47.8793 9.48438 54.1788V75.7335C9.48438 76.1229 9.79031 76.4288 10.1797 76.4288H45.2652C45.6545 76.4288 45.9605 76.1229 45.9605 75.7335V54.1788C45.9605 47.8793 40.843 42.7618 34.5573 42.7618H34.5713ZM32.9998 44.1524L27.7433 57.266L22.4867 44.1524H33.0138H32.9998ZM44.5838 75.0243H38.2147V60.3671C38.2147 59.9777 37.9088 59.6718 37.5194 59.6718C37.13 59.6718 36.8241 59.9777 36.8241 60.3671V75.0243H18.6486V60.3671C18.6486 59.9777 18.3427 59.6718 17.9533 59.6718C17.5639 59.6718 17.258 59.9777 17.258 60.3671V75.0243H10.8889V54.1649C10.8889 48.6163 15.4223 44.1107 20.9709 44.1385L27.0758 59.3797C27.187 59.644 27.4513 59.8108 27.7294 59.8108C28.0075 59.8108 28.2717 59.644 28.3691 59.3797L34.4739 44.1385C40.0225 44.0968 44.5698 48.6024 44.5559 54.1649V75.0243H44.5838ZM65.61 47.5594C69.4481 47.5594 72.577 44.4305 72.577 40.5924V33.8896C72.577 30.0515 69.4481 26.9226 65.61 26.9226H63.385C59.5469 26.9226 56.418 30.0515 56.418 33.8896V40.5924C56.418 44.4305 59.5469 47.5594 63.385 47.5594H65.61ZM63.3989 28.2993H65.6239C68.6972 28.2993 71.2003 30.8024 71.2003 33.8757V35.9477L69.9209 33.973C69.6845 33.5976 69.1144 33.5558 68.8223 33.8896C67.2509 35.6557 61.758 35.6418 60.2005 33.8896C59.9084 33.5419 59.3244 33.5976 59.1019 33.973L57.8225 35.9477V33.8757C57.8225 30.8024 60.3256 28.2993 63.3989 28.2993ZM57.8086 40.5924V38.5204L59.8389 35.3915C60.6316 35.9199 62.1334 36.6291 64.4975 36.6291C66.8616 36.6291 68.3773 35.9199 69.1561 35.3915L71.1864 38.5204V40.5924C71.1864 43.6657 68.6833 46.1688 65.61 46.1688H63.385C60.3117 46.1688 57.8086 43.6657 57.8086 40.5924ZM69.8375 47.9905C69.4759 47.9905 59.5608 47.9905 59.1853 47.9905C54.193 47.9905 50.1323 52.0511 50.1323 57.0435V73.8422C50.1323 74.2316 50.4383 74.5376 50.8277 74.5376H78.1813C78.5706 74.5376 78.8766 74.2316 78.8766 73.8422V57.0435C78.8766 52.0511 74.8159 47.9905 69.8375 47.9905ZM68.3773 49.3811L64.4975 59.046L60.6177 49.3811H68.3773ZM77.4859 73.1469H72.8273V61.869C72.8273 61.4796 72.5214 61.1736 72.132 61.1736C71.7427 61.1736 71.4367 61.4796 71.4367 61.869V73.1469H57.5722V61.869C57.5722 61.4796 57.2663 61.1736 56.8769 61.1736C56.4875 61.1736 56.1816 61.4796 56.1816 61.869V73.1469H51.523V57.0435C51.523 52.8299 54.93 49.409 59.1297 49.3811L63.8578 61.1597C63.9691 61.424 64.2333 61.5908 64.5114 61.5908C64.7895 61.5908 65.0537 61.424 65.1511 61.1597L69.8792 49.3811C74.0789 49.409 77.4859 52.8299 77.4859 57.0435V73.1469ZM76.3734 12.5852H43.2766C41.5522 12.5852 40.1477 13.9897 40.1477 15.7141V22.0971C40.1477 23.585 41.1906 24.8227 42.5813 25.1425V30.6633C42.5813 30.9415 42.7481 31.2057 43.0123 31.303C43.2766 31.4143 43.5686 31.3447 43.7772 31.15L49.6595 25.226H76.3734C78.0978 25.226 79.5023 23.8215 79.5023 22.0971V15.7141C79.5023 13.9897 78.0978 12.5852 76.3734 12.5852ZM78.1117 22.0971C78.1117 23.0566 77.333 23.8354 76.3734 23.8354H49.3675C49.1728 23.8354 48.992 23.9188 48.8669 24.044L43.9719 28.9807V24.5446C43.9719 24.1552 43.6659 23.8493 43.2766 23.8493C42.317 23.8493 41.5383 23.0705 41.5383 22.111V15.728C41.5383 14.7685 42.317 13.9897 43.2766 13.9897H76.3734C77.333 13.9897 78.1117 14.7685 78.1117 15.728V22.111V22.0971ZM47.212 16.1452C43.5686 16.2425 43.5686 21.5686 47.212 21.666C50.8555 21.5686 50.8555 16.2425 47.212 16.1452ZM47.212 20.2754C45.4181 20.2475 45.4181 17.5636 47.212 17.5358C49.0059 17.5636 49.0059 20.2475 47.212 20.2754ZM74.9272 17.8557H53.1361C52.2183 17.8557 52.2322 16.465 53.1361 16.465H74.9272C75.845 16.465 75.8311 17.8557 74.9272 17.8557ZM74.9272 20.8733H53.1361C52.2183 20.8733 52.2322 19.4827 53.1361 19.4827H74.9272C75.845 19.4827 75.8311 20.8733 74.9272 20.8733Z"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M54.7645 80.6101C54.2325 80.6101 53.7058 80.5616 53.1607 80.463C50.638 80.0014 47.962 78.4296 42.6296 75.2994C41.5798 74.6822 40.4257 74.0052 39.1465 73.2611C34.9567 70.8264 33.8659 71.5488 30.6287 73.6975C30.1492 74.0152 29.6069 74.3748 29.0167 74.7476C28.5653 75.0317 27.9716 74.8982 27.6873 74.4483C27.4034 73.9984 27.5368 73.4049 27.9866 73.1206C28.5585 72.7577 29.0702 72.42 29.5635 72.0923C32.9965 69.8131 34.8892 68.5591 40.1147 71.5956C41.3955 72.3413 42.5526 73.0203 43.6043 73.6374C48.7418 76.6537 51.3196 78.1672 53.5069 78.5668C55.626 78.9545 57.6437 78.2992 61.6668 76.995C64.2259 76.1655 67.4073 75.1339 71.8936 73.9316L84.6711 70.5087C85.6975 70.2327 86.5566 69.5707 87.0934 68.6427C87.629 67.7145 87.7723 66.6377 87.498 65.6127C87.2227 64.5859 86.5599 63.7266 85.632 63.1915C84.7043 62.6547 83.627 62.5109 82.602 62.7868L65.2621 67.4319C65.162 67.9972 64.9626 68.544 64.6683 69.054C64.0018 70.2094 62.921 71.0371 61.6251 71.3832C60.3297 71.7311 58.9797 71.5555 57.8243 70.8883L47.5092 64.932C47.0496 64.6662 46.8919 64.0777 47.1577 63.6178C47.4243 63.1562 48.0123 62.9992 48.472 63.265L58.788 69.2194C59.4967 69.6291 60.3275 69.7379 61.1268 69.5238C61.925 69.3096 62.5898 68.7998 62.9996 68.0908C63.2508 67.6559 63.3875 67.1778 63.4076 66.6878C63.408 66.6593 63.4076 66.6327 63.411 66.6059C63.4149 66.3216 63.3792 66.0341 63.3039 65.7515C63.0905 64.9539 62.5799 64.2884 61.8709 63.8787L51.5575 57.9225C43.4377 53.2355 39.384 50.9748 35.9746 50.7792C32.582 50.5867 29.4465 52.4379 23.2045 56.1283C22.0964 56.7838 20.8401 57.5279 19.4873 58.3138C19.0264 58.5812 18.4372 58.4258 18.1696 57.966C17.9022 57.5062 18.0592 56.9159 18.519 56.6484C19.8654 55.8658 21.1193 55.125 22.2246 54.4713C28.8032 50.5818 32.1019 48.6288 36.0849 48.8562C39.9397 49.0769 43.9088 51.2842 52.5203 56.2554L62.8348 62.2098C63.9897 62.877 64.8173 63.9573 65.1633 65.2532C65.1824 65.3184 65.1985 65.3853 65.2119 65.4505L82.1039 60.9257C83.6274 60.5177 85.2206 60.7301 86.5951 61.5227C87.9684 62.3151 88.9496 63.5911 89.3575 65.1144C89.7661 66.636 89.5548 68.2313 88.7606 69.6058C87.9684 70.9786 86.6921 71.9601 85.1688 72.3682L72.3925 75.7927C67.9544 76.9815 64.7972 78.0049 62.2622 78.8276C58.8399 79.9361 56.7642 80.6101 54.7645 80.6101Z"
                   fill="white"
                 />
                 <path
-                  d="M26.3109 41.8022H29.1617C33.9872 41.8022 37.9088 37.8807 37.9088 33.0552V24.4472C37.9088 19.6218 33.9872 15.7002 29.1617 15.7002H26.3109C21.4855 15.7002 17.5639 19.6218 17.5639 24.4472V33.0552C17.5639 37.8807 21.4855 41.8022 26.3109 41.8022ZM26.3109 17.1047H29.1617C33.2223 17.1047 36.5181 20.4005 36.5181 24.4611V27.7847L34.5156 24.6975C34.2792 24.3221 33.6952 24.2665 33.417 24.6141C31.3033 26.9643 24.1555 26.9504 22.0695 24.6141C21.7775 24.2665 21.1934 24.3221 20.9709 24.6975L18.9684 27.7847V24.4611C18.9684 20.4005 22.2642 17.1047 26.3248 17.1047H26.3109ZM18.9545 30.3435L21.6941 26.116C24.2806 28.2993 31.192 28.2993 33.7647 26.116L36.5042 30.3435V33.0691C36.5042 37.1297 33.2084 40.4255 29.1478 40.4255H26.297C22.2364 40.4255 18.9406 37.1297 18.9406 33.0691V30.3435H18.9545ZM34.5713 42.7618C34.0845 42.7618 21.402 42.7618 20.9014 42.7618C14.6019 42.7618 9.48438 47.8793 9.48438 54.1788V75.7335C9.48438 76.1229 9.79031 76.4288 10.1797 76.4288H45.2652C45.6545 76.4288 45.9605 76.1229 45.9605 75.7335V54.1788C45.9605 47.8793 40.843 42.7618 34.5573 42.7618H34.5713ZM32.9998 44.1524L27.7433 57.266L22.4867 44.1524H33.0138H32.9998ZM44.5838 75.0243H38.2147V60.3671C38.2147 59.9777 37.9088 59.6718 37.5194 59.6718C37.13 59.6718 36.8241 59.9777 36.8241 60.3671V75.0243H18.6486V60.3671C18.6486 59.9777 18.3427 59.6718 17.9533 59.6718C17.5639 59.6718 17.258 59.9777 17.258 60.3671V75.0243H10.8889V54.1649C10.8889 48.6163 15.4223 44.1107 20.9709 44.1385L27.0758 59.3797C27.187 59.644 27.4513 59.8108 27.7294 59.8108C28.0075 59.8108 28.2717 59.644 28.3691 59.3797L34.4739 44.1385C40.0225 44.0968 44.5698 48.6024 44.5559 54.1649V75.0243H44.5838ZM65.61 47.5594C69.4481 47.5594 72.577 44.4305 72.577 40.5924V33.8896C72.577 30.0515 69.4481 26.9226 65.61 26.9226H63.385C59.5469 26.9226 56.418 30.0515 56.418 33.8896V40.5924C56.418 44.4305 59.5469 47.5594 63.385 47.5594H65.61ZM63.3989 28.2993H65.6239C68.6972 28.2993 71.2003 30.8024 71.2003 33.8757V35.9477L69.9209 33.973C69.6845 33.5976 69.1144 33.5558 68.8223 33.8896C67.2509 35.6557 61.758 35.6418 60.2005 33.8896C59.9084 33.5419 59.3244 33.5976 59.1019 33.973L57.8225 35.9477V33.8757C57.8225 30.8024 60.3256 28.2993 63.3989 28.2993ZM57.8086 40.5924V38.5204L59.8389 35.3915C60.6316 35.9199 62.1334 36.6291 64.4975 36.6291C66.8616 36.6291 68.3773 35.9199 69.1561 35.3915L71.1864 38.5204V40.5924C71.1864 43.6657 68.6833 46.1688 65.61 46.1688H63.385C60.3117 46.1688 57.8086 43.6657 57.8086 40.5924ZM69.8375 47.9905C69.4759 47.9905 59.5608 47.9905 59.1853 47.9905C54.193 47.9905 50.1323 52.0511 50.1323 57.0435V73.8422C50.1323 74.2316 50.4383 74.5376 50.8277 74.5376H78.1813C78.5706 74.5376 78.8766 74.2316 78.8766 73.8422V57.0435C78.8766 52.0511 74.8159 47.9905 69.8375 47.9905ZM68.3773 49.3811L64.4975 59.046L60.6177 49.3811H68.3773ZM77.4859 73.1469H72.8273V61.869C72.8273 61.4796 72.5214 61.1736 72.132 61.1736C71.7427 61.1736 71.4367 61.4796 71.4367 61.869V73.1469H57.5722V61.869C57.5722 61.4796 57.2663 61.1736 56.8769 61.1736C56.4875 61.1736 56.1816 61.4796 56.1816 61.869V73.1469H51.523V57.0435C51.523 52.8299 54.93 49.409 59.1297 49.3811L63.8578 61.1597C63.9691 61.424 64.2333 61.5908 64.5114 61.5908C64.7895 61.5908 65.0537 61.424 65.1511 61.1597L69.8792 49.3811C74.0789 49.409 77.4859 52.8299 77.4859 57.0435V73.1469ZM76.3734 12.5852H43.2766C41.5522 12.5852 40.1477 13.9897 40.1477 15.7141V22.0971C40.1477 23.585 41.1906 24.8227 42.5813 25.1425V30.6633C42.5813 30.9415 42.7481 31.2057 43.0123 31.303C43.2766 31.4143 43.5686 31.3447 43.7772 31.15L49.6595 25.226H76.3734C78.0978 25.226 79.5023 23.8215 79.5023 22.0971V15.7141C79.5023 13.9897 78.0978 12.5852 76.3734 12.5852ZM78.1117 22.0971C78.1117 23.0566 77.333 23.8354 76.3734 23.8354H49.3675C49.1728 23.8354 48.992 23.9188 48.8669 24.044L43.9719 28.9807V24.5446C43.9719 24.1552 43.6659 23.8493 43.2766 23.8493C42.317 23.8493 41.5383 23.0705 41.5383 22.111V15.728C41.5383 14.7685 42.317 13.9897 43.2766 13.9897H76.3734C77.333 13.9897 78.1117 14.7685 78.1117 15.728V22.111V22.0971ZM47.212 16.1452C43.5686 16.2425 43.5686 21.5686 47.212 21.666C50.8555 21.5686 50.8555 16.2425 47.212 16.1452ZM47.212 20.2754C45.4181 20.2475 45.4181 17.5636 47.212 17.5358C49.0059 17.5636 49.0059 20.2475 47.212 20.2754ZM74.9272 17.8557H53.1361C52.2183 17.8557 52.2322 16.465 53.1361 16.465H74.9272C75.845 16.465 75.8311 17.8557 74.9272 17.8557ZM74.9272 20.8733H53.1361C52.2183 20.8733 52.2322 19.4827 53.1361 19.4827H74.9272C75.845 19.4827 75.8311 20.8733 74.9272 20.8733Z"
-                  stroke="white"
-                  stroke-width="0.4"
-                  mask="url(#path-1-outside-1_1_349)"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.71884 57.4477L22.7952 83.5598L30.4079 79.1637L15.3337 53.0516L7.71884 57.4477ZM22.4438 85.8389C22.1113 85.8389 21.7862 85.665 21.6073 85.3573L5.56834 57.5764C5.44118 57.3557 5.4059 57.0932 5.47279 56.8457C5.53826 56.5999 5.70022 56.3893 5.92095 56.2605L15.2036 50.9013C15.4255 50.7741 15.6879 50.7391 15.9353 50.806C16.1818 50.8712 16.3918 51.0334 16.5189 51.2541L32.5584 79.0348C32.8241 79.4948 32.6669 80.0834 32.2053 80.3509L22.9239 85.7084C22.7712 85.797 22.6055 85.8389 22.4438 85.8389Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M82.2751 62.8401C81.7431 62.8401 81.3116 62.4088 81.3116 61.8771L81.3119 14.9802C81.3119 12.8349 79.5659 11.0876 77.419 11.0876L35.6224 11.0875C33.4771 11.0875 31.7311 12.835 31.7311 14.9803L31.7314 50.8961C31.7314 51.4294 31.2996 51.8593 30.7679 51.8593C30.2363 51.8593 29.8048 51.4296 29.8048 50.8961L29.8051 14.9801C29.8051 11.7714 32.415 9.16124 35.6222 9.16124L77.4194 9.16113C80.6279 9.16113 83.2379 11.7714 83.2379 14.9803L83.2382 61.877C83.2382 62.4088 82.8066 62.8403 82.2751 62.8401Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M40.419 51.8727C39.887 51.8727 39.4552 51.4414 39.4552 50.9097L39.4557 10.1244C39.4557 9.59277 39.8866 9.16138 40.4184 9.16138C40.9502 9.16127 41.3815 9.59277 41.3815 10.1245L41.3821 50.9096C41.3821 51.4414 40.9502 51.8728 40.419 51.8727Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M61.3455 16.2209C54.0096 16.2209 48.0398 22.1889 48.0398 29.5262C48.0403 36.8617 54.0092 42.8314 61.3449 42.8314C68.6827 42.8314 74.65 36.8619 74.65 29.5262C74.6504 22.1888 68.6823 16.221 61.3455 16.2209ZM61.3455 44.7577C52.948 44.7577 46.1134 37.9237 46.1134 29.5262C46.114 21.1269 52.9474 14.2947 61.3449 14.2947C69.7444 14.2946 76.5763 21.127 76.5763 29.5262C76.5767 37.9236 69.7441 44.7577 61.3455 44.7577Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M61.3461 16.2209C58.7493 16.2209 55.8543 21.6855 55.8543 29.5262C55.8547 37.3668 58.7488 42.8314 61.3456 42.8314C63.9444 42.8314 66.8386 37.3669 66.8386 29.5262C66.839 21.6854 63.9442 16.221 61.3461 16.2209ZM61.3461 44.7576C59.2226 44.7576 57.289 43.0722 55.9045 40.0121C54.6304 37.1945 53.928 33.4708 53.928 29.5262C53.9284 25.5798 54.6302 21.8561 55.9045 19.0402C57.2895 15.98 59.2221 14.2947 61.3456 14.2947C63.471 14.2946 65.4039 15.9802 66.7885 19.0402C68.0626 21.8561 68.7649 25.5799 68.7649 29.5262C68.7654 33.4707 68.0626 37.1946 66.7885 40.0121C65.4041 43.0722 63.4709 44.7577 61.3461 44.7576Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M61.3454 24.0332C53.5047 24.0332 48.0397 26.9277 48.0397 29.5263C48.0403 32.1229 53.5043 35.0176 61.3449 35.0176C69.1875 35.0175 74.65 32.1231 74.65 29.5263C74.6503 26.9277 69.1872 24.0333 61.3454 24.0332ZM61.3454 36.9438C57.4009 36.9438 53.6764 36.2416 50.8588 34.9674C47.7995 33.5827 46.1134 31.6499 46.1134 29.5263C46.114 27.4009 47.7989 25.468 50.8588 24.0835C53.677 22.8091 57.4003 22.1086 61.3449 22.1086C65.2913 22.1086 69.015 22.8093 71.8309 24.0835C74.8912 25.468 76.5763 27.4009 76.5763 29.5263C76.5767 31.6498 74.891 33.5828 71.8309 34.9674C69.0152 36.2415 65.2911 36.9439 61.3454 36.9438Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M61.3466 44.7579C60.8147 44.7579 60.3829 44.3265 60.3829 43.7947L60.3835 15.258C60.3835 14.7262 60.8143 14.2949 61.3461 14.2949C61.8779 14.2948 62.3092 14.7263 62.3092 15.258L62.3098 43.7947C62.3098 44.3264 61.8779 44.7579 61.3466 44.7579Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M73.4633 50.1285H49.2295C48.6975 50.1285 48.2657 49.6971 48.2657 49.1654C48.2663 48.6335 48.697 48.2023 49.2288 48.2023L73.4633 48.2021C73.9952 48.2021 74.4263 48.6337 74.4263 49.1654C74.4265 49.6971 73.9948 50.1285 73.4633 50.1285Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M66.8576 55.4995H55.837C55.305 55.4995 54.8732 55.0682 54.8732 54.5365C54.8738 54.0045 55.3046 53.5733 55.8364 53.5733L66.8576 53.5732C67.3896 53.5732 67.8205 54.0047 67.8205 54.5365C67.8207 55.0682 67.3892 55.4996 66.8576 55.4995Z"
+                  fill="white"
                 />
               </svg>
 
               <h6
-                class="text-[18px] lg:text-[22px] font-medium leading-[33px] capitalize my-[10px] lg:my-[20px] lg:max-w-[220px] lg:min-h-[66px]"
+                class="text-[18px] lg:text-[20px] 2xl:text-[22px] font-medium mb-2 xl:leading-[28px] capitalize lg:max-w-[200px] lg:min-h-[66px]"
               >
                 Visa assistance
               </h6>
@@ -1346,7 +1379,7 @@
             </div>
             <!-- next card -->
             <div
-              class="why_choosCard transition duration-700 ease-in-out relative text-center px-2 md:px-4 lg:px-2 [@media(min-width:1280px)_and_(max-width:1680px)]:px-[28px] xl:px-[28px] pt-[17px] lg:pt-[47px] pb-[30px] flex flex-col text-white items-center hover:bg-[var(--background-color)] hover:text-[var(--text-color)] hover:border-1 hover:border-(--secondary-color) rounded-md transition"
+              class="why_choosCard transition duration-700 ease-in-out relative text-center px-2 md:px-4 lg:px-3 xl:px-4 pt-[17px] lg:pt-[30px] pb-[30px] flex flex-col text-white items-center hover:bg-[var(--background-color)] hover:text-[var(--text-color)] hover:border-1 hover:border-(--secondary-color) rounded-md transition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1354,48 +1387,91 @@
                 height="89"
                 viewBox="0 0 89 89"
                 fill="none"
-                class=""
               >
-                <mask
-                  id="path-1-outside-1_1_349"
-                  maskUnits="userSpaceOnUse"
-                  x="8.48438"
-                  y="11.5852"
-                  width="72"
-                  height="66"
-                  fill="black"
-                >
-                  <rect
-                    fill="white"
-                    x="8.48438"
-                    y="11.5852"
-                    width="72"
-                    height="66"
-                  />
-                  <path
-                    d="M26.3109 41.8022H29.1617C33.9872 41.8022 37.9088 37.8807 37.9088 33.0552V24.4472C37.9088 19.6218 33.9872 15.7002 29.1617 15.7002H26.3109C21.4855 15.7002 17.5639 19.6218 17.5639 24.4472V33.0552C17.5639 37.8807 21.4855 41.8022 26.3109 41.8022ZM26.3109 17.1047H29.1617C33.2223 17.1047 36.5181 20.4005 36.5181 24.4611V27.7847L34.5156 24.6975C34.2792 24.3221 33.6952 24.2665 33.417 24.6141C31.3033 26.9643 24.1555 26.9504 22.0695 24.6141C21.7775 24.2665 21.1934 24.3221 20.9709 24.6975L18.9684 27.7847V24.4611C18.9684 20.4005 22.2642 17.1047 26.3248 17.1047H26.3109ZM18.9545 30.3435L21.6941 26.116C24.2806 28.2993 31.192 28.2993 33.7647 26.116L36.5042 30.3435V33.0691C36.5042 37.1297 33.2084 40.4255 29.1478 40.4255H26.297C22.2364 40.4255 18.9406 37.1297 18.9406 33.0691V30.3435H18.9545ZM34.5713 42.7618C34.0845 42.7618 21.402 42.7618 20.9014 42.7618C14.6019 42.7618 9.48438 47.8793 9.48438 54.1788V75.7335C9.48438 76.1229 9.79031 76.4288 10.1797 76.4288H45.2652C45.6545 76.4288 45.9605 76.1229 45.9605 75.7335V54.1788C45.9605 47.8793 40.843 42.7618 34.5573 42.7618H34.5713ZM32.9998 44.1524L27.7433 57.266L22.4867 44.1524H33.0138H32.9998ZM44.5838 75.0243H38.2147V60.3671C38.2147 59.9777 37.9088 59.6718 37.5194 59.6718C37.13 59.6718 36.8241 59.9777 36.8241 60.3671V75.0243H18.6486V60.3671C18.6486 59.9777 18.3427 59.6718 17.9533 59.6718C17.5639 59.6718 17.258 59.9777 17.258 60.3671V75.0243H10.8889V54.1649C10.8889 48.6163 15.4223 44.1107 20.9709 44.1385L27.0758 59.3797C27.187 59.644 27.4513 59.8108 27.7294 59.8108C28.0075 59.8108 28.2717 59.644 28.3691 59.3797L34.4739 44.1385C40.0225 44.0968 44.5698 48.6024 44.5559 54.1649V75.0243H44.5838ZM65.61 47.5594C69.4481 47.5594 72.577 44.4305 72.577 40.5924V33.8896C72.577 30.0515 69.4481 26.9226 65.61 26.9226H63.385C59.5469 26.9226 56.418 30.0515 56.418 33.8896V40.5924C56.418 44.4305 59.5469 47.5594 63.385 47.5594H65.61ZM63.3989 28.2993H65.6239C68.6972 28.2993 71.2003 30.8024 71.2003 33.8757V35.9477L69.9209 33.973C69.6845 33.5976 69.1144 33.5558 68.8223 33.8896C67.2509 35.6557 61.758 35.6418 60.2005 33.8896C59.9084 33.5419 59.3244 33.5976 59.1019 33.973L57.8225 35.9477V33.8757C57.8225 30.8024 60.3256 28.2993 63.3989 28.2993ZM57.8086 40.5924V38.5204L59.8389 35.3915C60.6316 35.9199 62.1334 36.6291 64.4975 36.6291C66.8616 36.6291 68.3773 35.9199 69.1561 35.3915L71.1864 38.5204V40.5924C71.1864 43.6657 68.6833 46.1688 65.61 46.1688H63.385C60.3117 46.1688 57.8086 43.6657 57.8086 40.5924ZM69.8375 47.9905C69.4759 47.9905 59.5608 47.9905 59.1853 47.9905C54.193 47.9905 50.1323 52.0511 50.1323 57.0435V73.8422C50.1323 74.2316 50.4383 74.5376 50.8277 74.5376H78.1813C78.5706 74.5376 78.8766 74.2316 78.8766 73.8422V57.0435C78.8766 52.0511 74.8159 47.9905 69.8375 47.9905ZM68.3773 49.3811L64.4975 59.046L60.6177 49.3811H68.3773ZM77.4859 73.1469H72.8273V61.869C72.8273 61.4796 72.5214 61.1736 72.132 61.1736C71.7427 61.1736 71.4367 61.4796 71.4367 61.869V73.1469H57.5722V61.869C57.5722 61.4796 57.2663 61.1736 56.8769 61.1736C56.4875 61.1736 56.1816 61.4796 56.1816 61.869V73.1469H51.523V57.0435C51.523 52.8299 54.93 49.409 59.1297 49.3811L63.8578 61.1597C63.9691 61.424 64.2333 61.5908 64.5114 61.5908C64.7895 61.5908 65.0537 61.424 65.1511 61.1597L69.8792 49.3811C74.0789 49.409 77.4859 52.8299 77.4859 57.0435V73.1469ZM76.3734 12.5852H43.2766C41.5522 12.5852 40.1477 13.9897 40.1477 15.7141V22.0971C40.1477 23.585 41.1906 24.8227 42.5813 25.1425V30.6633C42.5813 30.9415 42.7481 31.2057 43.0123 31.303C43.2766 31.4143 43.5686 31.3447 43.7772 31.15L49.6595 25.226H76.3734C78.0978 25.226 79.5023 23.8215 79.5023 22.0971V15.7141C79.5023 13.9897 78.0978 12.5852 76.3734 12.5852ZM78.1117 22.0971C78.1117 23.0566 77.333 23.8354 76.3734 23.8354H49.3675C49.1728 23.8354 48.992 23.9188 48.8669 24.044L43.9719 28.9807V24.5446C43.9719 24.1552 43.6659 23.8493 43.2766 23.8493C42.317 23.8493 41.5383 23.0705 41.5383 22.111V15.728C41.5383 14.7685 42.317 13.9897 43.2766 13.9897H76.3734C77.333 13.9897 78.1117 14.7685 78.1117 15.728V22.111V22.0971ZM47.212 16.1452C43.5686 16.2425 43.5686 21.5686 47.212 21.666C50.8555 21.5686 50.8555 16.2425 47.212 16.1452ZM47.212 20.2754C45.4181 20.2475 45.4181 17.5636 47.212 17.5358C49.0059 17.5636 49.0059 20.2475 47.212 20.2754ZM74.9272 17.8557H53.1361C52.2183 17.8557 52.2322 16.465 53.1361 16.465H74.9272C75.845 16.465 75.8311 17.8557 74.9272 17.8557ZM74.9272 20.8733H53.1361C52.2183 20.8733 52.2322 19.4827 53.1361 19.4827H74.9272C75.845 19.4827 75.8311 20.8733 74.9272 20.8733Z"
-                  />
-                </mask>
                 <path
-                  d="M26.3109 41.8022H29.1617C33.9872 41.8022 37.9088 37.8807 37.9088 33.0552V24.4472C37.9088 19.6218 33.9872 15.7002 29.1617 15.7002H26.3109C21.4855 15.7002 17.5639 19.6218 17.5639 24.4472V33.0552C17.5639 37.8807 21.4855 41.8022 26.3109 41.8022ZM26.3109 17.1047H29.1617C33.2223 17.1047 36.5181 20.4005 36.5181 24.4611V27.7847L34.5156 24.6975C34.2792 24.3221 33.6952 24.2665 33.417 24.6141C31.3033 26.9643 24.1555 26.9504 22.0695 24.6141C21.7775 24.2665 21.1934 24.3221 20.9709 24.6975L18.9684 27.7847V24.4611C18.9684 20.4005 22.2642 17.1047 26.3248 17.1047H26.3109ZM18.9545 30.3435L21.6941 26.116C24.2806 28.2993 31.192 28.2993 33.7647 26.116L36.5042 30.3435V33.0691C36.5042 37.1297 33.2084 40.4255 29.1478 40.4255H26.297C22.2364 40.4255 18.9406 37.1297 18.9406 33.0691V30.3435H18.9545ZM34.5713 42.7618C34.0845 42.7618 21.402 42.7618 20.9014 42.7618C14.6019 42.7618 9.48438 47.8793 9.48438 54.1788V75.7335C9.48438 76.1229 9.79031 76.4288 10.1797 76.4288H45.2652C45.6545 76.4288 45.9605 76.1229 45.9605 75.7335V54.1788C45.9605 47.8793 40.843 42.7618 34.5573 42.7618H34.5713ZM32.9998 44.1524L27.7433 57.266L22.4867 44.1524H33.0138H32.9998ZM44.5838 75.0243H38.2147V60.3671C38.2147 59.9777 37.9088 59.6718 37.5194 59.6718C37.13 59.6718 36.8241 59.9777 36.8241 60.3671V75.0243H18.6486V60.3671C18.6486 59.9777 18.3427 59.6718 17.9533 59.6718C17.5639 59.6718 17.258 59.9777 17.258 60.3671V75.0243H10.8889V54.1649C10.8889 48.6163 15.4223 44.1107 20.9709 44.1385L27.0758 59.3797C27.187 59.644 27.4513 59.8108 27.7294 59.8108C28.0075 59.8108 28.2717 59.644 28.3691 59.3797L34.4739 44.1385C40.0225 44.0968 44.5698 48.6024 44.5559 54.1649V75.0243H44.5838ZM65.61 47.5594C69.4481 47.5594 72.577 44.4305 72.577 40.5924V33.8896C72.577 30.0515 69.4481 26.9226 65.61 26.9226H63.385C59.5469 26.9226 56.418 30.0515 56.418 33.8896V40.5924C56.418 44.4305 59.5469 47.5594 63.385 47.5594H65.61ZM63.3989 28.2993H65.6239C68.6972 28.2993 71.2003 30.8024 71.2003 33.8757V35.9477L69.9209 33.973C69.6845 33.5976 69.1144 33.5558 68.8223 33.8896C67.2509 35.6557 61.758 35.6418 60.2005 33.8896C59.9084 33.5419 59.3244 33.5976 59.1019 33.973L57.8225 35.9477V33.8757C57.8225 30.8024 60.3256 28.2993 63.3989 28.2993ZM57.8086 40.5924V38.5204L59.8389 35.3915C60.6316 35.9199 62.1334 36.6291 64.4975 36.6291C66.8616 36.6291 68.3773 35.9199 69.1561 35.3915L71.1864 38.5204V40.5924C71.1864 43.6657 68.6833 46.1688 65.61 46.1688H63.385C60.3117 46.1688 57.8086 43.6657 57.8086 40.5924ZM69.8375 47.9905C69.4759 47.9905 59.5608 47.9905 59.1853 47.9905C54.193 47.9905 50.1323 52.0511 50.1323 57.0435V73.8422C50.1323 74.2316 50.4383 74.5376 50.8277 74.5376H78.1813C78.5706 74.5376 78.8766 74.2316 78.8766 73.8422V57.0435C78.8766 52.0511 74.8159 47.9905 69.8375 47.9905ZM68.3773 49.3811L64.4975 59.046L60.6177 49.3811H68.3773ZM77.4859 73.1469H72.8273V61.869C72.8273 61.4796 72.5214 61.1736 72.132 61.1736C71.7427 61.1736 71.4367 61.4796 71.4367 61.869V73.1469H57.5722V61.869C57.5722 61.4796 57.2663 61.1736 56.8769 61.1736C56.4875 61.1736 56.1816 61.4796 56.1816 61.869V73.1469H51.523V57.0435C51.523 52.8299 54.93 49.409 59.1297 49.3811L63.8578 61.1597C63.9691 61.424 64.2333 61.5908 64.5114 61.5908C64.7895 61.5908 65.0537 61.424 65.1511 61.1597L69.8792 49.3811C74.0789 49.409 77.4859 52.8299 77.4859 57.0435V73.1469ZM76.3734 12.5852H43.2766C41.5522 12.5852 40.1477 13.9897 40.1477 15.7141V22.0971C40.1477 23.585 41.1906 24.8227 42.5813 25.1425V30.6633C42.5813 30.9415 42.7481 31.2057 43.0123 31.303C43.2766 31.4143 43.5686 31.3447 43.7772 31.15L49.6595 25.226H76.3734C78.0978 25.226 79.5023 23.8215 79.5023 22.0971V15.7141C79.5023 13.9897 78.0978 12.5852 76.3734 12.5852ZM78.1117 22.0971C78.1117 23.0566 77.333 23.8354 76.3734 23.8354H49.3675C49.1728 23.8354 48.992 23.9188 48.8669 24.044L43.9719 28.9807V24.5446C43.9719 24.1552 43.6659 23.8493 43.2766 23.8493C42.317 23.8493 41.5383 23.0705 41.5383 22.111V15.728C41.5383 14.7685 42.317 13.9897 43.2766 13.9897H76.3734C77.333 13.9897 78.1117 14.7685 78.1117 15.728V22.111V22.0971ZM47.212 16.1452C43.5686 16.2425 43.5686 21.5686 47.212 21.666C50.8555 21.5686 50.8555 16.2425 47.212 16.1452ZM47.212 20.2754C45.4181 20.2475 45.4181 17.5636 47.212 17.5358C49.0059 17.5636 49.0059 20.2475 47.212 20.2754ZM74.9272 17.8557H53.1361C52.2183 17.8557 52.2322 16.465 53.1361 16.465H74.9272C75.845 16.465 75.8311 17.8557 74.9272 17.8557ZM74.9272 20.8733H53.1361C52.2183 20.8733 52.2322 19.4827 53.1361 19.4827H74.9272C75.845 19.4827 75.8311 20.8733 74.9272 20.8733Z"
+                  d="M83.2946 78.5139H43.5947C43.0488 78.5139 42.6058 78.0709 42.6058 77.5251C42.6058 76.9792 43.0488 76.5362 43.5947 76.5362H82.3077V59.1653C82.3077 51.6458 76.1905 45.5286 68.6709 45.5286H64.9389L58.08 63.5145C57.9336 63.8982 57.5657 64.1513 57.1563 64.1513C56.7469 64.1513 56.3791 63.8982 56.2327 63.5145L49.3738 45.5286H45.6417C45.0088 45.5286 44.366 45.574 43.7332 45.663C43.1912 45.7382 42.6928 45.3624 42.6157 44.8225C42.5386 44.2826 42.9163 43.7802 43.4563 43.705C44.1821 43.6022 44.9178 43.5508 45.6417 43.5508H50.0541C50.4635 43.5508 50.8314 43.8039 50.9778 44.1876L57.1544 60.3876L63.3329 44.1876C63.4793 43.8039 63.8472 43.5508 64.2566 43.5508H68.669C77.2782 43.5508 84.2835 50.5561 84.2835 59.1653V77.5251C84.2835 78.0709 83.8425 78.5139 83.2946 78.5139Z"
                   fill="white"
                 />
                 <path
-                  d="M26.3109 41.8022H29.1617C33.9872 41.8022 37.9088 37.8807 37.9088 33.0552V24.4472C37.9088 19.6218 33.9872 15.7002 29.1617 15.7002H26.3109C21.4855 15.7002 17.5639 19.6218 17.5639 24.4472V33.0552C17.5639 37.8807 21.4855 41.8022 26.3109 41.8022ZM26.3109 17.1047H29.1617C33.2223 17.1047 36.5181 20.4005 36.5181 24.4611V27.7847L34.5156 24.6975C34.2792 24.3221 33.6952 24.2665 33.417 24.6141C31.3033 26.9643 24.1555 26.9504 22.0695 24.6141C21.7775 24.2665 21.1934 24.3221 20.9709 24.6975L18.9684 27.7847V24.4611C18.9684 20.4005 22.2642 17.1047 26.3248 17.1047H26.3109ZM18.9545 30.3435L21.6941 26.116C24.2806 28.2993 31.192 28.2993 33.7647 26.116L36.5042 30.3435V33.0691C36.5042 37.1297 33.2084 40.4255 29.1478 40.4255H26.297C22.2364 40.4255 18.9406 37.1297 18.9406 33.0691V30.3435H18.9545ZM34.5713 42.7618C34.0845 42.7618 21.402 42.7618 20.9014 42.7618C14.6019 42.7618 9.48438 47.8793 9.48438 54.1788V75.7335C9.48438 76.1229 9.79031 76.4288 10.1797 76.4288H45.2652C45.6545 76.4288 45.9605 76.1229 45.9605 75.7335V54.1788C45.9605 47.8793 40.843 42.7618 34.5573 42.7618H34.5713ZM32.9998 44.1524L27.7433 57.266L22.4867 44.1524H33.0138H32.9998ZM44.5838 75.0243H38.2147V60.3671C38.2147 59.9777 37.9088 59.6718 37.5194 59.6718C37.13 59.6718 36.8241 59.9777 36.8241 60.3671V75.0243H18.6486V60.3671C18.6486 59.9777 18.3427 59.6718 17.9533 59.6718C17.5639 59.6718 17.258 59.9777 17.258 60.3671V75.0243H10.8889V54.1649C10.8889 48.6163 15.4223 44.1107 20.9709 44.1385L27.0758 59.3797C27.187 59.644 27.4513 59.8108 27.7294 59.8108C28.0075 59.8108 28.2717 59.644 28.3691 59.3797L34.4739 44.1385C40.0225 44.0968 44.5698 48.6024 44.5559 54.1649V75.0243H44.5838ZM65.61 47.5594C69.4481 47.5594 72.577 44.4305 72.577 40.5924V33.8896C72.577 30.0515 69.4481 26.9226 65.61 26.9226H63.385C59.5469 26.9226 56.418 30.0515 56.418 33.8896V40.5924C56.418 44.4305 59.5469 47.5594 63.385 47.5594H65.61ZM63.3989 28.2993H65.6239C68.6972 28.2993 71.2003 30.8024 71.2003 33.8757V35.9477L69.9209 33.973C69.6845 33.5976 69.1144 33.5558 68.8223 33.8896C67.2509 35.6557 61.758 35.6418 60.2005 33.8896C59.9084 33.5419 59.3244 33.5976 59.1019 33.973L57.8225 35.9477V33.8757C57.8225 30.8024 60.3256 28.2993 63.3989 28.2993ZM57.8086 40.5924V38.5204L59.8389 35.3915C60.6316 35.9199 62.1334 36.6291 64.4975 36.6291C66.8616 36.6291 68.3773 35.9199 69.1561 35.3915L71.1864 38.5204V40.5924C71.1864 43.6657 68.6833 46.1688 65.61 46.1688H63.385C60.3117 46.1688 57.8086 43.6657 57.8086 40.5924ZM69.8375 47.9905C69.4759 47.9905 59.5608 47.9905 59.1853 47.9905C54.193 47.9905 50.1323 52.0511 50.1323 57.0435V73.8422C50.1323 74.2316 50.4383 74.5376 50.8277 74.5376H78.1813C78.5706 74.5376 78.8766 74.2316 78.8766 73.8422V57.0435C78.8766 52.0511 74.8159 47.9905 69.8375 47.9905ZM68.3773 49.3811L64.4975 59.046L60.6177 49.3811H68.3773ZM77.4859 73.1469H72.8273V61.869C72.8273 61.4796 72.5214 61.1736 72.132 61.1736C71.7427 61.1736 71.4367 61.4796 71.4367 61.869V73.1469H57.5722V61.869C57.5722 61.4796 57.2663 61.1736 56.8769 61.1736C56.4875 61.1736 56.1816 61.4796 56.1816 61.869V73.1469H51.523V57.0435C51.523 52.8299 54.93 49.409 59.1297 49.3811L63.8578 61.1597C63.9691 61.424 64.2333 61.5908 64.5114 61.5908C64.7895 61.5908 65.0537 61.424 65.1511 61.1597L69.8792 49.3811C74.0789 49.409 77.4859 52.8299 77.4859 57.0435V73.1469ZM76.3734 12.5852H43.2766C41.5522 12.5852 40.1477 13.9897 40.1477 15.7141V22.0971C40.1477 23.585 41.1906 24.8227 42.5813 25.1425V30.6633C42.5813 30.9415 42.7481 31.2057 43.0123 31.303C43.2766 31.4143 43.5686 31.3447 43.7772 31.15L49.6595 25.226H76.3734C78.0978 25.226 79.5023 23.8215 79.5023 22.0971V15.7141C79.5023 13.9897 78.0978 12.5852 76.3734 12.5852ZM78.1117 22.0971C78.1117 23.0566 77.333 23.8354 76.3734 23.8354H49.3675C49.1728 23.8354 48.992 23.9188 48.8669 24.044L43.9719 28.9807V24.5446C43.9719 24.1552 43.6659 23.8493 43.2766 23.8493C42.317 23.8493 41.5383 23.0705 41.5383 22.111V15.728C41.5383 14.7685 42.317 13.9897 43.2766 13.9897H76.3734C77.333 13.9897 78.1117 14.7685 78.1117 15.728V22.111V22.0971ZM47.212 16.1452C43.5686 16.2425 43.5686 21.5686 47.212 21.666C50.8555 21.5686 50.8555 16.2425 47.212 16.1452ZM47.212 20.2754C45.4181 20.2475 45.4181 17.5636 47.212 17.5358C49.0059 17.5636 49.0059 20.2475 47.212 20.2754ZM74.9272 17.8557H53.1361C52.2183 17.8557 52.2322 16.465 53.1361 16.465H74.9272C75.845 16.465 75.8311 17.8557 74.9272 17.8557ZM74.9272 20.8733H53.1361C52.2183 20.8733 52.2322 19.4827 53.1361 19.4827H74.9272C75.845 19.4827 75.8311 20.8733 74.9272 20.8733Z"
-                  stroke="white"
-                  stroke-width="0.4"
-                  mask="url(#path-1-outside-1_1_349)"
+                  d="M50.0533 45.5285C49.5075 45.5285 49.0645 45.0855 49.0645 44.5396V38.1376C49.0645 37.5917 49.5075 37.1487 50.0533 37.1487C50.5992 37.1487 51.0422 37.5917 51.0422 38.1376V44.5396C51.0422 45.0855 50.5992 45.5285 50.0533 45.5285Z"
+                  fill="white"
+                />
+                <path
+                  d="M64.2565 45.5286C63.7106 45.5286 63.2676 45.0855 63.2676 44.5397V38.4481C63.2676 37.9023 63.7106 37.4592 64.2565 37.4592C64.8023 37.4592 65.2454 37.9023 65.2454 38.4481V44.5397C65.2454 45.0855 64.8023 45.5286 64.2565 45.5286Z"
+                  fill="white"
+                />
+                <path
+                  d="M57.3422 41.8677C57.3363 41.8677 57.3304 41.8677 57.3244 41.8677C51.0094 41.8578 44.103 36.7887 43.8696 25.6796C43.8578 25.1337 44.2909 24.6808 44.8368 24.6709H44.8585C45.3945 24.6709 45.8355 25.1001 45.8474 25.638C46.0531 35.4181 51.9429 39.882 57.3284 39.8899H57.3422C62.7159 39.8899 68.5998 35.4557 68.8351 25.7132C68.849 25.1752 69.288 24.748 69.824 24.748H69.8477C70.3936 24.7619 70.8248 25.2148 70.8129 25.7607C70.5439 36.8303 63.6454 41.8677 57.3422 41.8677Z"
+                  fill="white"
+                />
+                <path
+                  d="M69.8248 26.7613C69.7496 26.7613 69.6725 26.7534 69.5954 26.7337C69.1603 26.6308 68.8498 26.2471 68.8359 25.8001C68.6401 19.1805 67.0223 16.56 66.2608 15.6878C60.1396 19.2102 55.1734 17.3333 51.8488 16.0774C49.5486 15.2072 48.6962 14.9936 48.1879 15.5078C48.182 21.0159 45.8482 25.8812 45.7473 26.0909C45.595 26.4034 45.2905 26.613 44.9444 26.6447C44.5982 26.6743 44.262 26.522 44.0583 26.2392C40.3638 21.1425 40.0929 15.4841 43.2969 10.3062C47.0724 4.20083 55.0014 0.245273 61.3461 1.29745C65.7862 2.03516 68.8794 5.07303 70.0898 9.8731C76.6699 15.047 70.9442 25.7823 70.695 26.2432C70.517 26.5675 70.1808 26.7613 69.8248 26.7613ZM59.2516 3.10712C54.0481 3.10712 47.9605 6.52472 44.978 11.3465C42.5453 15.2803 42.4504 19.5444 44.6635 23.5217C45.3419 21.6587 46.2655 18.4942 46.2082 15.1894C46.2042 14.9916 46.2616 14.7978 46.3684 14.6316C47.8042 12.4343 50.1083 13.3045 52.5489 14.2262C55.8063 15.4564 60.2642 17.1434 65.8495 13.6269C66.156 13.4351 66.5417 13.4232 66.8581 13.5992C67.1726 13.7733 69.536 15.2883 70.4636 21.5677C71.4664 18.3024 72.0458 13.71 68.6342 11.2496C68.4384 11.1092 68.3019 10.9015 68.2485 10.6682C67.2794 6.4377 64.7815 3.87054 61.0237 3.24754C60.4482 3.15458 59.8548 3.10712 59.2516 3.10712Z"
+                  fill="white"
+                />
+                <path
+                  d="M72.7936 78.5138C72.2477 78.5138 71.8047 78.0707 71.8047 77.5249V59.0089C71.8047 58.463 72.2477 58.02 72.7936 58.02C73.3394 58.02 73.7825 58.463 73.7825 59.0089V77.5249C73.7825 78.0707 73.3394 78.5138 72.7936 78.5138Z"
+                  fill="white"
+                />
+                <path
+                  d="M57.1552 78.514C56.7498 78.514 56.3681 78.2628 56.2237 77.8573L49.1551 58.1053C49.1294 58.0321 49.1116 57.955 49.1037 57.8778L48.4985 52.257L43.4928 51.7487C42.9489 51.6933 42.5533 51.2088 42.6087 50.6649C42.6641 50.121 43.1486 49.7254 43.6925 49.7808L49.4953 50.3702C49.9601 50.4177 50.328 50.7835 50.3794 51.2483L51.0578 57.5475L58.0868 77.1888C58.2707 77.7031 58.0037 78.2687 57.4895 78.4527C57.3787 78.4962 57.266 78.514 57.1552 78.514Z"
+                  fill="white"
+                />
+                <path
+                  d="M57.1537 78.5138C57.0429 78.5138 56.9302 78.496 56.8214 78.4564C56.3072 78.2725 56.0402 77.7068 56.2241 77.1926L63.2532 57.5513L63.9315 51.2521C63.981 50.7873 64.3508 50.4214 64.8156 50.3739L69.8392 49.8637L70.3771 44.6878C70.4345 44.1439 70.919 43.7504 71.4629 43.8057C72.0068 43.8631 72.4004 44.3476 72.345 44.8915L71.724 50.8664C71.6745 51.3332 71.3067 51.701 70.8399 51.7485L65.8124 52.2588L65.2072 57.8796C65.1993 57.9567 65.1815 58.0339 65.1558 58.107L58.0872 77.8591C57.9409 78.2626 57.5611 78.5138 57.1537 78.5138Z"
+                  fill="white"
+                />
+                <path
+                  d="M43.5956 82.0165H35.016C34.4701 82.0165 34.0271 81.5734 34.0271 81.0276C34.0271 80.4817 34.4701 80.0387 35.016 80.0387H42.6067V37.3503H12.05V80.0407H19.6408C20.1866 80.0407 20.6296 80.4837 20.6296 81.0296C20.6296 81.5754 20.1866 82.0184 19.6408 82.0184H11.0612C10.5153 82.0184 10.0723 81.5754 10.0723 81.0296V36.3614C10.0723 35.8156 10.5153 35.3726 11.0612 35.3726H43.5956C44.1415 35.3726 44.5845 35.8156 44.5845 36.3614V81.0296C44.5845 81.5754 44.1415 82.0165 43.5956 82.0165Z"
+                  fill="white"
+                />
+                <path
+                  d="M39.4591 52.6445H15.1937C14.6479 52.6445 14.2048 52.2015 14.2048 51.6556C14.2048 51.1098 14.6479 50.6667 15.1937 50.6667H39.4591C40.0049 50.6667 40.448 51.1098 40.448 51.6556C40.448 52.2015 40.0069 52.6445 39.4591 52.6445Z"
+                  fill="white"
+                />
+                <path
+                  d="M39.4591 47.9531H15.1937C14.6479 47.9531 14.2048 47.5101 14.2048 46.9642C14.2048 46.4184 14.6479 45.9753 15.1937 45.9753H39.4591C40.0049 45.9753 40.448 46.4184 40.448 46.9642C40.448 47.5101 40.0069 47.9531 39.4591 47.9531Z"
+                  fill="white"
+                />
+                <path
+                  d="M39.4591 43.26H15.1937C14.6479 43.26 14.2048 42.817 14.2048 42.2711C14.2048 41.7252 14.6479 41.2822 15.1937 41.2822H39.4591C40.0049 41.2822 40.448 41.7252 40.448 42.2711C40.448 42.817 40.0069 43.26 39.4591 43.26Z"
+                  fill="white"
+                />
+                <path
+                  d="M27.3271 79.3783C20.8934 79.3783 15.6602 74.1451 15.6602 67.7113C15.6602 61.2776 20.8934 56.0444 27.3271 56.0444C33.7608 56.0444 38.994 61.2776 38.994 67.7113C38.994 74.1451 33.7588 79.3783 27.3271 79.3783ZM27.3271 58.0222C21.9851 58.0222 17.6379 62.3694 17.6379 67.7113C17.6379 73.0533 21.9851 77.4005 27.3271 77.4005C32.669 77.4005 37.0162 73.0533 37.0162 67.7113C37.0162 62.3694 32.669 58.0222 27.3271 58.0222Z"
+                  fill="white"
+                />
+                <path
+                  d="M27.3269 88.1653C23.4742 88.1653 18.4902 86.8699 17.1216 83.2189C16.9851 82.853 17.0741 82.4416 17.353 82.1687C18.9431 80.5964 20.1298 78.6997 20.8793 76.532C21.0573 76.0158 21.621 75.7409 22.1372 75.9209C22.6534 76.0989 22.9263 76.6626 22.7483 77.1788C21.979 79.4058 20.7983 81.3835 19.2358 83.0666C20.5075 85.2165 24.113 86.1856 27.3289 86.1856C30.5447 86.1856 34.1502 85.2165 35.4219 83.0666C33.8595 81.3835 32.6788 79.4058 31.9094 77.1788C31.7314 76.6626 32.0043 76.0989 32.5205 75.9209C33.0367 75.7429 33.6004 76.0158 33.7784 76.532C34.528 78.6977 35.7127 80.5944 37.3048 82.1687C37.5817 82.4436 37.6727 82.855 37.5362 83.2189C36.1636 86.8699 31.1776 88.1653 27.3269 88.1653Z"
+                  fill="white"
+                />
+                <path
+                  d="M31.5777 87.6155C31.1327 87.6155 30.7273 87.3109 30.6165 86.86C29.9975 84.3047 29.511 81.3618 29.1708 78.1123C29.1134 77.5684 29.509 77.0819 30.0509 77.0265C30.5968 76.9711 31.0813 77.3647 31.1367 77.9066C31.4689 81.0691 31.9397 83.925 32.5369 86.3952C32.6655 86.9253 32.3392 87.4612 31.8091 87.5898C31.734 87.6076 31.6549 87.6155 31.5777 87.6155ZM23.0753 87.6155C22.9981 87.6155 22.921 87.6056 22.8419 87.5878C22.3118 87.4593 21.9855 86.9253 22.1141 86.3932C22.7114 83.923 23.184 81.0671 23.5143 77.9046C23.5717 77.3607 24.0562 76.9691 24.6001 77.0245C25.144 77.0819 25.5376 77.5684 25.4802 78.1103C25.1401 81.3598 24.6535 84.3027 24.0345 86.858C23.9257 87.3129 23.5203 87.6155 23.0753 87.6155Z"
+                  fill="white"
+                />
+                <path
+                  d="M27.3269 76.2335C22.6277 76.2335 18.8047 72.4104 18.8047 67.7112C18.8047 63.012 22.6277 59.189 27.3269 59.189C32.0261 59.189 35.8492 63.012 35.8492 67.7112C35.8492 72.4104 32.0261 76.2335 27.3269 76.2335ZM27.3269 61.1667C23.7175 61.1667 20.7825 64.1018 20.7825 67.7112C20.7825 71.3207 23.7175 74.2557 27.3269 74.2557C30.9364 74.2557 33.8714 71.3207 33.8714 67.7112C33.8714 64.1018 30.9344 61.1667 27.3269 61.1667Z"
+                  fill="white"
+                />
+                <path
+                  d="M29.7772 72.4698C29.6486 72.4698 29.522 72.444 29.3994 72.3946L27.3267 71.5382L25.254 72.3946C24.9356 72.5251 24.5736 72.4836 24.2948 72.2799C24.0159 72.0782 23.8636 71.7459 23.8893 71.4037L24.0634 69.1669L22.6097 67.46C22.3862 67.199 22.315 66.839 22.4218 66.5127C22.5286 66.1864 22.7956 65.9372 23.1299 65.8561L25.3094 65.33L26.4842 63.4194C26.6642 63.1267 26.9826 62.9487 27.3267 62.9487C27.6708 62.9487 27.9893 63.1267 28.1692 63.4194L29.344 65.33L31.5236 65.8561C31.8578 65.9372 32.1268 66.1844 32.2316 66.5127C32.3384 66.839 32.2672 67.197 32.0437 67.46L30.5881 69.1669L30.7621 71.4037C30.7878 71.7459 30.6355 72.0782 30.3567 72.2799C30.1866 72.4065 29.9829 72.4698 29.7772 72.4698ZM27.3267 69.4813C27.4553 69.4813 27.5838 69.507 27.7045 69.5565L28.6676 69.954L28.5866 68.9157C28.5668 68.6546 28.6498 68.3975 28.8199 68.1978L29.4963 67.4047L28.4837 67.1594C28.2286 67.0981 28.009 66.9379 27.8726 66.7164L27.3267 65.8284L26.7808 66.7164C26.6444 66.9399 26.4248 67.0981 26.1697 67.1594L25.1571 67.4047L25.8335 68.1978C26.0036 68.3975 26.0866 68.6546 26.0669 68.9157L25.9858 69.954L26.949 69.5565C27.0696 69.5051 27.1982 69.4813 27.3267 69.4813Z"
+                  fill="white"
+                />
+                <path
+                  d="M22.2169 25.4759C22.0567 25.4759 21.8945 25.4363 21.7501 25.3592L5.34049 16.5521C5.02009 16.3801 4.81836 16.0458 4.81836 15.6799C4.81836 15.3141 5.01811 14.9818 5.34049 14.8077L21.7481 6.00268C22.0408 5.84644 22.3909 5.84644 22.6836 6.00268L39.0913 14.8077C39.4117 14.9798 39.6134 15.3141 39.6134 15.6799C39.6134 16.0458 39.4136 16.3781 39.0913 16.5521L22.6836 25.3572C22.5373 25.4363 22.3771 25.4759 22.2169 25.4759ZM7.89974 15.6819L22.2169 23.3656L36.534 15.6819L22.2169 7.99826L7.89974 15.6819Z"
+                  fill="white"
+                />
+                <path
+                  d="M32.3369 31.6189H12.0944C11.5485 31.6189 11.1055 31.1758 11.1055 30.63V19.056C11.1055 18.5102 11.5485 18.0671 12.0944 18.0671C12.6402 18.0671 13.0832 18.5102 13.0832 19.056V29.6411H31.348V19.056C31.348 18.5102 31.791 18.0671 32.3369 18.0671C32.8828 18.0671 33.3258 18.5102 33.3258 19.056V30.63C33.3258 31.1758 32.8828 31.6189 32.3369 31.6189Z"
+                  fill="white"
                 />
               </svg>
 
               <h6
-                class="text-[18px] lg:text-[22px] font-medium leading-[33px] capitalize my-[10px] lg:my-[20px] lg:max-w-[220px] lg:min-h-[66px]"
+                class="text-[18px] lg:text-[20px] 2xl:text-[22px] font-medium mb-2 xl:leading-[28px] capitalize lg:max-w-[200px] lg:min-h-[66px]"
               >
                 Expert academic advisors
               </h6>
-              <p
-                class="text-sm font-normal leading-[25px] text-center 2xl:leading-[27px]"
-              >
+              <p class="text-sm font-normal leading-[25px] text-center">
                 RK Education has become a trusted name in the field of distance
                 education consultancy, dedicated to helping students achieve
                 their academic and career aspirations.
@@ -1451,292 +1527,132 @@
           </div>
         </div>
       </section>
-      <section class="pt-[80px] pb-[100px]" aria-labelledby="Our Programs section">
-        <div class="container-custom mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="font-normal text-center">
-            <span
-              class="block  text-base lg:text-xl text-(--secondary-color) uppercase tracking-[5px] leading-[40px] lg:leading-[63.73px]"
-              >Our Programs</span
-            >
-            <span
-              class="font_display-unna text-[35px] 2xl:text-[60px] text-(--text-color) leading-[40px] lg:leading-[50px]"
-            >
-              Explore Our Services</span
-            >
-          </h2>
-        </div>
-        <div class="mt-10 md:mt-16 xl:mt-22">
+      
+      <section class="">
+        <div class="container-custom">
+          <div
+            class="pt-[15px] pt:mt-[30px] lg:pt-[70px] flex justify-center relative items-center mx-auto border-t-1 border-[var(---light-gray)]"
+          >
+            <h2 class="font-normal text-center">
+              <span
+                class="block text-base 2xl:text-xl mb-[0.5rem] text-(--secondary-color) uppercase tracking-[5px]"
+                >Our Programs</span
+              >
+              <span
+                class="font_display-unna text-[30px] xl:text-[40px] 2xl:text-[47px] leading-none"
+              >
+                Our Esteemed Global Partners</span
+              >
+            </h2>
+          </div>
+
           <swiper-container
-            class="mySwiper"
+            id="ourPartners_slider"
+            class="mySwiper mt-10 md:mt-18 lg:mt-22"
             pagination="false"
             pagination-clickable="true"
-            space-between="10"
+            space-between="50"
             slides-per-view="3"
-            id="ourServices_slider"
             autoplay-delay="2500"
             autoplay-disable-on-interaction="false"
           >
             <swiper-slide>
-              <a href="services.html">
-                <div class="service_card relative rounded-xl overflow-hidden">
-                  <img
-                    src="./src/images/service_img_1.jpg"
-                    alt="Certificate attestations"
-                    class="w-full h-auto"
-                  />
-                  <div
-                    class="content custome-card-style transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:py-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
-                  >
-                    <div class="max-w-[75%]">
-                      <p
-                        class="font-bold text-[15px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[18px] xl:text-[22px] font-bold capitalize leading-[23px] lg:leading-[27.7px]"
-                      >
-                        Certificate attestations
-                      </p>
-                      <div
-                        class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] [@media(min-width:1280px)_and_(max-width:1680px)]:w-[40px] [@media(min-width:1280px)_and_(max-width:1680px)]:h-[40px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="11"
-                          height="18"
-                          viewBox="0 0 11 18"
-                          fill="none"
-                        >
-                          <path
-                            d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="0.5"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </swiper-slide>
-
-            <swiper-slide>
-              <a href="services.html">
-                <div class="service_card relative rounded-xl overflow-hidden">
-                  <img
-                    src="./src/images/service_img_2.jpg"
-                    alt="End-to-end distance education consulting"
-                    class="w-full h-auto"
-                  />
-                  <div
-                    class="content custome-card-style transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:py-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
-                  >
-                    <div class="max-w-[75%]">
-                      <p
-                        class="font-bold text-[15px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[18px] xl:text-[22px] font-bold capitalize leading-[23px] lg:leading-[27.7px]"
-                      >
-                        End-to-end distance education consulting
-                      </p>
-                      <div
-                        class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] [@media(min-width:1280px)_and_(max-width:1680px)]:w-[40px] [@media(min-width:1280px)_and_(max-width:1680px)]:h-[40px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="11"
-                          height="18"
-                          viewBox="0 0 11 18"
-                          fill="none"
-                        >
-                          <path
-                            d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="0.5"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </swiper-slide>
-
-            <swiper-slide>
-              <a href="services.html">
-                <div class="service_card relative rounded-xl overflow-hidden">
-                  <img
-                    src="./src/images/service_img_3.png"
-                    alt="Assistance with program selection"
-                    class="w-full h-auto"
-                  />
-                  <div
-                    class="content custome-card-style transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:py-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
-                  >
-                    <div class="max-w-[75%]">
-                      <p
-                        class="font-bold text-[15px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[18px] xl:text-[22px] font-bold capitalize leading-[23px] lg:leading-[27.7px]"
-                      >
-                        Assistance with program selection
-                      </p>
-                      <div
-                        class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] [@media(min-width:1280px)_and_(max-width:1680px)]:w-[40px] [@media(min-width:1280px)_and_(max-width:1680px)]:h-[40px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="11"
-                          height="18"
-                          viewBox="0 0 11 18"
-                          fill="none"
-                        >
-                          <path
-                            d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="0.5"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
+              <div
+                class="bg-white shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)] flex items-center justify-center py-[35px] px-[40px] w-full h-28"
+              >
+                <img
+                  src="./src/images/logo-1.svg"
+                  alt="Stanford University"
+                  aria-label="Stanford University"
+                  alt="Stanford University"
+                  class="max-h-[54px] !object-contain"
+                />
+              </div>
             </swiper-slide>
             <swiper-slide>
-              <a href="services.html">
-                <div class="service_card relative rounded-xl overflow-hidden">
-                  <img
-                    src="./src/images/service_img_4.png"
-                    alt=" Personalized academic advising"
-                    class="w-full h-auto"
-                  />
-                  <div
-                    class="content custome-card-style transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:py-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
-                  >
-                    <div class="max-w-[75%]">
-                      <p
-                        class="font-bold text-[15px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[18px] xl:text-[22px] font-bold capitalize leading-[23px] lg:leading-[27.7px]"
-                      >
-                        Personalized academic advising
-                      </p>
-                      <div
-                        class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] [@media(min-width:1280px)_and_(max-width:1680px)]:w-[40px] [@media(min-width:1280px)_and_(max-width:1680px)]:h-[40px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="11"
-                          height="18"
-                          viewBox="0 0 11 18"
-                          fill="none"
-                        >
-                          <path
-                            d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="0.5"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
+              <div
+                class="bg-white shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)] flex items-center justify-center p-6 w-full h-28"
+              >
+                <img
+                  src="./src/images/logo-2.svg"
+                  alt="Stanford University"
+                  aria-label="Stanford University"
+                  alt="Stanford University"
+                  class="max-h-[54px] !object-contain"
+                />
+              </div>
             </swiper-slide>
             <swiper-slide>
-              <a href="services.html">
-                <div class="service_card relative rounded-xl overflow-hidden">
-                  <img
-                    src="./src/images/service_img_5.png"
-                    alt=" Certificate attestations"
-                    class="w-full h-auto"
-                  />
-                  <div
-                    class="content custome-card-style transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:py-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
-                  >
-                    <div class="max-w-[75%]">
-                      <p
-                        class="font-bold text-[15px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[18px] xl:text-[22px] font-bold capitalize leading-[23px] lg:leading-[27.7px]"
-                      >
-                        Certificate attestations
-                      </p>
-                      <div
-                        class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] [@media(min-width:1280px)_and_(max-width:1680px)]:w-[40px] [@media(min-width:1280px)_and_(max-width:1680px)]:h-[40px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="11"
-                          height="18"
-                          viewBox="0 0 11 18"
-                          fill="none"
-                        >
-                          <path
-                            d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="0.5"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
+              <div
+                class="bg-white shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)] flex items-center justify-center p-6 w-full h-28"
+              >
+                <img
+                  src="./src/images/logo-1.svg"
+                  alt="Stanford University"
+                  aria-label="Stanford University"
+                  alt="Stanford University"
+                  class="max-h-[54px] !object-contain"
+                />
+              </div>
             </swiper-slide>
             <swiper-slide>
-              <a href="services.html">
-                <div class="service_card relative rounded-xl overflow-hidden">
-                  <img
-                    src="./src/images/service_img_5.png"
-                    alt=" Certificate attestations"
-                    class="w-full h-auto"
-                  />
-                  <div
-                    class="content custome-card-style transition duration-700 ease-in-out absolute bottom-0 left-0 z-10 text-[var(--background-color)] py-[10px] lg:py-[20px] xl:py-[30px] px-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:py-[10px] [@media(min-width:1280px)_and_(max-width:1680px)]:px-[10px] lg:px-[14px] xl:px-[24px] mx-[14px] mb-[20px] text-left"
-                  >
-                    <div class="max-w-[75%]">
-                      <p
-                        class="font-bold text-[15px] [@media(min-width:1280px)_and_(max-width:1680px)]:text-[18px] xl:text-[22px] font-bold capitalize leading-[23px] lg:leading-[27.7px]"
-                      >
-                        Certificate attestations
-                      </p>
-                      <div
-                        class="transition duration-700 ease-in-out w-[35px] lg:w-[40px] xl:w-[58px] h-[35px] [@media(min-width:1280px)_and_(max-width:1680px)]:w-[40px] [@media(min-width:1280px)_and_(max-width:1680px)]:h-[40px] lg:h-[40px] xl:h-[58px] bg-[var(--secondary-color)] inline-flex items-center justify-center rounded-full absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="11"
-                          height="18"
-                          viewBox="0 0 11 18"
-                          fill="none"
-                        >
-                          <path
-                            d="M0.984375 16.915C1.28593 17.1948 1.74235 17.1947 2.04395 16.915L10.0156 9.51758C10.1655 9.37848 10.25 9.19407 10.25 9C10.25 8.80593 10.1655 8.62152 10.0156 8.48242L2.04395 1.08496C1.89458 0.946436 1.70554 0.87509 1.51465 0.875C1.32358 0.875 1.13386 0.946266 0.984375 1.08496C0.834494 1.22405 0.75 1.40847 0.75 1.60254C0.750077 1.79645 0.83466 1.98013 0.984375 2.11914L8.39746 9L0.984375 15.8809C0.83466 16.0199 0.750077 16.2036 0.75 16.3975C0.75 16.5915 0.834494 16.7759 0.984375 16.915Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="0.5"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
+              <div
+                class="bg-white shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)] flex items-center justify-center p-6 w-full h-28"
+              >
+                <img
+                  src="./src/images/logo-2.svg"
+                  alt="Stanford University"
+                  aria-label="Stanford University"
+                  alt="Stanford University"
+                  class="max-h-[54px] !object-contain"
+                />
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div
+                class="bg-white shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)] flex items-center justify-center p-6 w-full h-28"
+              >
+                <img
+                  src="./src/images/logo-2.svg"
+                  alt="Stanford University"
+                  aria-label="Stanford University"
+                  alt="Stanford University"
+                  class="max-h-[54px] !object-contain"
+                />
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div
+                class="bg-white shadow-[0_9.717px_9.717px_0_rgba(0,0,0,0.02)] rounded-xl border-[0.972px] border-solid border-[rgba(0,0,0,0.14)] flex items-center justify-center p-6 w-full h-28"
+              >
+                <img
+                  src="./src/images/logo-3.svg"
+                  alt="Stanford University"
+                  aria-label="Stanford University"
+                  alt="Stanford University"
+                  class="max-h-[54px] object-contain"
+                />
+              </div>
             </swiper-slide>
           </swiper-container>
-          <button
-            class="btn-golden bg-[var(--text-color)] bg-[var(--secondary-color)] btn-sm mx-auto flex mt-[18px] sm:mt-[28px] md:mt-[38px] lg:mt-[68px] tracking-[0.96px] text-sm text-white uppercase tracking-wide font-medium"
-            aria-label="View all available services"
-          >
-            View All Services
-          </button>
         </div>
       </section>
 
-      <section class="pb-[70px]" aria-labelledby="FREQUENTLY asked questions">
-        <div class="container-custom mx-auto px-4 sm:px-6 lg:px-8">
+     
+      
+     
+
+     
+    
+      <section class="pt-[70px] pb-[70px]" aria-labelledby="FREQUENTLY asked questions">
+        <div class="container-custom">
           <h2 class="font-normal text-center">
             <span
-              class="block text-base lg:text-xl text-(--secondary-color) uppercase tracking-[5px] leading-[40px] lg:leading-[63.73px]"
+              class="block text-base 2xl:text-xl mb-[0.5rem] text-(--secondary-color) uppercase tracking-[5px]"
               >FREQUENTLY asked questions</span
             >
             <span
-              class="font_display-unna text-[35px] 2xl:text-[60px] text-(--text-color) leading-[40px] lg:leading-[50px]"
+              class="font_display-unna text-[30px] xl:text-[40px] 2xl:text-[47px] leading-none"
             >
               Got Questions? We’ve Got Answers</span
             >
@@ -1880,21 +1796,21 @@
     </main>
 
     <!-- Footer -->
-    <footer class="pt-[80px] bg-[var(--mid-black)] text-gray-300">
-      <div
-        class="container-custom mx-auto pb-[70px] px-4 sm:px-6 lg:px-8 relative"
-      >
+    <footer class="pt-[120px] 2xl:pt-[97px] bg-[var(--mid-black)] text-gray-300">
+      <div class="container-custom mx-auto pb-[70px]">
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-15"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-15  relative"
         >
           <!-- About RK Group -->
-          <div>
+          <div
+            class="text-sm 2xl:text-lg"
+          >
             <h3
-              class="text-base font-medium text-[var(--secondary-color)] mb-3"
+              class="font-medium text-[var(--secondary-color)] mb-3"
             >
               ABOUT RK GROUP
             </h3>
-            <p class="text-sm font-light leading-[27px]">
+            <p class="font-light leading-[27px]">
               At RK Education, Our Vision is to be the leading provider of
               distance education consultancy, empowering people from all
               nationalities to access high-quality, flexible educational
@@ -1904,16 +1820,18 @@
           </div>
 
           <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:grid-cols-2 gap-10"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:grid-cols-2 gap-0"
           >
-            <div>
-              <h3
-                class="text-base font-medium text-[var(--secondary-color)] mb-3"
-              >
+            <div
+              class="text-sm 2xl:text-lg"
+            >
+              <h3 class="font-medium text-[var(--secondary-color)] mb-3">
                 QUICK LINKS
               </h3>
-              <ul class="space-y-2 text-sm">
-                <li><a href="index.html" class="hover:text-yellow-500">Home</a></li>
+              <ul class="space-y-2 font-light">
+                <li>
+                  <a href="index.html" class="hover:text-yellow-500">Home</a>
+                </li>
                 <li>
                   <a href="#" class="hover:text-yellow-500">Our Programs</a>
                 </li>
@@ -1926,13 +1844,15 @@
               </ul>
             </div>
 
-            <div>
+            <div
+              class="text-sm 2xl:text-lg"
+            >
               <h3
-                class="text-base font-medium text-[var(--secondary-color)] mb-3"
+                class="font-medium text-[var(--secondary-color)] mb-3"
               >
                 ACCREDITATIONS
               </h3>
-              <ul class="text-sm font-light leading-[27px] space-y-1">
+              <ul class="font-light leading-[27px] space-y-1">
                 <li>• UGC-DEB Approved</li>
                 <li>• AICTE Recognized</li>
                 <li>
@@ -1948,7 +1868,7 @@
             <div class="flex justify-end">
               <a
                 href="index.html"
-                class="footer-brand-logo absolute top-[-80px] right-0 px-[10px] pb-[10px] pt-[5px] lg:px-[10px] lg:pb-[10px] lg:pt-[5px] flex items-center space-x-3 rtl:space-x-reverse rounded-bl-[200px] rounded-br-[200px] rounded-tl-0 rounded-tr-0 bg-[rgba(217,217,217,0.2)]"
+                class="footer-brand-logo absolute top-[-120px] 2xl:top-[-97px] right-0 px-[10px] pb-[10px] pt-[5px] lg:px-[10px] lg:pb-[10px] lg:pt-[5px] flex items-center space-x-3 rtl:space-x-reverse rounded-bl-[200px] rounded-br-[200px] rounded-tl-0 rounded-tr-0 bg-[rgba(217,217,217,0.2)]"
               >
                 <span class="brand-logo">
                   <svg
@@ -2038,11 +1958,13 @@
             </div>
             <!-- Newsletter -->
             <h3
-              class="text-base font-medium text-[var(--secondary-color)] mb-3"
+              class="font-medium text-[var(--secondary-color)] mb-3"
             >
               NEWSLETTER
             </h3>
-            <p class="text-sm font-light leading-[27px] mb-4">
+            <p
+              class="leading-[27px] mb-4 text-sm 2xl:text-lg"
+            >
               Sign up for email updates today.
             </p>
             <form class="flex flex-col space-y-5">
@@ -2053,7 +1975,7 @@
               />
               <button
                 type="submit"
-                class="flex flex-row gap-4 font-normal text-sm w-max px-10 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600"
+                class="flex flex-row gap-4 font-normal text-sm w-max px-8 py-3 bg-[var(--secondary-color)] text-white rounded-lg hover:bg-yellow-600 tracking-[3.2px]"
               >
                 SUBMIT
                 <img src="./src/images/arrow-right.svg" alt="arrow" />
@@ -2062,13 +1984,15 @@
           </div>
 
           <!-- Contact Info -->
-          <div class="">
+          <div
+            class="text-sm 2xl:text-lg"
+          >
             <h3
-              class="text-base font-medium text-[var(--secondary-color)] mb-3"
+              class="font-medium text-[var(--secondary-color)] mb-3"
             >
               CONTACT US
             </h3>
-            <ul class="text-sm font-light leading-[27px] space-y-1">
+            <ul class="font-light leading-[27px] space-y-1">
               <li class="flex gap-3">
                 <img src="./src/images/email-icon.svg" alt="email-icon" />
                 info@rkeducationgroup.com
@@ -2083,17 +2007,19 @@
           </div>
 
           <div class="md:col-span-2">
-            <div class=" ">
+            <div
+              class="text-sm 2xl:text-lg"
+            >
               <h3
-                class="text-base font-medium text-[var(--secondary-color)] mb-3"
+                class="font-medium text-[var(--secondary-color)] mb-3"
               >
                 Address
               </h3>
-              <ul class="text-sm font-light leading-[27px] space-y-1">
+              <ul class="font-light leading-[27px] space-y-1">
                 <li class="flex gap-2 flex-col text-[var(--secondary-color)]">
                   United Arab Emirates
                   <ul
-                    class="flex text-white flex-col md:flex-row gap-3 text-[13px]"
+                    class="flex text-white flex-col md:flex-row gap-3  text-xs 2xl:text-[13px]"
                   >
                     <li class="flex gap-2 items-center">
                       <img src="./src/images/f_2_.svg" /> Sharjah – Al Wahda
@@ -2130,12 +2056,12 @@
           class="container-custom mx-auto px-4 sm:px-6 lg:px-8 relative py-4 flex flex-col md:flex-row items-center justify-between"
         >
           <!-- Left: Copyright -->
-          <div class="text-sm text-center md:text-left">
+          <div class="text-sm text-center text-white md:text-left">
             © 2025 RK Group. All Rights Reserved.
           </div>
 
           <!-- Center: Social Icons -->
-          <div class="flex space-x-5 my-3 md:my-0 justify-center">
+          <div class="flex my-3 md:my-0 justify-center items-center gap-[53px]">
             <a href="#" class="hover:text-yellow-500 transition-colors">
               <img src="./src/images/f_1_.svg" />
             </a>
@@ -2155,14 +2081,12 @@
 
           <!-- Right: Designed By -->
           <div
-            class="text-sm text-center md:text-right flex items-center space-x-1"
+            class="text-sm text-center md:text-right flex items-center space-x-3"
           >
-            <span>Designed By:</span>
-            <a
-              href="#"
-              target="_blank"
-              class="hover:text-yellow-500 font-medium"
+            <span class="text-white leading-[0.7px] font-normal"
+              >Designed By:</span
             >
+            <a href="#" target="_blank" class="hover:text-yellow-500">
               <img src="./src/images/intersmart-logo-footer.svg" />
             </a>
           </div>
@@ -2171,10 +2095,10 @@
       <!-- Footer -->
     </footer>
     <div
-      class="fixed bottom-[3%] right-0 z-10 gap-[28px] lg: gap-[48px] flex-col flex"
+      class="fixed bottom-[3%] right-0 z-10 gap-[28px] lg: gap-[48px] flex-col flex max-w-[50px] "
     >
       <div
-        class="shadow-xl pl-[10px] lg:pl-[20px] pr-[10px] lg:pr-[15px] py-[17px] lg:py-[27px] bg-[var(--background-color)] rounded-l-[30px]"
+        class="shadow-xl pl-[10px] lg:pl-[15px] pr-[10px] lg:pr-[15px] py-[17px] lg:py-[27px] bg-[var(--background-color)]  sticky-social"
       >
         <ul class="flex flex-col gap-[12px] lg:gap-[22px] items-center">
           <li>
@@ -2246,7 +2170,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="./src/js/custom.js"></script>
-
-    <script></script>
   </body>
 </html>
