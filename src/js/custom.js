@@ -51,10 +51,12 @@ function setupSlider(selector, breakpoints) {
 /* ---- ourServices_slider script ---*/
 setupSlider('#ourServices_slider', {
   0: { slidesPerView: 1.1 },
-  440: { slidesPerView: 1.3 },
-  640: { slidesPerView: 2 },
-  768: { slidesPerView: 3.3 },
-  1024: { slidesPerView: 4.2 },
+  440: { slidesPerView: 2.5},
+  768: { slidesPerView: 3 },
+
+  992: { slidesPerView: 3.5},
+  1024: { slidesPerView: 3.5 },
+  1300: { slidesPerView: 4.2 },
 });
 
 /* ---- ourPartners_slider script ---*/
