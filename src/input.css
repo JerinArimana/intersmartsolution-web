@@ -484,7 +484,7 @@ swiper-slide img {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.45); /* transparent black overlay */
-  z-index: -1;
+  z-index: 0;
 }
 
 /* Content wrapper */
@@ -549,5 +549,5 @@ backdrop-filter: blur(12px);
 }
 
 .application_btn{
-  
+
 }
