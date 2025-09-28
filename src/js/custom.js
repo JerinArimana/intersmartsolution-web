@@ -190,3 +190,59 @@ function toggleAccordion(index) {
     });
   });
 })();
+
+
+function initTabs() {
+    try {
+      const tabButtons = document.querySelectorAll(".tab-btn");
+      const tabContents = document.querySelectorAll(".tab-content");
+
+      if (tabButtons.length === 0) {
+        throw new Error("No tab buttons found. Add elements with class 'tab-btn'.");
+      }
+
+      if (tabContents.length === 0) {
+        throw new Error("No tab content found. Add elements with class 'tab-content'.");
+      }
+
+      tabButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const target = btn.getAttribute("data-tab");
+          const targetContent = document.getElementById(target);
+
+          if (!target) {
+            console.error("Missing 'data-tab' attribute on:", btn);
+            return;
+          }
+
+          if (!targetContent) {
+            console.error(`No content found with id '${target}'`);
+            return;
+          }
+
+          // reset all tabs
+          tabButtons.forEach((b) => {
+            b.classList.remove("bg-white", "text-[var(--text-color)]", "font-normal");
+            b.setAttribute("aria-selected", "false");
+          });
+          tabContents.forEach((c) => c.classList.add("hidden"));
+
+          // activate clicked tab
+          btn.classList.add("bg-white", "text-[var(--text-color)]", "font-normal");
+          btn.setAttribute("aria-selected", "true");
+          targetContent.classList.remove("hidden");
+        });
+      });
+
+      // Initialize first tab safely
+      if (tabButtons[0] && tabContents[0]) {
+        tabButtons[0].classList.add("bg-white", "text-[var(--text-color)]", "font-normal");
+        tabContents[0].classList.remove("hidden");
+      }
+    } catch (err) {
+      console.error("Tab system initialization failed:", err.message);
+    }
+  }
+
+  // Run the function after DOM is ready
+  document.addEventListener("DOMContentLoaded", initTabs);
