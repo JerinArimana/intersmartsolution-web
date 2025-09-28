@@ -34,8 +34,9 @@ body {
   --border-light-yellow: #c397304d;
   --yellow-shade: rgba(195, 151, 48, 0.1);
   --yellow-shade-second: rgba(195, 151, 48, 0.05);
-  --gray-cod-1:rgba(121, 121, 121, 0.80);
-  --yellow-shade-third:rgba(195, 151, 48, 0.10);
+  --gray-cod-1: rgba(121, 121, 121, 0.8);
+  --yellow-shade-third: rgba(195, 151, 48, 0.1);
+  --cream-yellow:#f4edd9;
 }
 
 .font_display-unna {
@@ -88,7 +89,34 @@ body {
   border-radius: 17px;
   display: inline-block;
 }
-
+.custom-gradient-border-second {
+  background: linear-gradient(#fff 0 0) padding-box,
+    /* fade only top-right corner */
+      linear-gradient(
+        to bottom right,
+        rgb(195 151 48) 0%,
+        rgb(195 151 48) 80%,
+        rgba(255, 255, 255, 0) 100%
+      )
+      border-box;
+  border: 1px solid transparent;
+  display: inline-block;
+  border-radius: 5.362px;
+}
+.custom-gradient-border-first {
+  background: linear-gradient(#fff 0 0) padding-box,
+    /* fade only top-right corner */
+      linear-gradient(
+        to bottom left,
+        rgb(195 151 48) 0%,
+        rgb(195 151 48) 80%,
+        rgba(255, 255, 255, 0) 100%
+      )
+      border-box;
+  border: 1px solid transparent;
+  display: inline-block;
+  border-radius: 5.362px;
+}
 .gradient-border_three {
   background: linear-gradient(
       322deg,
@@ -488,9 +516,13 @@ swiper-slide img {
   background: rgba(0, 0, 0, 0.45); /* transparent black overlay */
   z-index: 0;
 }
-.innerPage-overlay{
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%);
-   position: absolute;
+.innerPage-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -552,24 +584,21 @@ swiper-slide img {
   }
 }
 
-.outlien-button{
+.outlien-button {
   border-radius: 200px;
-border: 1px solid #C39730;
-backdrop-filter: blur(12px);
+  border: 1px solid #c39730;
+  backdrop-filter: blur(12px);
 }
 
-
-.detaiil-page-info-card .choose-it{
+.detaiil-page-info-card .choose-it {
   border: unset;
   outline: unset;
   box-shadow: unset;
   padding: 0px;
 }
 
-.detail-page_btn button{
-     
-      @media (min-width: 768px) and (max-width: 991.98px) { 
-
-        padding: 12px 18px;
-      }
+.detail-page_btn button {
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    padding: 12px 18px;
+  }
 }
