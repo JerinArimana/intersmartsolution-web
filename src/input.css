@@ -1,7 +1,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  color: var(--text-color);
+  color: #1D1D1D;
 }
 
 :root {
@@ -37,6 +37,8 @@ body {
   --gray-cod-1: rgba(121, 121, 121, 0.8);
   --yellow-shade-third: rgba(195, 151, 48, 0.1);
   --cream-yellow:#f4edd9;
+--light-yellow-border:rgba(195, 151, 48, 0.44);
+--card-yellow-light:rgba(195, 151, 48, 0.10);
 }
 
 .font_display-unna {
@@ -602,7 +604,35 @@ swiper-slide img {
     padding: 12px 18px;
   }
 }
+.why_choos-EduCard:after {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    display: block;
+    width: 6px;
+    height: 80px;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: var(--secondary-color);
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    left: 0;
+}
 
-
+.academic-list-card::after{
+   content: "";
+    position: absolute;
+    display: block;
+    width: 55px;
+    height: 4px;
+   border-radius: 10px;
+    background-color: var(--secondary-color);
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    left: 0;
+    bottom: -6px;
+}
 /* ------------------------- */
 
