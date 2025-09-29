@@ -88,6 +88,15 @@ setupSlider('#team_slider', {
   1300: { slidesPerView: 5 },
 });
 
+
+/* ---- team_slider script ---*/
+setupSlider('#location_slider', {
+  0: { slidesPerView: 1 },
+  640: { slidesPerView: 2 },
+  990: { slidesPerView: 3 },
+  1024: { slidesPerView: 3 },
+  1300: { slidesPerView: 3 },
+});
 /* ---- initialize all swiper containers safely ---*/
 try {
   const swipers = document.querySelectorAll('swiper-container');
@@ -246,3 +255,69 @@ function initTabs() {
 
   // Run the function after DOM is ready
   document.addEventListener("DOMContentLoaded", initTabs);
+
+
+
+
+  
+
+   // Initialize Lucide icons
+    lucide.createIcons();
+
+    let currentIndex = 0;
+    const totalCards = 5;
+
+    function updateSlider() {
+      const cards = document.querySelectorAll('.card');
+      const indicators = document.querySelectorAll('#indicators button');
+
+      // Hide all cards
+      cards.forEach(card => {
+        card.classList.add('hidden');
+        card.classList.remove('scale-100', 'opacity-100', 'border-2', 'border-yellow-500');
+        card.classList.add('scale-95', 'opacity-70', 'border', 'border-gray-700');
+      });
+
+      // Show and style the three visible cards
+      for (let i = 0; i < 3; i++) {
+        const index = (currentIndex + i) % totalCards;
+        const card = cards[index];
+        card.classList.remove('hidden');
+        if (i === 1) {
+          card.classList.remove('scale-95', 'opacity-70', 'border', 'border-gray-700');
+          card.classList.add('scale-100', 'opacity-100', 'border-2', 'border-yellow-500');
+        }
+      }
+
+      // Update indicators
+      indicators.forEach((indicator, index) => {
+        indicator.classList.remove('bg-yellow-500');
+        indicator.classList.add('bg-gray-600');
+        if (index === currentIndex) {
+          indicator.classList.remove('bg-gray-600');
+          indicator.classList.add('bg-yellow-500');
+        }
+      });
+    }
+
+    // Event listeners for navigation buttons
+    document.getElementById('next-button').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalCards;
+      updateSlider();
+    });
+
+    document.getElementById('prev-button').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+      updateSlider();
+    });
+
+    // Event listeners for indicators
+    document.querySelectorAll('#indicators button').forEach(button => {
+      button.addEventListener('click', () => {
+        currentIndex = parseInt(button.getAttribute('data-index'));
+        updateSlider();
+      });
+    });
+
+    // Initial render
+    updateSlider();
