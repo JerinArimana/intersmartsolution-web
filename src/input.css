@@ -634,5 +634,15 @@ swiper-slide img {
     left: 0;
     bottom: -6px;
 }
+.blog-card{
+cursor: pointer;
+}
+
+.blog-card svg{
+@media (max-width: 991.98px) { 
+  width: 30px;
+  height: 30px;
+ }
+}
 /* ------------------------- */
 
