@@ -607,7 +607,8 @@ swiper-slide img {
 .why_choos-EduCard:after {
     content: "";
     position: absolute;
-    bottom: 30px;
+    top: 50%;
+    transform: translateY(-50%);
     display: block;
     width: 6px;
     height: 80px;
@@ -618,6 +619,11 @@ swiper-slide img {
     margin-right: auto;
     opacity: 1;
     left: 0;
+
+
+    
+  
+
 }
 
 .academic-list-card::after{
@@ -711,4 +717,7 @@ cursor: pointer;
 .location_swiper {
   --swiper-navigation-color: #ffffff;  /* arrow color */
   --swiper-navigation-size: 20px;  /* arrow size */
+}
+.footer-copy-right-section svg{
+  fill: white;
 }
