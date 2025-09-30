@@ -146,6 +146,76 @@ function toggleAccordion(index) {
 }
 
 
+// (function () {
+//   document.addEventListener("DOMContentLoaded", () => {
+//     const nav = document.querySelector('ul[aria-label="Main navigation"]');
+//     if (!nav) {
+//       console.warn("Navigation element not found.");
+//       return;
+//     }
+
+//     // ✅ Select all nav links (main + dropdown)
+//     const links = nav.querySelectorAll("a, #dropdownNavbar a");
+//     if (!links.length) {
+//       console.warn("No navigation links found.");
+//       return;
+//     }
+
+//     const currentPage = window.location.pathname.split("/").pop();
+//     const ACTIVE_CLASS = "nav-active";
+//     const ROOT_PAGE = "index.html";
+
+//     const ICON_HTML = `
+//       <span class="nav-icon block">
+//         <img src="./src/images/cap-icon.svg" alt="cap nav icon" class="w-auto h-auto object-cover"/>
+//       </span>
+//     `;
+
+//     // ✅ Remove active class & icons from all
+//     function clearActive() {
+//       links.forEach(link => {
+//         link.classList.remove(ACTIVE_CLASS);
+//         link.removeAttribute("aria-current");
+
+//         const oldIcon = link.querySelector(".nav-icon");
+//         if (oldIcon) oldIcon.remove();
+//       });
+//     }
+
+//     // ✅ Add active + icon only once
+//     function setActive(link) {
+//       clearActive();
+
+//       link.classList.add(ACTIVE_CLASS);
+//       link.setAttribute("aria-current", "page");
+
+//       // ensure <a> has relative position so icon aligns
+//       link.style.position = "relative";
+
+//       if (!link.querySelector(".nav-icon")) {
+//         link.insertAdjacentHTML("beforeend", ICON_HTML);
+//       }
+//     }
+
+//     // ✅ Loop through links
+//     links.forEach(link => {
+//       const href = link.getAttribute("href");
+//       if (!href) return;
+
+//       // Highlight current page on load
+//       if (href === currentPage || (href === ROOT_PAGE && currentPage === "")) {
+//         setActive(link);
+//       }
+
+//       // On click → set active
+//       link.addEventListener("click", (e) => {
+//         if (href === "#") e.preventDefault();
+//         setActive(link);
+//       });
+//     });
+//   });
+// })();
+
 (function () {
   document.addEventListener("DOMContentLoaded", () => {
     const nav = document.querySelector('ul[aria-label="Main navigation"]');
@@ -154,51 +224,79 @@ function toggleAccordion(index) {
       return;
     }
 
-    const links = nav.querySelectorAll("a");
+    // ✅ Get all nav + dropdown links
+    const links = nav.querySelectorAll("a, #dropdownNavbar a");
     if (!links.length) {
       console.warn("No navigation links found.");
       return;
     }
 
-    const currentPage = window.location.pathname.split("/").pop(); // e.g. "about.html"
-    const ACTIVE_CLASS = "nav-active"; // ✅ avoids hardcoding class name everywhere
-    const ROOT_PAGE = "index.html"; // ✅ avoids magic strings
+    const currentPage = window.location.pathname.split("/").pop();
+    const ACTIVE_CLASS = "nav-active";
+    const ROOT_PAGE = "index.html";
 
+    const ICON_HTML = `
+      <span class="nav-icon block absolute w-[40px] top-[-25px] left-1/2 -translate-x-1/2">
+        <img src="./src/images/cap-icon.svg" alt="cap nav icon" class="w-auto h-auto object-cover"/>
+      </span>
+    `;
+
+    // ✅ Remove active + icons
     function clearActive() {
       links.forEach(link => {
         link.classList.remove(ACTIVE_CLASS);
         link.removeAttribute("aria-current");
+
+        // remove icon inside <a>, <li>, or parent <li>
+        const candidates = [
+          link.querySelector(".nav-icon"),
+          link.parentElement.querySelector(".nav-icon"),
+          link.closest("li")?.querySelector(".nav-icon")
+        ];
+        candidates.forEach(icon => icon && icon.remove());
       });
     }
 
-    // ✅ safer loop with null-check
+    // ✅ Add active + icon
+    function setActive(link) {
+      clearActive();
+
+      link.classList.add(ACTIVE_CLASS);
+      link.setAttribute("aria-current", "page");
+
+      if (link.closest("#dropdownNavbar")) {
+        // 👉 Dropdown item clicked → icon goes on parent <li> that holds the button
+        const parentLi = nav.querySelector("button#dropdownNavbarLink")?.closest("li");
+        if (parentLi) {
+          parentLi.style.position = "relative";
+          parentLi.insertAdjacentHTML("beforeend", ICON_HTML);
+        }
+      } else {
+        // 👉 Normal nav item → icon on <a>
+        link.style.position = "relative";
+        link.insertAdjacentHTML("beforeend", ICON_HTML);
+      }
+    }
+
+    // ✅ Loop through links
     links.forEach(link => {
       const href = link.getAttribute("href");
       if (!href) return;
 
+      // Highlight on load
       if (href === currentPage || (href === ROOT_PAGE && currentPage === "")) {
-        clearActive();
-        link.classList.add(ACTIVE_CLASS);
-        link.setAttribute("aria-current", "page");
+        setActive(link);
       }
 
-      // Attach click listener
-      const clickHandler = (e) => {
+      // Handle click
+      link.addEventListener("click", (e) => {
         if (href === "#") e.preventDefault();
-        clearActive();
-        link.classList.add(ACTIVE_CLASS);
-        link.setAttribute("aria-current", "page");
-      };
-
-      link.addEventListener("click", clickHandler);
-
-      // ✅ Cleanup: remove event listener if needed later
-      window.addEventListener("beforeunload", () => {
-        link.removeEventListener("click", clickHandler);
+        setActive(link);
       });
     });
   });
 })();
+
 
 
 function initTabs() {
