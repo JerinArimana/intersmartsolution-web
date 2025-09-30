@@ -644,5 +644,71 @@ cursor: pointer;
   height: 30px;
  }
 }
+
+
+
+
+.swiper-button-next, .swiper-button-prev{
+   width: 5px!important;
+  height: 11px!important;
+}
+/* .custom_swiper .swiper-button-next{
+  width: 5px;
+  height: 11px;
+}
+.swiper-button-prev{
+  width: 5px;
+  height: 11px;
+} */
 /* ------------------------- */
 
+.custom-prev,
+.custom-next {
+  width: 40px;
+  height: 40px;
+  background: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.mySwiper {
+  /* arrow color */
+  --swiper-navigation-color: #282828;
+
+  /* arrow font-size (controls actual arrow size) */
+  --swiper-navigation-size: 20px;
+
+  /* optional: positioning tweaks */
+  --swiper-navigation-sides-offset: 0px; /* distance from edges */
+  --swiper-navigation-top-offset: 50%;   /* vertical alignment */
+}
+.mySwiper {
+  --swiper-navigation-color: #000;  /* arrow color */
+  --swiper-navigation-size: 20px;  /* arrow size */
+}
+
+.location_swiper .swiper-button-next,
+.location_swiper .swiper-button-prev {
+  top: auto;       /* reset default */
+  left: 50%;       /* center horizontally */
+  transform: translateX(-50%);
+}
+
+/* move next (down) arrow to bottom */
+.location_swiper .swiper-button-next {
+  bottom: 0px!important;
+  
+}
+
+/* move prev (up) arrow to top */
+.location_swiper .swiper-button-prev {
+  top: 10px;
+}
+
+.location_swiper {
+  --swiper-navigation-color: #ffffff;  /* arrow color */
+  --swiper-navigation-size: 20px;  /* arrow size */
+}
