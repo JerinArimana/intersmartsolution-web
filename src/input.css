@@ -256,10 +256,10 @@ body {
   opacity: 1;
   transition: opacity 0.3s ease; /* Smooth fade effect */
 }
-.service_card span {
+.service_card .icon-box {
   opacity: 0;
 }
-.service_card:hover span {
+.service_card:hover .icon-box {
   opacity: 1;
 }
 .service_card:hover .content {
@@ -672,7 +672,7 @@ swiper-slide img {
   --swiper-navigation-color: #282828;
 
   /* arrow font-size (controls actual arrow size) */
-  --swiper-navigation-size: 20px;
+  --swiper-navigation-size: 15px;
 
   /* optional: positioning tweaks */
   --swiper-navigation-sides-offset: 0px; /* distance from edges */
@@ -680,7 +680,7 @@ swiper-slide img {
 }
 .mySwiper {
   --swiper-navigation-color: #000; /* arrow color */
-  --swiper-navigation-size: 20px; /* arrow size */
+  --swiper-navigation-size: 15px; /* arrow size */
 }
 
 .location_swiper .swiper-button-next,
@@ -721,4 +721,39 @@ swiper-slide img {
 }
 .transparent-bg-breadcrumb {
   background: transparent;
+}
+
+.custom-input::placeholder {
+  color: white;
+}
+
+.whychooseCar-distance {
+  border-radius: 10px;
+  border: 1px solid rgba(195, 151, 48, 0.32);
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(6px);
+}
+
+.tab-scroll-style {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: normal;
+  flex-wrap: nowrap;
+  overflow: auto;
+  white-space: nowrap;
+  /* padding: 0 50px 0 0; */
+  /* max-width: 1170px; */
+  padding: 5px;
+  height: 58px;
+  gap: 1rem;
+}
+
+.footer-brand-logo svg{
+  @media (max-width: 991.98px) { 
+    max-width: 100px;
+max-height: 100px;
+   }
+
 }
