@@ -83,10 +83,11 @@ setupSlider('#testimonials_slider', {
 
 /* ---- team_slider script ---*/
 setupSlider('#team_slider', {
-  0: { slidesPerView: 1 },
-  440: { slidesPerView: 1.6 },
-  640: { slidesPerView: 2 },
-  990: { slidesPerView: 3 },
+  0: { slidesPerView: 1
+   },
+  440: { slidesPerView: 2 },
+  640: { slidesPerView: 3 },
+  990: { slidesPerView: 4 },
   1024: { slidesPerView: 4 },
   1300: { slidesPerView: 5 },
 });

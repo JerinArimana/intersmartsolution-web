@@ -453,6 +453,9 @@ swiper-slide img {
   position: relative;
   z-index: 1;
   bottom: -28px;
+   
+    border-radius: 100%;
+    overflow: hidden;
 }
 .social {
   opacity: 0;
@@ -684,7 +687,17 @@ swiper-slide img {
 .mySwiper {
   --swiper-navigation-color: #000; /* arrow color */
   --swiper-navigation-size: 15px; /* arrow size */
+
+
 }
+.custom_swiper::part(container) {
+padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+/* .custom_swiper::part(wrapper) {
+      padding-right: 5rem;
+} */
 
 .location_swiper .swiper-button-next,
 .location_swiper .swiper-button-prev {
@@ -760,3 +773,4 @@ max-height: 100px;
    }
 
 }
+
