@@ -691,8 +691,11 @@ swiper-slide img {
 
 }
 .custom_swiper::part(container) {
-padding-right: 2rem;
+
+    @media (min-width: 1400px) { 
+      padding-right: 2rem;
     padding-left: 2rem;
+     }
 }
 
 /* .custom_swiper::part(wrapper) {
@@ -774,3 +777,11 @@ max-height: 100px;
 
 }
 
+ @media (min-width: 768px) {
+    #mainContainer {
+      right: 0 !important;
+    }
+    #toggleBtn {
+      display: none;
+    }
+  }

@@ -468,3 +468,10 @@ function initTabs() {
 
     // Initial render
     updateSlider();
+
+
+
+
+
+
+// Usage: const toggle = createToggleSocial(); then call toggle();

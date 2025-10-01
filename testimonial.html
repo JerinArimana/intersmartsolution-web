@@ -1151,78 +1151,67 @@
     </footer>
     
     
-    <div
-      class="fixed bottom-[3%] right-0 z-10 gap-[28px] lg: gap-[48px] flex-col flex max-w-[50px]"
+       <div class="fixed right-0 top-1/2 -translate-y-1/2 z-10 transition-all duration-300" id="mainContainer" style="right: -50px;">
+  <div class="flex items-start">
+    <button 
+      id="toggleBtn" 
+      class="w-[100px] z-1 relative right-[-30px] bg-yellow-600 text-white px-4 py-2 rounded-l-lg md:hidden transition-all duration-300"
+      onclick="toggleSocial()"
     >
-      <div
-        class="shadow-xl pl-[10px] lg:pl-[15px] pr-[10px] lg:pr-[15px] py-[17px] lg:py-[27px] bg-[var(--background-color)] sticky-social"
-      >
+      <span id="btnText">Show</span>
+    </button>
+    
+    <div 
+      id="socialContainer" 
+      class="z-5 gap-[28px] lg:gap-[48px] flex-col flex max-w-[50px] md:translate-x-0"
+    >
+      <div class="shadow-xl pl-[10px] lg:pl-[15px] pr-[10px] lg:pr-[15px] py-[17px] lg:py-[27px] bg-[var(--background-color)] sticky-social">
         <ul class="flex flex-col gap-[12px] lg:gap-[22px] items-center">
-          <li>
-            <a href="#">
-              <img src="./src/images/wts.svg" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./src/images/face.svg" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./src/images/youtoobe.svg" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./src/images/insta.svg" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./src/images/x.svg" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./src/images/ind.svg" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./src/images/pnt.svg" />
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              <img src="./src/images/tick.svg" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./src/images/tel.svg" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./src/images/env.svg" />
-            </a>
-          </li>
+          <li><a href="#"><img src="./src/images/wts.svg" /></a></li>
+          <li><a href="#"><img src="./src/images/face.svg" /></a></li>
+          <li><a href="#"><img src="./src/images/youtoobe.svg" /></a></li>
+          <li><a href="#"><img src="./src/images/insta.svg" /></a></li>
+          <li><a href="#"><img src="./src/images/x.svg" /></a></li>
+          <li><a href="#"><img src="./src/images/ind.svg" /></a></li>
+          <li><a href="#"><img src="./src/images/pnt.svg" /></a></li>
+          <li><a href="#"><img src="./src/images/tick.svg" /></a></li>
+          <li><a href="#"><img src="./src/images/tel.svg" /></a></li>
+          <li><a href="#"><img src="./src/images/env.svg" /></a></li>
+          <li><a href="#"><img src="./src/images/env.svg" /></a></li>
         </ul>
       </div>
 
-      <a
-        href="#"
-        class="relative cursor-pointer right-[15px] max-w-[62px] max-h-[62px] bg-[var()]"
-      >
-        <img
-          src="./src/images/chatboat.svg"
-          alt="chatboat"
-          class="w-full h-auto object-cover"
-        />
+      <a href="#" class="relative cursor-pointer right-[15px] max-w-[62px] max-h-[62px]">
+        <img src="./src/images/chatboat.svg" alt="chatboat" class="w-full h-auto object-cover" />
       </a>
     </div>
+  </div>
+</div>
+
+<script>
+  let isVisible = false;
+
+  function toggleSocial() {
+    const mainContainer = document.getElementById('mainContainer');
+    const socialContainer = document.getElementById('socialContainer');
+    const btnText = document.getElementById('btnText');
+    
+    isVisible = !isVisible;
+    
+    if (isVisible) {
+      // Show: Move entire container to show everything
+      mainContainer.style.right = '0';
+      btnText.textContent = 'Hide';
+    } else {
+      // Hide: Move container so only button is visible at edge
+      const containerWidth = socialContainer.offsetWidth;
+      mainContainer.style.right = `-${containerWidth}px`;
+      btnText.textContent = 'Show';
+    }
+  }
+</script>
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
