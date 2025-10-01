@@ -29,7 +29,7 @@
   <body>
     <a href="#header" class="skip-link">Skip to main content</a>
     <!-- Header -->
-      <header class="absolute w-full top-0 z-10" id="header">
+   <header class="absolute w-full top-0 z-10" id="header">
       <nav class="">
         <div
           class="brand_logo mx-auto w-full container-custom flex flex-wrap items-center lg:items-start justify-between"
@@ -53,7 +53,7 @@
             data-drawer-show="drawer-example"
             aria-controls="drawer-example"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="bg-gray-200 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-expanded="false"
           >
             <span class="sr-only">Open main menu</span>
@@ -131,7 +131,7 @@
                 <!-- Dropdown menu -->
                 <div
                   id="dropdownNavbar"
-                  class="z-10 hidden font-normal bg-white divide-y rounded-lg shadow-sm w-44"
+                  class="!min-width-[350px] !w-[350px] max-w-[350px] z-10 hidden font-normal bg-white divide-y rounded-lg shadow-sm w-44"
                 >
                   <ul
                     class="py-2 text-sm text-black dark:text-gray-400"
@@ -140,32 +140,33 @@
                     <li>
                       <a
                         href="attestation.html"
-                        class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-none"
+                        class="block px-3 text-[var(--text-color)] py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-none"
                         >Attestation</a
                       >
                     </li>
                     <li>
                       <a
-                        href="#"
-                        class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-none"
-                        >Settings</a
+                        href="service-detail.html"
+                        class="block px-3 py-2 text-[var(--text-color)] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-none"
+                        >Service-detail</a
                       >
                     </li>
                     <li>
                       <a
-                        href="#"
-                        class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-none"
-                        >Earnings</a
+                        href="equivalence-certificate.html"
+                        class="block px-3 py-2 text-[var(--text-color)] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-none"
+                        >Equivalence-certificate</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="privacy-policy.html"
+                        class="block px-3 py-2 text-[var(--text-color)] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-none"
+                        >Privacy-policy</a
                       >
                     </li>
                   </ul>
-                  <div class="py-1">
-                    <a
-                      href="#"
-                      class="block px-3 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                      >Sign out</a
-                    >
-                  </div>
+                 
                 </div>
               </li>
               <li class="relative">
@@ -186,7 +187,7 @@
                 class="gradient-border-line px-[18px] py-[8px] 2xl:px-[28px] 2xl:py-[10.5px]"
               >
                 <a
-                  href="#"
+                  href="contact.html"
                   class="block py-2 px-3 text-white md:border-0 py-[1px] rounded-none btn-nave"
                   >Contact</a
                 >
@@ -261,7 +262,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="distance-education.html"
               class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
               >Distance education</a
             >
@@ -300,30 +301,30 @@
               >
                 <li>
                   <a
-                    href="#"
+                    href="attestation.html"
                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Dashboard</a
+                    >Attestation</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="service-detail.html"
                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Settings</a
+                    >Service-detail</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="equivalence-certificate.html"
                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Earnings</a
+                    >Equivalence-certificate</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="privacy-policy.html"
                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Sign out</a
+                    >Privacy-policy</a
                   >
                 </li>
               </ul>
@@ -336,16 +337,10 @@
               >Careers</a
             >
           </li>
+         
           <li>
             <a
-              href="#"
-              class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
-              >Login</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
+              href="contact.html"
               class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
               >Contact</a
             >
@@ -678,12 +673,12 @@
     </main>
 
     <!-- Footer -->
-   <footer
+     <footer
       class="pt-[120px] 2xl:pt-[97px] bg-[var(--mid-black)] text-gray-300"
     >
       <div class="container-custom mx-auto pb-[70px]">
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-15 relative"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-10 2xl:gap-15 relative"
         >
           <!-- About RK Group -->
           <div class="text-sm 2xl:text-lg">
@@ -708,17 +703,20 @@
               </h3>
               <ul class="space-y-2 font-light">
                 <li>
-                  <a href="index.html" class="hover:text-yellow-500">Home</a>
+                  <a href="index.html" class="hover:text-[var(--secondary-color)]">Home</a>
                 </li>
                 <li>
-                  <a href="#" class="hover:text-yellow-500">Our Programs</a>
+                  <a href="#" class="hover:ttext-[var(--secondary-color)]">Our Programs</a>
                 </li>
-                <li><a href="#" class="hover:text-yellow-500">Our Team</a></li>
-                <li><a href="#" class="hover:text-yellow-500">Career</a></li>
+                <li><a href="#" class="hover:text-[var(--secondary-color)]">Our Team</a></li>
+                <li><a href="#" class="hover:text-[var(--secondary-color)]">Career</a></li>
                 <li>
-                  <a href="#" class="hover:text-yellow-500">Testimonials</a>
+                  <a href="testimonial.html" class="hover:text-[var(--secondary-color)]">Testimonials</a>
                 </li>
-                <li><a href="#" class="hover:text-yellow-500">FAQs</a></li>
+                <li>
+                  <a href="blogs.html" class="hover:text-[var(--secondary-color)]">Blogs</a>
+                </li>
+                <li><a href="faq.html" class="hover:text-[var(--secondary-color)]">FAQs</a></li>
               </ul>
             </div>
 
@@ -727,10 +725,10 @@
                 ACCREDITATIONS
               </h3>
               <ul class="font-light leading-[27px] space-y-1">
-                <li>• UGC-DEB Approved</li>
-                <li>• AICTE Recognized</li>
-                <li>
-                  • Partnered with Top Indian & International Universities
+                <li class="flex gap-2"><span>•</span> UGC-DEB Approved</li>
+                <li class="flex gap-2"><span>•</span> AICTE Recognized</li>
+                <li class="flex gap-2">
+                  <span>•</span> Partnered with Top Indian & International Universities
                 </li>
               </ul>
             </div>
@@ -839,9 +837,10 @@
             </p>
             <form class="flex flex-col space-y-5">
               <input
+              id="email"
                 type="email"
                 placeholder="Enter Your Email"
-                class="w-full px-3 py-2 rounded bg-black rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                class="custom-input w-full px-[33px] py-[20px] text-[18px] rounded bg-black rounded-lg text-white focus:outline-none border-0"
               />
               <button
                 type="submit"
@@ -861,11 +860,13 @@
             <ul class="font-light leading-[27px] space-y-1">
               <li class="flex gap-3">
                 <img src="./src/images/email-icon.svg" alt="email-icon" />
-                 info@rkfutureeducation.ae
+                <a href="mailto:info@rkfutureeducation.ae"> info@rkfutureeducation.ae</a>
+                
               </li>
               <li class="flex gap-3">
                 <img src="./src/images/footer-whatsup.svg" alt="email-icon" />
-                +971 58 565 1687
+                <a href="tel:+971585651687">+971 58 565 1687</a>
+                
               </li>
               <li>Saturday – Thursday: 10:00 AM  – 07:00 PM</li>
               <li>Friday: Closed</li>
@@ -881,7 +882,7 @@
                 <li class="flex gap-2 flex-col text-[var(--secondary-color)]">
                   United Arab Emirates
                   <ul
-                    class="flex text-white flex-col md:flex-row gap-3 text-xs 2xl:text-[13px]"
+                    class="flex text-white flex-col md:flex-row gap-3 text-xs lg:text-[11px] 2xl:text-[13px]"
                   >
                     <li class="flex gap-2 items-center">
                       📍Sharjah – Al Wahda Street
@@ -899,8 +900,8 @@
                 </li>
                 <li class="flex gap-2 flex-col text-[var(--secondary-color)]">
                   India
-                  <ul class="flex gap-2 text-sm text-white">
-                    <li>Kerala – MG Road, Kochi</li>
+                  <ul class="flex gap-2 text-xs lg:text-[11px] 2xl:text-[13px] text-white">
+                    <li>📍 Kerala – MG Road, Kochi</li>
                   </ul>
                 </li>
               </ul>

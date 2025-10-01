@@ -551,6 +551,9 @@ swiper-slide img {
   line-height: normal;
   letter-spacing: 0.96px;
   text-transform: uppercase;
+  @media (max-width: 767.98px) { 
+    font-size: 14px;
+   }
 }
 .why_choosCard svg {
   max-width: 70px;

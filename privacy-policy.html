@@ -22,7 +22,7 @@
 <body>
     <a href="#header" class="skip-link">Skip to main content</a>
     <!-- Header -->
-   <header class="absolute w-full top-0 z-10" id="header">
+  <header class="absolute w-full top-0 z-10" id="header">
       <nav class="">
         <div
           class="brand_logo mx-auto w-full container-custom flex flex-wrap items-center lg:items-start justify-between"
@@ -46,7 +46,7 @@
             data-drawer-show="drawer-example"
             aria-controls="drawer-example"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="bg-gray-200 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-expanded="false"
           >
             <span class="sr-only">Open main menu</span>
@@ -124,7 +124,7 @@
                 <!-- Dropdown menu -->
                 <div
                   id="dropdownNavbar"
-                  class="z-10 hidden font-normal bg-white divide-y rounded-lg shadow-sm w-44"
+                  class="!min-width-[350px] !w-[350px] max-w-[350px] z-10 hidden font-normal bg-white divide-y rounded-lg shadow-sm w-44"
                 >
                   <ul
                     class="py-2 text-sm text-black dark:text-gray-400"
@@ -133,32 +133,33 @@
                     <li>
                       <a
                         href="attestation.html"
-                        class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-none"
+                        class="block px-3 text-[var(--text-color)] py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-none"
                         >Attestation</a
                       >
                     </li>
                     <li>
                       <a
-                        href="#"
-                        class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-none"
-                        >Settings</a
+                        href="service-detail.html"
+                        class="block px-3 py-2 text-[var(--text-color)] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-none"
+                        >Service-detail</a
                       >
                     </li>
                     <li>
                       <a
-                        href="#"
-                        class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-none"
-                        >Earnings</a
+                        href="equivalence-certificate.html"
+                        class="block px-3 py-2 text-[var(--text-color)] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-none"
+                        >Equivalence-certificate</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="privacy-policy.html"
+                        class="block px-3 py-2 text-[var(--text-color)] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-none"
+                        >Privacy-policy</a
                       >
                     </li>
                   </ul>
-                  <div class="py-1">
-                    <a
-                      href="#"
-                      class="block px-3 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                      >Sign out</a
-                    >
-                  </div>
+                 
                 </div>
               </li>
               <li class="relative">
@@ -179,7 +180,7 @@
                 class="gradient-border-line px-[18px] py-[8px] 2xl:px-[28px] 2xl:py-[10.5px]"
               >
                 <a
-                  href="#"
+                  href="contact.html"
                   class="block py-2 px-3 text-white md:border-0 py-[1px] rounded-none btn-nave"
                   >Contact</a
                 >
@@ -189,82 +190,156 @@
         </div>
       </nav>
     </header>
-    <aside id="drawer-example"
-        class="fixed top-0 left-0 !z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80"
-        tabindex="-1" aria-labelledby="drawer-label">
-        <h5 id="drawer-label"
-            class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400">
-            <svg class="w-4 h-4 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                viewBox="0 0 20 20">
-                <path
-                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
-            </svg>
-            Info
-        </h5>
-        <button type="button" data-drawer-hide="drawer-example" aria-controls="drawer-example"
-            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
-            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-            </svg>
-            <span class="sr-only">Close menu</span>
-        </button>
+    <aside
+      id="drawer-example"
+      class="fixed top-0 left-0 !z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80"
+      tabindex="-1"
+      aria-labelledby="drawer-label"
+    >
+      <h5
+        id="drawer-label"
+        class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"
+      >
+        <svg
+          class="w-4 h-4 me-2.5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"
+          />
+        </svg>
+        Info
+      </h5>
+      <button
+        type="button"
+        data-drawer-hide="drawer-example"
+        aria-controls="drawer-example"
+        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
+      >
+        <svg
+          class="w-3 h-3"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 14 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+          />
+        </svg>
+        <span class="sr-only">Close menu</span>
+      </button>
 
-        <div class="space-y-2">
-            <ul aria-label="mobile navigation" class="text-black">
-                <li>
-                    <a href="index.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600">Home</a>
-                </li>
-                <li>
-                    <a href="about.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600">About us</a>
-                </li>
-                <li>
-                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600">Distance education</a>
-                </li>
-                <li class="flex items-center">
-                    <a href="#" class="w-full py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
-                        id="dropdownDefaultButton" data-dropdown-toggle="dropdown">Document Services</a>
+      <div class="space-y-2">
+        <ul aria-label="mobile navigation" class="text-black">
+          <li>
+            <a
+              href="index.html"
+              class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a
+              href="distance-education.html"
+              class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
+              >Distance education</a
+            >
+          </li>
+          <li class="flex items-center">
+            <a
+              href="#"
+              class="w-full py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
+              id="dropdownDefaultButton"
+              data-dropdown-toggle="dropdown"
+              >Document Services</a
+            >
 
-                    <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 10 6">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="m1 1 4 4 4-4" />
-                    </svg>
-                    <div id="dropdown"
-                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
-                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                            aria-labelledby="dropdownDefaultButton">
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
-                                    out</a>
-                            </li>
-                        </ul>
-                    </div>
+            <svg
+              class="w-2.5 h-2.5 ms-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+            <div
+              id="dropdown"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700"
+            >
+              <ul
+                class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                aria-labelledby="dropdownDefaultButton"
+              >
+                <li>
+                  <a
+                    href="attestation.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Attestation</a
+                  >
                 </li>
                 <li>
-                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600">Careers</a>
+                  <a
+                    href="service-detail.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Service-detail</a
+                  >
                 </li>
                 <li>
-                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600">Login</a>
+                  <a
+                    href="equivalence-certificate.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Equivalence-certificate</a
+                  >
                 </li>
                 <li>
-                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600">Contact</a>
+                  <a
+                    href="privacy-policy.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Privacy-policy</a
+                  >
                 </li>
-            </ul>
-        </div>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
+              >Careers</a
+            >
+          </li>
+         
+          <li>
+            <a
+              href="contact.html"
+              class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
     </aside>
 
     <main>
@@ -395,7 +470,7 @@
     >
       <div class="container-custom mx-auto pb-[70px]">
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-15 relative"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-10 2xl:gap-15 relative"
         >
           <!-- About RK Group -->
           <div class="text-sm 2xl:text-lg">
@@ -420,17 +495,20 @@
               </h3>
               <ul class="space-y-2 font-light">
                 <li>
-                  <a href="index.html" class="hover:text-yellow-500">Home</a>
+                  <a href="index.html" class="hover:text-[var(--secondary-color)]">Home</a>
                 </li>
                 <li>
-                  <a href="#" class="hover:text-yellow-500">Our Programs</a>
+                  <a href="#" class="hover:ttext-[var(--secondary-color)]">Our Programs</a>
                 </li>
-                <li><a href="#" class="hover:text-yellow-500">Our Team</a></li>
-                <li><a href="#" class="hover:text-yellow-500">Career</a></li>
+                <li><a href="#" class="hover:text-[var(--secondary-color)]">Our Team</a></li>
+                <li><a href="#" class="hover:text-[var(--secondary-color)]">Career</a></li>
                 <li>
-                  <a href="#" class="hover:text-yellow-500">Testimonials</a>
+                  <a href="testimonial.html" class="hover:text-[var(--secondary-color)]">Testimonials</a>
                 </li>
-                <li><a href="#" class="hover:text-yellow-500">FAQs</a></li>
+                <li>
+                  <a href="blogs.html" class="hover:text-[var(--secondary-color)]">Blogs</a>
+                </li>
+                <li><a href="faq.html" class="hover:text-[var(--secondary-color)]">FAQs</a></li>
               </ul>
             </div>
 
@@ -439,10 +517,10 @@
                 ACCREDITATIONS
               </h3>
               <ul class="font-light leading-[27px] space-y-1">
-                <li>• UGC-DEB Approved</li>
-                <li>• AICTE Recognized</li>
-                <li>
-                  • Partnered with Top Indian & International Universities
+                <li class="flex gap-2"><span>•</span> UGC-DEB Approved</li>
+                <li class="flex gap-2"><span>•</span> AICTE Recognized</li>
+                <li class="flex gap-2">
+                  <span>•</span> Partnered with Top Indian & International Universities
                 </li>
               </ul>
             </div>
@@ -551,9 +629,10 @@
             </p>
             <form class="flex flex-col space-y-5">
               <input
+              id="email"
                 type="email"
                 placeholder="Enter Your Email"
-                class="w-full px-3 py-2 rounded bg-black rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                class="custom-input w-full px-[33px] py-[20px] text-[18px] rounded bg-black rounded-lg text-white focus:outline-none border-0"
               />
               <button
                 type="submit"
@@ -573,11 +652,13 @@
             <ul class="font-light leading-[27px] space-y-1">
               <li class="flex gap-3">
                 <img src="./src/images/email-icon.svg" alt="email-icon" />
-                 info@rkfutureeducation.ae
+                <a href="mailto:info@rkfutureeducation.ae"> info@rkfutureeducation.ae</a>
+                
               </li>
               <li class="flex gap-3">
                 <img src="./src/images/footer-whatsup.svg" alt="email-icon" />
-                +971 58 565 1687
+                <a href="tel:+971585651687">+971 58 565 1687</a>
+                
               </li>
               <li>Saturday – Thursday: 10:00 AM  – 07:00 PM</li>
               <li>Friday: Closed</li>
@@ -593,7 +674,7 @@
                 <li class="flex gap-2 flex-col text-[var(--secondary-color)]">
                   United Arab Emirates
                   <ul
-                    class="flex text-white flex-col md:flex-row gap-3 text-xs 2xl:text-[13px]"
+                    class="flex text-white flex-col md:flex-row gap-3 text-xs lg:text-[11px] 2xl:text-[13px]"
                   >
                     <li class="flex gap-2 items-center">
                       📍Sharjah – Al Wahda Street
@@ -611,8 +692,8 @@
                 </li>
                 <li class="flex gap-2 flex-col text-[var(--secondary-color)]">
                   India
-                  <ul class="flex gap-2 text-sm text-white">
-                    <li>Kerala – MG Road, Kochi</li>
+                  <ul class="flex gap-2 text-xs lg:text-[11px] 2xl:text-[13px] text-white">
+                    <li>📍 Kerala – MG Road, Kochi</li>
                   </ul>
                 </li>
               </ul>
