@@ -1878,15 +1878,19 @@
       <!-- Footer -->
     </footer>
     
-    <div class="fixed right-0 top-1/2 -translate-y-1/2 z-10 transition-all duration-300" id="mainContainer" style="right: -50px;">
+    <div class="fixed right-0 top-1/2 -translate-y-1/2 z-10 transition-all duration-300" id="mainContainer" style="right: -43px;">
   <div class="flex items-start">
-    <button 
-      id="toggleBtn" 
-      class="w-[100px] z-1 relative right-[-30px] bg-yellow-600 text-white px-4 py-2 rounded-l-lg md:hidden transition-all duration-300"
-      onclick="toggleSocial()"
-    >
-      <span id="btnText">Show</span>
-    </button>
+   <button 
+  id="toggleBtn" 
+  class="z-1 relative top-[25px] bg-yellow-600 text-white px-2 py-2 rounded-l-lg md:hidden transition-all duration-300"
+  onclick="toggleSocial(this)"
+>
+  <div id="btnText">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+    </svg>
+  </div>
+</button>
     
     <div 
       id="socialContainer" 
@@ -1914,28 +1918,9 @@
   </div>
 </div>
 
-<script>
-  let isVisible = false;
 
-  function toggleSocial() {
-    const mainContainer = document.getElementById('mainContainer');
-    const socialContainer = document.getElementById('socialContainer');
-    const btnText = document.getElementById('btnText');
-    
-    isVisible = !isVisible;
-    
-    if (isVisible) {
-      // Show: Move entire container to show everything
-      mainContainer.style.right = '0';
-      btnText.textContent = 'Hide';
-    } else {
-      // Hide: Move container so only button is visible at edge
-      const containerWidth = socialContainer.offsetWidth;
-      mainContainer.style.right = `-${containerWidth}px`;
-      btnText.textContent = 'Show';
-    }
-  }
-</script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>

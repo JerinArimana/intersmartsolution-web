@@ -475,3 +475,26 @@ function initTabs() {
 
 
 // Usage: const toggle = createToggleSocial(); then call toggle();
+
+
+
+function toggleSocial(button) {
+    // Get the main container relative to the button
+    const mainContainer = button.closest('#mainContainer');
+    const socialContainer = mainContainer.querySelector('#socialContainer');
+
+    // Get current visibility state from data attribute (default false)
+    const isVisible = mainContainer.dataset.visible === 'true';
+
+    // Toggle the state
+    mainContainer.dataset.visible = !isVisible;
+
+    if (!isVisible) {
+      // Show: Move container to fully visible
+      mainContainer.style.right = '0';
+    } else {
+      // Hide: Only button visible
+      const containerWidth = socialContainer.offsetWidth;
+      mainContainer.style.right = `-${containerWidth}px`;
+    }
+  }
