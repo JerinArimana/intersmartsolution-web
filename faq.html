@@ -29,7 +29,7 @@
   <body>
     <a href="#header" class="skip-link">Skip to main content</a>
     <!-- Header -->
-   <header class="absolute w-full top-0 z-10" id="header">
+  <header class="absolute w-full top-0 z-10" id="header">
       <nav class="">
         <div
           class="brand_logo mx-auto w-full container-custom flex flex-wrap items-center lg:items-start justify-between"
@@ -43,6 +43,7 @@
             >
               <img
                 src="./src/images/RKG-LOGO.svg"
+                loading="lazy"
                 alt="header logo"
                 class="w-full h-auto object-cover"
               />
@@ -87,7 +88,6 @@
                   class="block text-white md:bg-transparent py-[3px] rounded-none"
                   aria-current="page"
                 >
-                 
                   Home
                 </a>
               </li>
@@ -166,16 +166,15 @@
                       >
                     </li> -->
                   </ul>
-                 
                 </div>
               </li>
-              <!-- <li class="relative">
+              <li class="relative">
                 <a
-                  href="#"
+                  href="career.html"
                   class="block text-white md:border-0 py-[3px] rounded-none"
                   >Careers</a
                 >
-              </li> -->
+              </li>
               <li class="relative">
                 <a
                   href="#"
@@ -330,14 +329,14 @@
               </ul>
             </div>
           </li>
-          <!-- <li>
+          <li>
             <a
-              href="#"
+              href="career.html"
               class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
               >Careers</a
             >
-          </li> -->
-         
+          </li>
+
           <li>
             <a
               href="contact.html"
@@ -785,7 +784,7 @@ Got Questions? We’ve Got Answers</span
     </main>
 
     <!-- Footer -->
-   <footer
+  <footer
       class="pt-[120px] 2xl:pt-[97px] bg-[var(--mid-black)] text-gray-300"
     >
       <div class="container-custom mx-auto pb-[70px]">
@@ -815,24 +814,46 @@ Got Questions? We’ve Got Answers</span
               </h3>
               <ul class="space-y-2 font-light">
                 <li>
-                  <a href="index.html" class="hover:text-[var(--secondary-color)]">Home</a>
+                  <a
+                    href="index.html"
+                    class="hover:text-[var(--secondary-color)]"
+                    >Home</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="hover:ttext-[var(--secondary-color)]">Our Programs</a>
-                </li>
-                <li><a href="#" class="hover:text-[var(--secondary-color)]">Our Team</a></li>
-                <!-- <li><a href="#" class="hover:text-[var(--secondary-color)]">Career</a></li> -->
-                <li>
-                  <a href="testimonial.html" class="hover:text-[var(--secondary-color)]">Testimonials</a>
+                  <a href="#" class="hover:ttext-[var(--secondary-color)]"
+                    >Our Programs</a
+                  >
                 </li>
                 <li>
-                  <a href="blogs.html" class="hover:text-[var(--secondary-color)]">Blogs</a>
+                  <a href="#" class="hover:text-[var(--secondary-color)]"
+                    >Our Team</a
+                  >
                 </li>
-                <li><a href="faq.html" class="hover:text-[var(--secondary-color)]">FAQs</a></li>
+               <li><a href="career.html" class="hover:text-[var(--secondary-color)]">Career</a></li> 
+                <li>
+                  <a
+                    href="testimonial.html"
+                    class="hover:text-[var(--secondary-color)]"
+                    >Testimonials</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="blogs.html"
+                    class="hover:text-[var(--secondary-color)]"
+                    >Blogs</a
+                  >
+                </li>
+                <li>
+                  <a href="faq.html" class="hover:text-[var(--secondary-color)]"
+                    >FAQs</a
+                  >
+                </li>
               </ul>
             </div>
 
-            <div class="text-sm 2xl:text-lg">
+            <div class="text-sm 2xl:text-lg pt-5 sm:pt-0">
               <h3 class="font-medium text-[var(--secondary-color)] mb-3">
                 ACCREDITATIONS
               </h3>
@@ -840,7 +861,8 @@ Got Questions? We’ve Got Answers</span
                 <li class="flex gap-2"><span>•</span> UGC-DEB Approved</li>
                 <li class="flex gap-2"><span>•</span> AICTE Recognized</li>
                 <li class="flex gap-2">
-                  <span>•</span> Partnered with Top Indian & International Universities
+                  <span>•</span> Partnered with Top Indian & International
+                  Universities
                 </li>
               </ul>
             </div>
@@ -949,7 +971,7 @@ Got Questions? We’ve Got Answers</span
             </p>
             <form class="flex flex-col space-y-5">
               <input
-              id="email"
+                id="email"
                 type="email"
                 placeholder="Enter Your Email"
                 class="custom-input w-full px-[33px] py-[20px] text-[18px] rounded bg-black rounded-lg text-white focus:outline-none border-0"
@@ -972,15 +994,15 @@ Got Questions? We’ve Got Answers</span
             <ul class="font-light leading-[27px] space-y-1">
               <li class="flex gap-3">
                 <img src="./src/images/email-icon.svg" alt="email-icon" />
-                <a href="mailto:info@rkfutureeducation.ae"> info@rkfutureeducation.ae</a>
-                
+                <a href="mailto:info@rkfutureeducation.ae">
+                  info@rkfutureeducation.ae</a
+                >
               </li>
               <li class="flex gap-3">
                 <img src="./src/images/footer-whatsup.svg" alt="email-icon" />
                 <a href="tel:+971585651687">+971 58 565 1687</a>
-                
               </li>
-              <li>Saturday – Thursday: 10:00 AM  – 07:00 PM</li>
+              <li>Saturday – Thursday: 10:00 AM – 07:00 PM</li>
               <li>Friday: Closed</li>
             </ul>
           </div>
@@ -1012,7 +1034,9 @@ Got Questions? We’ve Got Answers</span
                 </li>
                 <li class="flex gap-2 flex-col text-[var(--secondary-color)]">
                   India
-                  <ul class="flex gap-2 text-xs lg:text-[11px] 2xl:text-[13px] text-white">
+                  <ul
+                    class="flex gap-2 text-xs lg:text-[11px] 2xl:text-[13px] text-white"
+                  >
                     <li>📍 Kerala – MG Road, Kochi</li>
                   </ul>
                 </li>
@@ -1022,7 +1046,9 @@ Got Questions? We’ve Got Answers</span
         </div>
       </div>
       <!-- Grid Layout -->
-      <div class="bg-[var(--light-black)] text-gray-400 footer-copy-right-section">
+      <div
+        class="bg-[var(--light-black)] text-gray-400 footer-copy-right-section"
+      >
         <div
           class="container-custom mx-auto px-4 sm:px-6 lg:px-8 relative py-4 flex flex-col md:flex-row items-center justify-between gap-[15px]"
         >
@@ -1032,7 +1058,9 @@ Got Questions? We’ve Got Answers</span
           </div>
 
           <!-- Center: Social Icons -->
-          <div class="flex my-3 md:my-0 justify-center items-center gap-[23px] lg:gap-[53px]">
+          <div
+            class="flex my-3 md:my-0 justify-center items-center gap-[23px] lg:gap-[53px]"
+          >
             <a href="index.html" class=" ">
               <img src="./src/images/f_1_.svg" />
             </a>
@@ -1049,14 +1077,32 @@ Got Questions? We’ve Got Answers</span
               <img src="./src/images/f_5_.svg" />
             </a>
             <a href="#" class="">
-             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
-  <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
-</svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-pinterest"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"
+                />
+              </svg>
             </a>
             <a href="#" class="">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
-  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
-</svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-tiktok"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"
+                />
+              </svg>
             </a>
           </div>
 
